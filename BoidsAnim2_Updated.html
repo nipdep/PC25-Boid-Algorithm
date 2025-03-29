@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boid CSV Animator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://66.media.tumblr.com/750be466aa8b119e007f4cc3a3c8212b/tumblr_psomn0jloC1uoyuh1o1_500.gif');
+            background-size: 100%;
+            background-color: #FFFFFF;
+        }
+
+        canvas {
+            border: 1px solid black;
+            margin-top: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Boid CSV Animator</h1>
+    <input type="file" id="csvFile" accept=".csv">
+    <label style="text-align:center; margin-right: 10%;">Current Frame: <span id="frameNumber">#</span></label>
+    <label>FPS: <input type="number" id="fps" value="15" min="1"></label>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = 800;
+        canvas.height = 450;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth * 0.8;
+            canvas.height = window.innerHeight * 0.8;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+
+        let boids = {};
+        let frameCount = 0;
+        let maxFrameId = 0;
+        let colors = [];
+        let fps = 15;
+        let animationInterval;
+        let minX, maxX, minY, maxY;
+
+        document.getElementById("csvFile").addEventListener("change", event => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const lines = e.target.result.split("\n");
+                boids = {};
+                minX = Infinity; maxX = -Infinity;
+                minY = Infinity; maxY = -Infinity;
+                maxFrameId = 0;
+
+                lines.forEach(line => {
+                    if (!line.trim()) return;
+                    const [boidId, frameId, x, y, vx, vy] = line.split(",").map(Number);
+                    if (!boids[boidId]) boids[boidId] = {};
+                    boids[boidId][frameId] = { x, y, vx, vy };
+                    maxFrameId = Math.max(maxFrameId, frameId);
+                    minX = Math.min(minX, x); maxX = Math.max(maxX, x);
+                    minY = Math.min(minY, y); maxY = Math.max(maxY, y);
+                });
+
+                colors = generateColors(Object.keys(boids).length);
+                frameCount = 0;
+                restartAnimation();
+            };
+            reader.readAsText(file);
+        });
+
+        document.getElementById("fps").addEventListener("change", event => {
+            fps = parseInt(event.target.value, 10) || 15;
+        });
+
+        function normalize(value, min, max, size) {
+            return ((value - min) / (max - min)) * size;
+        }
+
+        function generateColors(num) {
+            const colors = [];
+            for (let i = 0; i < num; i++) {
+                const r = Math.floor(100 + Math.random() * 155);
+                const g = Math.floor(100 + Math.random() * 155);
+                const b = Math.floor(100 + Math.random() * 155);
+                colors.push(`rgb(${r},${g},${b})`);
+            }
+            return colors;
+        }
+
+        function restartAnimation() {
+            clearInterval(animationInterval);
+            animationInterval = setInterval(() => {
+                document.getElementById("frameNumber").textContent = `${frameCount}/${maxFrameId}`;
+                drawFrame();
+                frameCount = (frameCount + 1) % (maxFrameId + 1);
+            }, 1000 / fps);
+        }
+
+        function drawTriangle(x, y, angle, size, color) {
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(
+                x + size * Math.cos(angle),
+                y + size * Math.sin(angle)
+            );
+            ctx.lineTo(
+                x + size * Math.cos(angle + Math.PI * 2 / 3),
+                y + size * Math.sin(angle + Math.PI * 2 / 3)
+            );
+            ctx.lineTo(
+                x + size * Math.cos(angle - Math.PI * 2 / 3),
+                y + size * Math.sin(angle - Math.PI * 2 / 3)
+            );
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        function drawFrame() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const boidIds = Object.keys(boids);
+            boidIds.forEach((id, idx) => {
+                const data = boids[id][frameCount];
+                if (data) {
+                    const normX = normalize(data.x, minX, maxX, canvas.width);
+                    const normY = normalize(data.y, minY, maxY, canvas.height);
+                    const angle = Math.atan2(data.vy, data.vx);
+                    drawTriangle(normX, normY, angle, 5, colors[idx]);
+                }
+            });
+
+            // Draw the turn-around boundary
+            const margin = 100;
+            ctx.setLineDash([5, 5]);
+            ctx.strokeStyle = 'red';
+            ctx.strokeRect(margin, margin, canvas.width - 2 * margin, canvas.height - 2 * margin);
+            ctx.setLineDash([]);
+        }
+    </script>
+</body>
+
+</html>
