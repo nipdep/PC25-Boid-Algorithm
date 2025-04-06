@@ -87,19 +87,13 @@ void read_config(int rank, char *buffer)
     free(buffer);
 }
 
-void write_output(Boid *full_flock, int create, int delete)
+void write_output(Boid *full_flock, int create)
 {
     MPI_File fh;
 
-    if (delete)
-    {
-        // Create the file if it doesn't exist
-        MPI_File_delete("boids_output.csv", MPI_INFO_NULL);
-    }
-
     if (create)
     {
-        // Create the file if it doesn't exist
+        MPI_File_delete("boids_output.csv", MPI_INFO_NULL);
         MPI_File_open(MPI_COMM_WORLD, "boids_output.csv",
                       MPI_MODE_CREATE | MPI_MODE_WRONLY,
                       MPI_INFO_NULL, &fh);
@@ -115,7 +109,7 @@ void write_output(Boid *full_flock, int create, int delete)
     char buffer[100];
     int len;
 
-    for (int i = 0; i < FLOCKSIZE; i++)
+    for (int i = 0; i < flocksize; i++)
     {
         len = snprintf(buffer, sizeof(buffer), "%d,%d,%.2f,%.2f,%.2f,%.2f\n",
                        full_flock[i].id, full_flock[i].timestep,
@@ -139,11 +133,9 @@ int main(int argc, char** argv) {
     // Open the config file collectively in read-only mode.
     read_config(rank, config);
 
-
-
     int local_count = flocksize / size; 
 
-    Boid* full_flock = allocateFullFlock(FLOCKSIZE);
+    Boid* full_flock = allocateFullFlock(flocksize);
     Boid* local_flock = NULL;
     void* d_states;
 
@@ -157,15 +149,7 @@ int main(int argc, char** argv) {
         full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
 
     if (rank == 0) {
-        // print boids in flock 
-        // printf("Initial Flock State:\n");
-        write_output(full_flock,1,1);
-        //for (int i = 0; i < FLOCKSIZE; i++) {
-        //    printf("%d,%d,%.2f,%.2f,%.2f,%.2f\n",
-        //        full_flock[i].id, full_flock[i].timestep,
-        //        full_flock[i].position.x, full_flock[i].position.y,
-        //        full_flock[i].velocity.x, full_flock[i].velocity.y);
-        //}
+        write_output(full_flock, 1);
     }
 
     // Synchronize all processes
@@ -189,21 +173,13 @@ int main(int argc, char** argv) {
         // MPI_Gather(local_flock, local_count * sizeof(Boid), MPI_BYTE, full_flock, local_count * sizeof(Boid), MPI_BYTE, 0, MPI_COMM_WORLD);
 
         if (rank == 0) {
-            // printf("Updated Flock State:\n");
-            write_output(full_flock,0,0);
-            //for (int i = 0; i < FLOCKSIZE; i++) {
-            //    printf("%d,%d,%.2f,%.2f,%.2f,%.2f\n",
-            //           full_flock[i].id, full_flock[i].timestep,
-            //           full_flock[i].position.x, full_flock[i].position.y,
-            //           full_flock[i].velocity.x, full_flock[i].velocity.y);
-            //}
-        }
+            write_output(full_flock,0);
+        }    
     }
 
     cudaFree(local_flock);
     cudaFree(d_states);
     cudaFree(full_flock);
-    // free(full_flock);
 
     MPI_Finalize();
     return 0;
