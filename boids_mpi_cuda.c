@@ -9,9 +9,6 @@
 
 #include "boids.h"
 
-#define FLOCKSIZE 400
-#define FRAMES 60
-
 int flocksize = 20;
 int frames = 30;
 
