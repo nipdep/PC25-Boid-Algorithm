@@ -12,6 +12,9 @@
 #define FLOCKSIZE 400
 #define FRAMES 60
 
+int flocksize = 20;
+int frames = 30;
+
 MPI_Offset global_offset = 0;
 
 // Declare external GPU functions
@@ -53,9 +56,38 @@ void read_config(int rank, char *buffer)
     MPI_File_read_all(fh, buffer, file_size, MPI_CHAR, &status);
     buffer[file_size] = '\0'; // Null-terminate the string
 
-    
+    // Split by line
+    char *line = strtok(buffer, "\n");
+
+    while (line != NULL)
+    {
+        // Split line into key and value
+        char *equals = strchr(line, '=');
+        if (equals)
+        {
+            *equals = '\0'; // Temporarily split the string
+            char *key = line;
+            char *value = equals + 1;
+
+            // Compare and assign
+            if (strcmp(key, "FLOCKSIZE") == 0)
+            {
+                flocksize = atoi(value);
+            }
+            else if (strcmp(key, "FRAMES") == 0)
+            {
+                frames = atoi(value);
+            }
+        }
+
+        line = strtok(NULL, "\n");
+    }
+
+    printf("FLOCKSIZE: %d\n", flocksize);
+    printf("FRAMES: %d\n", frames);
 
     MPI_File_close(&fh);
+    free(buffer);
 }
 
 void write_output(Boid *full_flock, int create, int delete)
@@ -112,7 +144,7 @@ int main(int argc, char** argv) {
 
 
 
-    int local_count = FLOCKSIZE / size; 
+    int local_count = flocksize / size; 
 
     Boid* full_flock = allocateFullFlock(FLOCKSIZE);
     Boid* local_flock = NULL;
@@ -142,7 +174,7 @@ int main(int argc, char** argv) {
     // Synchronize all processes
     MPI_Barrier(MPI_COMM_WORLD);
 
-    for (int t = 1; t < FRAMES; t++) {
+    for (int t = 1; t < frames; t++) {
         // printf("Rank %d: Updating boids at timestep %d\n", rank, t);
         // printf("Rank %d: All-to-all exchange completed\n", rank);
         updateBoids(local_flock, full_flock, local_count, t);
