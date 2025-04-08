@@ -5,14 +5,12 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdbool.h>
-#include <cuda_runtime.h>
-
 #include "boids.h"
 
 int flocksize = 20;
 int frames = 30;
-
-MPI_Offset global_offset = 0;
+int char_buffer_size = 50;
+int* length = NULL;
 
 // Declare external GPU functions
 extern Boid* createBoids(int size, int rank, void** d_states);
@@ -87,48 +85,118 @@ void read_config(int rank, char *buffer)
     free(buffer);
 }
 
-void write_output(Boid *full_flock, int create)
+MPI_File create_file(const char *filename)
 {
     MPI_File fh;
+    MPI_File_delete(filename, MPI_INFO_NULL);
+    MPI_File_open(MPI_COMM_WORLD, filename,
+                  MPI_MODE_CREATE | MPI_MODE_RDWR,
+                  MPI_INFO_NULL, &fh);
+    return fh;
+}
 
-    if (create)
-    {
-        MPI_File_delete("boids_output.csv", MPI_INFO_NULL);
-        MPI_File_open(MPI_COMM_WORLD, "boids_output.csv",
-                      MPI_MODE_CREATE | MPI_MODE_WRONLY,
-                      MPI_INFO_NULL, &fh);
-    }else
-    {
-        // Open the file in append mode
-        MPI_File_open(MPI_COMM_WORLD, "boids_output.csv",
-                      MPI_MODE_APPEND | MPI_MODE_WRONLY,
-                      MPI_INFO_NULL, &fh);
-    }
-    
+void close_file(MPI_File *fh)
+{
+    MPI_File_close(fh);
+}
 
-    char buffer[100];
+void write_output(Boid *full_flock, int flock_count, MPI_File fh, int frame_no, int size, int rank)
+{ 
+
+    char buffer[char_buffer_size];
+    MPI_Offset offset = char_buffer_size * frame_no*size*flock_count+ rank*char_buffer_size*flock_count;
     int len;
 
-    for (int i = 0; i < flocksize; i++)
+    for (int i = 0; i < flock_count; i++)
     {
-        len = snprintf(buffer, sizeof(buffer), "%d,%d,%.2f,%.2f,%.2f,%.2f\n",
+        len = snprintf(buffer, sizeof(buffer), "%d,%d,%.2f,%.2f,%.2f,%.2f",
                        full_flock[i].id, full_flock[i].timestep,
                        full_flock[i].position.x, full_flock[i].position.y,
                        full_flock[i].velocity.x, full_flock[i].velocity.y);
 
-        MPI_File_write_at(fh, global_offset, buffer, len, MPI_CHAR, MPI_STATUS_IGNORE);
-        global_offset += len;
+        for (int j = len; j < char_buffer_size-1; j++)
+        {
+            buffer[j] = ' ';
+        }
+        buffer[char_buffer_size-1] = '\n'; // Ensure null termination
+
+        MPI_File_write_at(fh, offset, buffer, char_buffer_size, MPI_CHAR, MPI_STATUS_IGNORE);
+        offset += char_buffer_size;
+    }
+}
+
+void assign_boids_values(Boid *full_flock, int flock_count, char *buffer)
+{   
+    //printf("Inside @ %s\n", buffer);
+    char *line = strtok(buffer, "\n");
+
+    for (int i=0; i < flock_count; i++)
+    {
+        if (line == NULL)
+        {
+            printf("Error in assignment @ %d: %s\n", i, line);
+        }
+
+        sscanf(line, "%d,%d,%f,%f,%f,%f",
+               &full_flock[i].id, &full_flock[i].timestep,
+               &full_flock[i].position.x, &full_flock[i].position.y,
+               &full_flock[i].velocity.x, &full_flock[i].velocity.y);
+
+        /*int id, timestep;
+        float x, y, vx, vy;
+        sscanf(line, "%d,%d,%f,%f,%f,%f",
+               &id, &timestep,
+               &x, &y,
+               &vx, &vy);
+
+        printf("Rank %d: Assigning values: id=%d, timestep=%d, x=%.2f, y=%.2f, vx=%.2f, vy=%.2f\n", i, id, timestep, x, y, vx, vy);
+        
+
+	printf("I %d: Assigning values: id=%d, timestep=%d, x=%.2f, y=%.2f, vx=%.2f, vy=%.2f\n", 
+		i,
+		full_flock[i].id,
+		full_flock[i].timestep,
+		full_flock[i].position.x,
+		full_flock[i].position.y,
+		full_flock[i].velocity.x,
+		full_flock[i].velocity.y
+	);*/
+	line = strtok(NULL, "\n");
+    }
+}
+
+void read_output(Boid *full_flock, int flock_count,  MPI_File fh, int frame_no)
+{
+    MPI_Status status;
+    MPI_Offset file_size;
+    MPI_Offset offset;
+
+    file_size = flock_count*char_buffer_size* sizeof(char);
+    offset = char_buffer_size * frame_no * flock_count;
+    // Allocate a buffer to hold the file contents plus a null terminator.
+    char *buffer = (char *)malloc((file_size + 1) * sizeof(char));
+    if (!buffer)
+    {
+        fprintf(stderr, "Memory allocation error\n");
+        MPI_File_close(&fh);
+        MPI_Finalize();
+        exit(EXIT_FAILURE);
     }
 
-    MPI_File_close(&fh);
+    // Read the file content collectively into the buffer.
+    MPI_File_read_at(fh, offset, buffer, file_size, MPI_CHAR, &status);
+    //printf("Read @ %s\n", buffer);
+    assign_boids_values(full_flock, flock_count, buffer);
 }
 
 int main(int argc, char** argv) {
     char *config;
-    int rank, size; 
+    int 
+	    rank, size; 
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
+    MPI_File fh = create_file("boids_output.csv");
 
     // Open the config file collectively in read-only mode.
     read_config(rank, config);
@@ -145,39 +213,39 @@ int main(int argc, char** argv) {
     MPI_Barrier(MPI_COMM_WORLD);
 
     // All-to-all exchange so each rank gets the full flock
-    MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
-        full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
+    //MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
+    //    full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
 
-    if (rank == 0) {
-        write_output(full_flock, 1);
-    }
+    write_output(local_flock, local_count, fh, 0, size, rank);
 
     // Synchronize all processes
     MPI_Barrier(MPI_COMM_WORLD);
+    read_output(full_flock, flocksize, fh, 0);
 
     for (int t = 1; t < frames; t++) {
         // printf("Rank %d: Updating boids at timestep %d\n", rank, t);
         // printf("Rank %d: All-to-all exchange completed\n", rank);
         updateBoids(local_flock, full_flock, local_count, t);
         // printf("Updated Flock State:\n");
-
+	
+	write_output(local_flock, local_count, fh, t, size, rank);
         // Synchronize all processes
         MPI_Barrier(MPI_COMM_WORLD);
         // printf("Rank %d: Boids updated\n", rank);
 
         // All-to-all exchange so each rank gets the full flock
-        MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
-                     full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
+        //MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
+        //             full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
         // printf("Rank %d: All-to-all exchange completed\n", rank);
         // Optionally collect final state at root for printing
         // MPI_Gather(local_flock, local_count * sizeof(Boid), MPI_BYTE, full_flock, local_count * sizeof(Boid), MPI_BYTE, 0, MPI_COMM_WORLD);
 
-        if (rank == 0) {
-            write_output(full_flock,0);
-        }    
+        //write_output(local_flock, local_count, fh, t, size, rank);
+        MPI_Barrier(MPI_COMM_WORLD);
+	read_output(full_flock, flocksize, fh, t);
     }
 
-    cudaFree(local_flock);
+    close_file(&fh);
     cudaFree(d_states);
     cudaFree(full_flock);
 
