@@ -127,7 +127,6 @@ void write_output(Boid *full_flock, int flock_count, MPI_File fh, int frame_no, 
 
 void assign_boids_values(Boid *full_flock, int flock_count, char *buffer)
 {   
-    //printf("Inside @ %s\n", buffer);
     char *line = strtok(buffer, "\n");
 
     for (int i=0; i < flock_count; i++)
@@ -142,25 +141,6 @@ void assign_boids_values(Boid *full_flock, int flock_count, char *buffer)
                &full_flock[i].position.x, &full_flock[i].position.y,
                &full_flock[i].velocity.x, &full_flock[i].velocity.y);
 
-        /*int id, timestep;
-        float x, y, vx, vy;
-        sscanf(line, "%d,%d,%f,%f,%f,%f",
-               &id, &timestep,
-               &x, &y,
-               &vx, &vy);
-
-        printf("Rank %d: Assigning values: id=%d, timestep=%d, x=%.2f, y=%.2f, vx=%.2f, vy=%.2f\n", i, id, timestep, x, y, vx, vy);
-        
-
-	printf("I %d: Assigning values: id=%d, timestep=%d, x=%.2f, y=%.2f, vx=%.2f, vy=%.2f\n", 
-		i,
-		full_flock[i].id,
-		full_flock[i].timestep,
-		full_flock[i].position.x,
-		full_flock[i].position.y,
-		full_flock[i].velocity.x,
-		full_flock[i].velocity.y
-	);*/
 	line = strtok(NULL, "\n");
     }
 }
@@ -185,14 +165,12 @@ void read_output(Boid *full_flock, int flock_count,  MPI_File fh, int frame_no)
 
     // Read the file content collectively into the buffer.
     MPI_File_read_at(fh, offset, buffer, file_size, MPI_CHAR, &status);
-    //printf("Read @ %s\n", buffer);
     assign_boids_values(full_flock, flock_count, buffer);
 }
 
 int main(int argc, char** argv) {
     char *config;
-    int 
-	    rank, size; 
+    int rank, size; 
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
@@ -212,37 +190,23 @@ int main(int argc, char** argv) {
     // Synchronize all processes
     MPI_Barrier(MPI_COMM_WORLD);
 
-    // All-to-all exchange so each rank gets the full flock
-    //MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
-    //    full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
-
+    //output the initial state of the boids
     write_output(local_flock, local_count, fh, 0, size, rank);
 
-    // Synchronize all processes
+    // All-to-all exchange, Synchronize all processes
     MPI_Barrier(MPI_COMM_WORLD);
     read_output(full_flock, flocksize, fh, 0);
 
     for (int t = 1; t < frames; t++) {
-        // printf("Rank %d: Updating boids at timestep %d\n", rank, t);
-        // printf("Rank %d: All-to-all exchange completed\n", rank);
+        // time step update.
         updateBoids(local_flock, full_flock, local_count, t);
         // printf("Updated Flock State:\n");
 	
-	write_output(local_flock, local_count, fh, t, size, rank);
-        // Synchronize all processes
-        MPI_Barrier(MPI_COMM_WORLD);
-        // printf("Rank %d: Boids updated\n", rank);
+	    write_output(local_flock, local_count, fh, t, size, rank);
 
-        // All-to-all exchange so each rank gets the full flock
-        //MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
-        //             full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
-        // printf("Rank %d: All-to-all exchange completed\n", rank);
-        // Optionally collect final state at root for printing
-        // MPI_Gather(local_flock, local_count * sizeof(Boid), MPI_BYTE, full_flock, local_count * sizeof(Boid), MPI_BYTE, 0, MPI_COMM_WORLD);
-
-        //write_output(local_flock, local_count, fh, t, size, rank);
+        // All-to-all exchange, Synchronize all processes
         MPI_Barrier(MPI_COMM_WORLD);
-	read_output(full_flock, flocksize, fh, t);
+	    read_output(full_flock, flocksize, fh, t);
     }
 
     close_file(&fh);
