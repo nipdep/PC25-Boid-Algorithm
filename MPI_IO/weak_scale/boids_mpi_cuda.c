@@ -36,15 +36,16 @@ void read_config(int argc, char *argv[], int rank, int size)
     threadCount = atoi(argv[2]);
     frames = atoi(argv[3]);
 
-    int numChars = snprintf(NULL, 0, "%d_%d_", size, threadCount);
+    int numChars = snprintf(NULL, 0, "%d_%d_%d_", size, threadCount, flocksize);
     size_t originalLength = strlen(output_file);
     char *file_type;
 
-        if (atoi(argv[4]) == 0)
+    if (atoi(argv[4]) == 0)
     {
         file_type = "strong";
         numChars += 6;
-    }else
+    }
+    else
     {
         file_type = "weak";
         numChars += 4;
@@ -52,7 +53,7 @@ void read_config(int argc, char *argv[], int rank, int size)
 
     size_t totalLength = numChars + 1 + originalLength + 1;
     char *newStr = malloc(totalLength);
-    sprintf(newStr, "%d_%d_%s_%s", size, threadCount,file_type, output_file);
+    sprintf(newStr, "%d_%d_%d_%s_%s", size, threadCount, flocksize, file_type, output_file);
     output_file = newStr;
     if (rank == 0)
     {
@@ -186,7 +187,7 @@ int main(int argc, char *argv[])
     end_io = clock_now();
     if (rank == 0)
     {
-        printf("|FILEOUT|IO_READ|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n",0, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
+        printf("|FILEOUT|IO_READ|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", 0, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
     }
 
     for (int t = 1; t < frames; t++)

@@ -36,7 +36,7 @@ void read_config(int argc, char *argv[], int rank, int size)
     threadCount = atoi(argv[2]);
     frames = atoi(argv[3]);
 
-    int numChars = snprintf(NULL, 0, "%d_%d_", size, threadCount);
+    int numChars = snprintf(NULL, 0, "%d_%d_%d_", size, threadCount, flocksize);
     size_t originalLength = strlen(output_file);
     char *file_type;
 
@@ -53,7 +53,7 @@ void read_config(int argc, char *argv[], int rank, int size)
 
     size_t totalLength = numChars + 1 + originalLength + 1;
     char *newStr = malloc(totalLength);
-    sprintf(newStr, "%d_%d_%s_%s", size, threadCount, file_type, output_file);
+    sprintf(newStr, "%d_%d_%d_%s_%s", size, threadCount, flocksize ,file_type, output_file);
     output_file = newStr;
     if (rank == 0)
     {
