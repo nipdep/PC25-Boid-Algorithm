@@ -114,7 +114,7 @@ __global__ void updateBoidsKernel(Boid* local_flock, Boid* full_flock, int local
     boid->velocity.y = cap_velocity(boid->velocity.y);
 
     boid->position.x += boid->velocity.x;
-    boid->position.y += boid->velocity.y;     
+    boid->position.y += boid->velocity.y;         
     boid->timestep = timestep;
 }
 

@@ -1,0 +1,1192 @@
+|FILEOUT|MPI_IO|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 16|
+[dcs222:37509] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 4 bound to socket 0[core 2[hwt 0-3]]: [..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 5 bound to socket 1[core 22[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 6 bound to socket 0[core 3[hwt 0-3]]: [..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 7 bound to socket 1[core 23[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 8 bound to socket 0[core 4[hwt 0-3]]: [..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 9 bound to socket 1[core 24[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 10 bound to socket 0[core 5[hwt 0-3]]: [..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 11 bound to socket 1[core 25[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 12 bound to socket 0[core 6[hwt 0-3]]: [..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 13 bound to socket 1[core 26[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 14 bound to socket 0[core 7[hwt 0-3]]: [..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37509] MCW rank 15 bound to socket 1[core 27[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....]
+Output file: 16_256_strong_boids_output.csv
+|FILEOUT|IO_WRITE|TS 0|SIZE 16| time taken: 5.041420 seconds, clock cycles: 2581207131
+|FILEOUT|IO_READ|TS 0|SIZE 16| time taken: 0.526385 seconds, clock cycles: 269508903
+|FILEOUT|CUDA|TS 1|SIZE 16| time taken: 0.000606 seconds, clock cycles: 310243
+|FILEOUT|IO_WRITE|TS 1|SIZE 16| time taken: 3.975189 seconds, clock cycles: 2035296924
+|FILEOUT|IO_READ|TS 1|SIZE 16| time taken: 0.507983 seconds, clock cycles: 260087287
+|FILEOUT|CUDA|TS 2|SIZE 16| time taken: 0.000616 seconds, clock cycles: 315303
+|FILEOUT|IO_WRITE|TS 2|SIZE 16| time taken: 2.950926 seconds, clock cycles: 1510873976
+|FILEOUT|IO_READ|TS 2|SIZE 16| time taken: 0.501225 seconds, clock cycles: 256627224
+|FILEOUT|CUDA|TS 3|SIZE 16| time taken: 0.000613 seconds, clock cycles: 314028
+|FILEOUT|IO_WRITE|TS 3|SIZE 16| time taken: 1.292516 seconds, clock cycles: 661768429
+|FILEOUT|IO_READ|TS 3|SIZE 16| time taken: 0.501236 seconds, clock cycles: 256632580
+|FILEOUT|CUDA|TS 4|SIZE 16| time taken: 0.000607 seconds, clock cycles: 310936
+|FILEOUT|IO_WRITE|TS 4|SIZE 16| time taken: 0.807573 seconds, clock cycles: 413477561
+|FILEOUT|IO_READ|TS 4|SIZE 16| time taken: 0.501397 seconds, clock cycles: 256715073
+|FILEOUT|CUDA|TS 5|SIZE 16| time taken: 0.000613 seconds, clock cycles: 313784
+|FILEOUT|IO_WRITE|TS 5|SIZE 16| time taken: 0.507802 seconds, clock cycles: 259994598
+|FILEOUT|IO_READ|TS 5|SIZE 16| time taken: 0.501968 seconds, clock cycles: 257007630
+|FILEOUT|CUDA|TS 6|SIZE 16| time taken: 0.000609 seconds, clock cycles: 311580
+|FILEOUT|IO_WRITE|TS 6|SIZE 16| time taken: 0.330575 seconds, clock cycles: 169254577
+|FILEOUT|IO_READ|TS 6|SIZE 16| time taken: 0.502537 seconds, clock cycles: 257299040
+|FILEOUT|CUDA|TS 7|SIZE 16| time taken: 0.000608 seconds, clock cycles: 311055
+|FILEOUT|IO_WRITE|TS 7|SIZE 16| time taken: 2.608942 seconds, clock cycles: 1335778387
+|FILEOUT|IO_READ|TS 7|SIZE 16| time taken: 0.741772 seconds, clock cycles: 379787385
+|FILEOUT|CUDA|TS 8|SIZE 16| time taken: 0.000579 seconds, clock cycles: 296271
+|FILEOUT|IO_WRITE|TS 8|SIZE 16| time taken: 5.184739 seconds, clock cycles: 2654586216
+|FILEOUT|IO_READ|TS 8|SIZE 16| time taken: 0.501836 seconds, clock cycles: 256939960
+|FILEOUT|CUDA|TS 9|SIZE 16| time taken: 0.000579 seconds, clock cycles: 296445
+|FILEOUT|IO_WRITE|TS 9|SIZE 16| time taken: 4.060792 seconds, clock cycles: 2079125548
+|FILEOUT|IO_READ|TS 9|SIZE 16| time taken: 0.512417 seconds, clock cycles: 262357370
+|FILEOUT|CUDA|TS 10|SIZE 16| time taken: 0.000604 seconds, clock cycles: 309077
+|FILEOUT|IO_WRITE|TS 10|SIZE 16| time taken: 6.755308 seconds, clock cycles: 3458717720
+|FILEOUT|IO_READ|TS 10|SIZE 16| time taken: 0.510337 seconds, clock cycles: 261292586
+|FILEOUT|CUDA|TS 11|SIZE 16| time taken: 0.000581 seconds, clock cycles: 297426
+|FILEOUT|IO_WRITE|TS 11|SIZE 16| time taken: 1.249599 seconds, clock cycles: 639794706
+|FILEOUT|IO_READ|TS 11|SIZE 16| time taken: 0.506963 seconds, clock cycles: 259564897
+|FILEOUT|CUDA|TS 12|SIZE 16| time taken: 0.000585 seconds, clock cycles: 299759
+|FILEOUT|IO_WRITE|TS 12|SIZE 16| time taken: 0.719109 seconds, clock cycles: 368183990
+|FILEOUT|IO_READ|TS 12|SIZE 16| time taken: 0.507084 seconds, clock cycles: 259627025
+|FILEOUT|CUDA|TS 13|SIZE 16| time taken: 0.000589 seconds, clock cycles: 301580
+|FILEOUT|IO_WRITE|TS 13|SIZE 16| time taken: 0.572216 seconds, clock cycles: 292974518
+|FILEOUT|IO_READ|TS 13|SIZE 16| time taken: 0.509689 seconds, clock cycles: 260960724
+|FILEOUT|CUDA|TS 14|SIZE 16| time taken: 0.000603 seconds, clock cycles: 308790
+|FILEOUT|IO_WRITE|TS 14|SIZE 16| time taken: 0.347050 seconds, clock cycles: 177689423
+|FILEOUT|IO_READ|TS 14|SIZE 16| time taken: 0.506665 seconds, clock cycles: 259412656
+|FILEOUT|CUDA|TS 15|SIZE 16| time taken: 0.000738 seconds, clock cycles: 378047
+|FILEOUT|IO_WRITE|TS 15|SIZE 16| time taken: 2.568878 seconds, clock cycles: 1315265320
+|FILEOUT|IO_READ|TS 15|SIZE 16| time taken: 0.509581 seconds, clock cycles: 260905442
+|FILEOUT|CUDA|TS 16|SIZE 16| time taken: 0.000725 seconds, clock cycles: 371038
+|FILEOUT|IO_WRITE|TS 16|SIZE 16| time taken: 5.177368 seconds, clock cycles: 2650812598
+|FILEOUT|IO_READ|TS 16|SIZE 16| time taken: 0.507855 seconds, clock cycles: 260021981
+|FILEOUT|CUDA|TS 17|SIZE 16| time taken: 0.000746 seconds, clock cycles: 381887
+|FILEOUT|IO_WRITE|TS 17|SIZE 16| time taken: 4.091610 seconds, clock cycles: 2094904336
+|FILEOUT|IO_READ|TS 17|SIZE 16| time taken: 0.506737 seconds, clock cycles: 259449437
+|FILEOUT|CUDA|TS 18|SIZE 16| time taken: 0.000729 seconds, clock cycles: 373017
+|FILEOUT|IO_WRITE|TS 18|SIZE 16| time taken: 2.856487 seconds, clock cycles: 1462521563
+|FILEOUT|IO_READ|TS 18|SIZE 16| time taken: 0.506264 seconds, clock cycles: 259207392
+|FILEOUT|CUDA|TS 19|SIZE 16| time taken: 0.000739 seconds, clock cycles: 378510
+|FILEOUT|IO_WRITE|TS 19|SIZE 16| time taken: 1.370520 seconds, clock cycles: 701706478
+|FILEOUT|IO_READ|TS 19|SIZE 16| time taken: 0.507145 seconds, clock cycles: 259658155
+|FILEOUT|CUDA|TS 20|SIZE 16| time taken: 0.000734 seconds, clock cycles: 375668
+|FILEOUT|IO_WRITE|TS 20|SIZE 16| time taken: 0.729381 seconds, clock cycles: 373443288
+|FILEOUT|IO_READ|TS 20|SIZE 16| time taken: 0.506748 seconds, clock cycles: 259454922
+|FILEOUT|CUDA|TS 21|SIZE 16| time taken: 0.000751 seconds, clock cycles: 384417
+|FILEOUT|IO_WRITE|TS 21|SIZE 16| time taken: 0.557500 seconds, clock cycles: 285439966
+|FILEOUT|IO_READ|TS 21|SIZE 16| time taken: 0.513503 seconds, clock cycles: 262913668
+|FILEOUT|CUDA|TS 22|SIZE 16| time taken: 0.000699 seconds, clock cycles: 358048
+|FILEOUT|IO_WRITE|TS 22|SIZE 16| time taken: 0.320535 seconds, clock cycles: 164113969
+|FILEOUT|IO_READ|TS 22|SIZE 16| time taken: 0.664902 seconds, clock cycles: 340429694
+|FILEOUT|CUDA|TS 23|SIZE 16| time taken: 0.000708 seconds, clock cycles: 362418
+|FILEOUT|IO_WRITE|TS 23|SIZE 16| time taken: 2.579251 seconds, clock cycles: 1320576469
+|FILEOUT|IO_READ|TS 23|SIZE 16| time taken: 0.507230 seconds, clock cycles: 259701753
+|FILEOUT|CUDA|TS 24|SIZE 16| time taken: 0.000733 seconds, clock cycles: 375275
+|FILEOUT|IO_WRITE|TS 24|SIZE 16| time taken: 5.087817 seconds, clock cycles: 2604962257
+|FILEOUT|IO_READ|TS 24|SIZE 16| time taken: 0.507110 seconds, clock cycles: 259640574
+|FILEOUT|CUDA|TS 25|SIZE 16| time taken: 0.000727 seconds, clock cycles: 372457
+|FILEOUT|IO_WRITE|TS 25|SIZE 16| time taken: 4.139654 seconds, clock cycles: 2119502616
+|FILEOUT|IO_READ|TS 25|SIZE 16| time taken: 0.506945 seconds, clock cycles: 259555937
+|FILEOUT|CUDA|TS 26|SIZE 16| time taken: 0.000718 seconds, clock cycles: 367663
+|FILEOUT|IO_WRITE|TS 26|SIZE 16| time taken: 3.310405 seconds, clock cycles: 1694927131
+|FILEOUT|IO_READ|TS 26|SIZE 16| time taken: 0.506250 seconds, clock cycles: 259200206
+|FILEOUT|CUDA|TS 27|SIZE 16| time taken: 0.000737 seconds, clock cycles: 377458
+|FILEOUT|IO_WRITE|TS 27|SIZE 16| time taken: 1.381286 seconds, clock cycles: 707218205
+|FILEOUT|IO_READ|TS 27|SIZE 16| time taken: 0.507128 seconds, clock cycles: 259649722
+|FILEOUT|CUDA|TS 28|SIZE 16| time taken: 0.000744 seconds, clock cycles: 380754
+|FILEOUT|IO_WRITE|TS 28|SIZE 16| time taken: 0.727901 seconds, clock cycles: 372685483
+|FILEOUT|IO_READ|TS 28|SIZE 16| time taken: 0.506074 seconds, clock cycles: 259110129
+|FILEOUT|CUDA|TS 29|SIZE 16| time taken: 0.000740 seconds, clock cycles: 378774
+|FILEOUT|IO_WRITE|TS 29|SIZE 16| time taken: 0.510511 seconds, clock cycles: 261381476
+|FILEOUT|IO_READ|TS 29|SIZE 16| time taken: 0.505475 seconds, clock cycles: 258803318
+|FILEOUT|CUDA|TS 30|SIZE 16| time taken: 0.000732 seconds, clock cycles: 374918
+|FILEOUT|IO_WRITE|TS 30|SIZE 16| time taken: 0.322097 seconds, clock cycles: 164913653
+|FILEOUT|IO_READ|TS 30|SIZE 16| time taken: 0.506015 seconds, clock cycles: 259079611
+|FILEOUT|CUDA|TS 31|SIZE 16| time taken: 0.000740 seconds, clock cycles: 378876
+|FILEOUT|IO_WRITE|TS 31|SIZE 16| time taken: 2.533878 seconds, clock cycles: 1297345413
+|FILEOUT|IO_READ|TS 31|SIZE 16| time taken: 0.506792 seconds, clock cycles: 259477336
+|FILEOUT|CUDA|TS 32|SIZE 16| time taken: 0.000722 seconds, clock cycles: 369492
+|FILEOUT|IO_WRITE|TS 32|SIZE 16| time taken: 4.961408 seconds, clock cycles: 2540240844
+|FILEOUT|IO_READ|TS 32|SIZE 16| time taken: 0.507140 seconds, clock cycles: 259655578
+|FILEOUT|CUDA|TS 33|SIZE 16| time taken: 0.000744 seconds, clock cycles: 380729
+|FILEOUT|IO_WRITE|TS 33|SIZE 16| time taken: 3.897724 seconds, clock cycles: 1995634720
+|FILEOUT|IO_READ|TS 33|SIZE 16| time taken: 0.508007 seconds, clock cycles: 260099680
+|FILEOUT|CUDA|TS 34|SIZE 16| time taken: 0.000576 seconds, clock cycles: 294888
+|FILEOUT|IO_WRITE|TS 34|SIZE 16| time taken: 2.820822 seconds, clock cycles: 1444260789
+|FILEOUT|IO_READ|TS 34|SIZE 16| time taken: 0.933460 seconds, clock cycles: 477931640
+|FILEOUT|CUDA|TS 35|SIZE 16| time taken: 0.000575 seconds, clock cycles: 294353
+|FILEOUT|IO_WRITE|TS 35|SIZE 16| time taken: 1.334103 seconds, clock cycles: 683060839
+|FILEOUT|IO_READ|TS 35|SIZE 16| time taken: 0.509075 seconds, clock cycles: 260646611
+|FILEOUT|CUDA|TS 36|SIZE 16| time taken: 0.000572 seconds, clock cycles: 292989
+|FILEOUT|IO_WRITE|TS 36|SIZE 16| time taken: 0.742955 seconds, clock cycles: 380393062
+|FILEOUT|IO_READ|TS 36|SIZE 16| time taken: 0.506226 seconds, clock cycles: 259187720
+|FILEOUT|CUDA|TS 37|SIZE 16| time taken: 0.000575 seconds, clock cycles: 294652
+|FILEOUT|IO_WRITE|TS 37|SIZE 16| time taken: 0.511138 seconds, clock cycles: 261702409
+|FILEOUT|IO_READ|TS 37|SIZE 16| time taken: 0.508184 seconds, clock cycles: 260190054
+|FILEOUT|CUDA|TS 38|SIZE 16| time taken: 0.000583 seconds, clock cycles: 298478
+|FILEOUT|IO_WRITE|TS 38|SIZE 16| time taken: 0.337024 seconds, clock cycles: 172556338
+|FILEOUT|IO_READ|TS 38|SIZE 16| time taken: 0.509833 seconds, clock cycles: 261034732
+|FILEOUT|CUDA|TS 39|SIZE 16| time taken: 0.000575 seconds, clock cycles: 294615
+|FILEOUT|IO_WRITE|TS 39|SIZE 16| time taken: 2.553547 seconds, clock cycles: 1307415961
+|FILEOUT|IO_READ|TS 39|SIZE 16| time taken: 0.506704 seconds, clock cycles: 259432654
+|FILEOUT|CUDA|TS 40|SIZE 16| time taken: 0.000565 seconds, clock cycles: 289434
+|FILEOUT|IO_WRITE|TS 40|SIZE 16| time taken: 5.004586 seconds, clock cycles: 2562348208
+|FILEOUT|IO_READ|TS 40|SIZE 16| time taken: 0.594102 seconds, clock cycles: 304180320
+|FILEOUT|CUDA|TS 41|SIZE 16| time taken: 0.000575 seconds, clock cycles: 294149
+|FILEOUT|IO_WRITE|TS 41|SIZE 16| time taken: 4.386247 seconds, clock cycles: 2245758532
+|FILEOUT|IO_READ|TS 41|SIZE 16| time taken: 0.505637 seconds, clock cycles: 258885976
+|FILEOUT|CUDA|TS 42|SIZE 16| time taken: 0.000572 seconds, clock cycles: 293045
+|FILEOUT|IO_WRITE|TS 42|SIZE 16| time taken: 3.205106 seconds, clock cycles: 1641014189
+|FILEOUT|IO_READ|TS 42|SIZE 16| time taken: 0.508897 seconds, clock cycles: 260555208
+|FILEOUT|CUDA|TS 43|SIZE 16| time taken: 0.000575 seconds, clock cycles: 294174
+|FILEOUT|IO_WRITE|TS 43|SIZE 16| time taken: 1.342112 seconds, clock cycles: 687161562
+|FILEOUT|IO_READ|TS 43|SIZE 16| time taken: 0.506351 seconds, clock cycles: 259251684
+|FILEOUT|CUDA|TS 44|SIZE 16| time taken: 0.000595 seconds, clock cycles: 304856
+|FILEOUT|IO_WRITE|TS 44|SIZE 16| time taken: 0.743735 seconds, clock cycles: 380792315
+|FILEOUT|IO_READ|TS 44|SIZE 16| time taken: 0.506164 seconds, clock cycles: 259156185
+|FILEOUT|CUDA|TS 45|SIZE 16| time taken: 0.000570 seconds, clock cycles: 292045
+|FILEOUT|IO_WRITE|TS 45|SIZE 16| time taken: 0.559947 seconds, clock cycles: 286692824
+|FILEOUT|IO_READ|TS 45|SIZE 16| time taken: 0.509002 seconds, clock cycles: 260609204
+|FILEOUT|CUDA|TS 46|SIZE 16| time taken: 0.000568 seconds, clock cycles: 290759
+|FILEOUT|IO_WRITE|TS 46|SIZE 16| time taken: 0.390538 seconds, clock cycles: 199955404
+|FILEOUT|IO_READ|TS 46|SIZE 16| time taken: 0.505802 seconds, clock cycles: 258970424
+|FILEOUT|CUDA|TS 47|SIZE 16| time taken: 0.000570 seconds, clock cycles: 291833
+|FILEOUT|IO_WRITE|TS 47|SIZE 16| time taken: 2.606723 seconds, clock cycles: 1334642227
+|FILEOUT|IO_READ|TS 47|SIZE 16| time taken: 0.505395 seconds, clock cycles: 258762108
+|FILEOUT|CUDA|TS 48|SIZE 16| time taken: 0.000574 seconds, clock cycles: 293686
+|FILEOUT|IO_WRITE|TS 48|SIZE 16| time taken: 5.215968 seconds, clock cycles: 2670575836
+|FILEOUT|IO_READ|TS 48|SIZE 16| time taken: 0.506908 seconds, clock cycles: 259536993
+|FILEOUT|CUDA|TS 49|SIZE 16| time taken: 0.000571 seconds, clock cycles: 292370
+|FILEOUT|IO_WRITE|TS 49|SIZE 16| time taken: 4.306839 seconds, clock cycles: 2205101750
+|FILEOUT|IO_READ|TS 49|SIZE 16| time taken: 0.506611 seconds, clock cycles: 259384902
+|FILEOUT|CUDA|TS 50|SIZE 16| time taken: 0.000736 seconds, clock cycles: 376918
+|FILEOUT|IO_WRITE|TS 50|SIZE 16| time taken: 3.149117 seconds, clock cycles: 1612347845
+|FILEOUT|IO_READ|TS 50|SIZE 16| time taken: 0.508681 seconds, clock cycles: 260444752
+|FILEOUT|CUDA|TS 51|SIZE 16| time taken: 0.000743 seconds, clock cycles: 380221
+|FILEOUT|IO_WRITE|TS 51|SIZE 16| time taken: 1.318062 seconds, clock cycles: 674847609
+|FILEOUT|IO_READ|TS 51|SIZE 16| time taken: 1.177875 seconds, clock cycles: 603071994
+|FILEOUT|CUDA|TS 52|SIZE 16| time taken: 0.000706 seconds, clock cycles: 361563
+|FILEOUT|IO_WRITE|TS 52|SIZE 16| time taken: 0.721243 seconds, clock cycles: 369276271
+|FILEOUT|IO_READ|TS 52|SIZE 16| time taken: 0.510406 seconds, clock cycles: 261327980
+|FILEOUT|CUDA|TS 53|SIZE 16| time taken: 0.000728 seconds, clock cycles: 372908
+|FILEOUT|IO_WRITE|TS 53|SIZE 16| time taken: 0.541009 seconds, clock cycles: 276996615
+|FILEOUT|IO_READ|TS 53|SIZE 16| time taken: 0.510177 seconds, clock cycles: 261210599
+|FILEOUT|CUDA|TS 54|SIZE 16| time taken: 0.000726 seconds, clock cycles: 371820
+|FILEOUT|IO_WRITE|TS 54|SIZE 16| time taken: 0.330153 seconds, clock cycles: 169038198
+|FILEOUT|IO_READ|TS 54|SIZE 16| time taken: 0.512163 seconds, clock cycles: 262227335
+|FILEOUT|CUDA|TS 55|SIZE 16| time taken: 0.000750 seconds, clock cycles: 384141
+|FILEOUT|IO_WRITE|TS 55|SIZE 16| time taken: 2.485232 seconds, clock cycles: 1272438843
+|FILEOUT|IO_READ|TS 55|SIZE 16| time taken: 0.506232 seconds, clock cycles: 259190729
+|FILEOUT|CUDA|TS 56|SIZE 16| time taken: 0.000567 seconds, clock cycles: 290349
+|FILEOUT|IO_WRITE|TS 56|SIZE 16| time taken: 5.244213 seconds, clock cycles: 2685037093
+|FILEOUT|IO_READ|TS 56|SIZE 16| time taken: 0.507057 seconds, clock cycles: 259613145
+|FILEOUT|CUDA|TS 57|SIZE 16| time taken: 0.000589 seconds, clock cycles: 301416
+|FILEOUT|IO_WRITE|TS 57|SIZE 16| time taken: 3.872872 seconds, clock cycles: 1982910639
+|FILEOUT|IO_READ|TS 57|SIZE 16| time taken: 0.982008 seconds, clock cycles: 502788211
+|FILEOUT|CUDA|TS 58|SIZE 16| time taken: 0.000572 seconds, clock cycles: 293103
+|FILEOUT|IO_WRITE|TS 58|SIZE 16| time taken: 2.815561 seconds, clock cycles: 1441567142
+|FILEOUT|IO_READ|TS 58|SIZE 16| time taken: 0.506535 seconds, clock cycles: 259346167
+|FILEOUT|CUDA|TS 59|SIZE 16| time taken: 0.000579 seconds, clock cycles: 296254
+|FILEOUT|IO_WRITE|TS 59|SIZE 16| time taken: 1.342515 seconds, clock cycles: 687367835
+|FILEOUT|IO_READ|TS 59|SIZE 16| time taken: 0.505444 seconds, clock cycles: 258787205
+|FILEOUT|MPI|SIZE 16| time taken: 355.393220 seconds, clock cycles: 181961328395
+|FILEOUT|MPI_IO|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 16|
+[dcs222:37946] MCW rank 13 bound to socket 1[core 26[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 14 bound to socket 0[core 7[hwt 0-3]]: [..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 15 bound to socket 1[core 27[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 4 bound to socket 0[core 2[hwt 0-3]]: [..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 5 bound to socket 1[core 22[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 6 bound to socket 0[core 3[hwt 0-3]]: [..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 7 bound to socket 1[core 23[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 8 bound to socket 0[core 4[hwt 0-3]]: [..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 9 bound to socket 1[core 24[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 10 bound to socket 0[core 5[hwt 0-3]]: [..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 11 bound to socket 1[core 25[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:37946] MCW rank 12 bound to socket 0[core 6[hwt 0-3]]: [..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+Output file: 16_256_weak_boids_output.csv
+|FILEOUT|IO_WRITE|TS 0|SIZE 16| time taken: 97.941014 seconds, clock cycles: 50145799224
+|FILEOUT|IO_READ|TS 0|SIZE 16| time taken: 0.614702 seconds, clock cycles: 314727393
+|FILEOUT|CUDA|TS 1|SIZE 16| time taken: 0.010227 seconds, clock cycles: 5236070
+|FILEOUT|IO_WRITE|TS 1|SIZE 16| time taken: 97.586282 seconds, clock cycles: 49964176525
+|FILEOUT|IO_READ|TS 1|SIZE 16| time taken: 0.613129 seconds, clock cycles: 313922066
+|FILEOUT|CUDA|TS 2|SIZE 16| time taken: 0.003618 seconds, clock cycles: 1852168
+|FILEOUT|IO_WRITE|TS 2|SIZE 16| time taken: 97.852312 seconds, clock cycles: 50100383969
+|FILEOUT|IO_READ|TS 2|SIZE 16| time taken: 0.617906 seconds, clock cycles: 316367673
+|FILEOUT|CUDA|TS 3|SIZE 16| time taken: 0.003877 seconds, clock cycles: 1985062
+|FILEOUT|IO_WRITE|TS 3|SIZE 16| time taken: 98.130895 seconds, clock cycles: 50243018310
+|FILEOUT|IO_READ|TS 3|SIZE 16| time taken: 0.621349 seconds, clock cycles: 318130912
+|FILEOUT|CUDA|TS 4|SIZE 16| time taken: 0.003595 seconds, clock cycles: 1840741
+|FILEOUT|IO_WRITE|TS 4|SIZE 16| time taken: 98.570061 seconds, clock cycles: 50467871422
+|FILEOUT|IO_READ|TS 4|SIZE 16| time taken: 0.626466 seconds, clock cycles: 320750412
+|FILEOUT|CUDA|TS 5|SIZE 16| time taken: 0.004060 seconds, clock cycles: 2078825
+|FILEOUT|IO_WRITE|TS 5|SIZE 16| time taken: 4.685062 seconds, clock cycles: 2398751809
+|FILEOUT|IO_READ|TS 5|SIZE 16| time taken: 0.620415 seconds, clock cycles: 317652689
+|FILEOUT|CUDA|TS 6|SIZE 16| time taken: 0.003313 seconds, clock cycles: 1696492
+|FILEOUT|IO_WRITE|TS 6|SIZE 16| time taken: 0.894938 seconds, clock cycles: 458208288
+|FILEOUT|IO_READ|TS 6|SIZE 16| time taken: 0.619224 seconds, clock cycles: 317042642
+|FILEOUT|CUDA|TS 7|SIZE 16| time taken: 0.003309 seconds, clock cycles: 1694103
+|FILEOUT|IO_WRITE|TS 7|SIZE 16| time taken: 0.905397 seconds, clock cycles: 463563392
+|FILEOUT|IO_READ|TS 7|SIZE 16| time taken: 0.618990 seconds, clock cycles: 316922859
+|FILEOUT|CUDA|TS 8|SIZE 16| time taken: 0.003298 seconds, clock cycles: 1688323
+|FILEOUT|IO_WRITE|TS 8|SIZE 16| time taken: 0.892309 seconds, clock cycles: 456862158
+|FILEOUT|IO_READ|TS 8|SIZE 16| time taken: 0.615577 seconds, clock cycles: 315175246
+|FILEOUT|CUDA|TS 9|SIZE 16| time taken: 0.003252 seconds, clock cycles: 1665226
+|FILEOUT|IO_WRITE|TS 9|SIZE 16| time taken: 0.893465 seconds, clock cycles: 457454181
+|FILEOUT|IO_READ|TS 9|SIZE 16| time taken: 0.616567 seconds, clock cycles: 315682317
+|FILEOUT|CUDA|TS 10|SIZE 16| time taken: 0.003367 seconds, clock cycles: 1723700
+|FILEOUT|IO_WRITE|TS 10|SIZE 16| time taken: 0.895927 seconds, clock cycles: 458714442
+|FILEOUT|IO_READ|TS 10|SIZE 16| time taken: 0.608242 seconds, clock cycles: 311419818
+|FILEOUT|CUDA|TS 11|SIZE 16| time taken: 0.003428 seconds, clock cycles: 1755206
+|FILEOUT|IO_WRITE|TS 11|SIZE 16| time taken: 149.962699 seconds, clock cycles: 76780901932
+|FILEOUT|IO_READ|TS 11|SIZE 16| time taken: 0.606836 seconds, clock cycles: 310699849
+|FILEOUT|CUDA|TS 12|SIZE 16| time taken: 0.003377 seconds, clock cycles: 1728875
+|FILEOUT|IO_WRITE|TS 12|SIZE 16| time taken: 150.770457 seconds, clock cycles: 77194473759
+|FILEOUT|IO_READ|TS 12|SIZE 16| time taken: 0.601529 seconds, clock cycles: 307982827
+|FILEOUT|CUDA|TS 13|SIZE 16| time taken: 0.003126 seconds, clock cycles: 1600393
+|FILEOUT|IO_WRITE|TS 13|SIZE 16| time taken: 150.792694 seconds, clock cycles: 77205859283
+|FILEOUT|IO_READ|TS 13|SIZE 16| time taken: 0.605214 seconds, clock cycles: 309869421
+|FILEOUT|CUDA|TS 14|SIZE 16| time taken: 0.003172 seconds, clock cycles: 1623917
+|FILEOUT|IO_WRITE|TS 14|SIZE 16| time taken: 150.114857 seconds, clock cycles: 76858806738
+|FILEOUT|IO_READ|TS 14|SIZE 16| time taken: 0.610552 seconds, clock cycles: 312602514
+|FILEOUT|CUDA|TS 15|SIZE 16| time taken: 0.003501 seconds, clock cycles: 1792430
+|FILEOUT|IO_WRITE|TS 15|SIZE 16| time taken: 52.363238 seconds, clock cycles: 26809978084
+|FILEOUT|IO_READ|TS 15|SIZE 16| time taken: 0.606984 seconds, clock cycles: 310775574
+|FILEOUT|CUDA|TS 16|SIZE 16| time taken: 0.003057 seconds, clock cycles: 1565004
+|FILEOUT|IO_WRITE|TS 16|SIZE 16| time taken: 0.897512 seconds, clock cycles: 459526332
+|FILEOUT|IO_READ|TS 16|SIZE 16| time taken: 0.607202 seconds, clock cycles: 310887200
+|FILEOUT|CUDA|TS 17|SIZE 16| time taken: 0.003198 seconds, clock cycles: 1637459
+|FILEOUT|IO_WRITE|TS 17|SIZE 16| time taken: 0.896638 seconds, clock cycles: 459078610
+|FILEOUT|IO_READ|TS 17|SIZE 16| time taken: 0.606196 seconds, clock cycles: 310372198
+|FILEOUT|CUDA|TS 18|SIZE 16| time taken: 0.003376 seconds, clock cycles: 1728383
+|FILEOUT|IO_WRITE|TS 18|SIZE 16| time taken: 0.893893 seconds, clock cycles: 457673318
+|FILEOUT|IO_READ|TS 18|SIZE 16| time taken: 0.606907 seconds, clock cycles: 310736324
+|FILEOUT|CUDA|TS 19|SIZE 16| time taken: 0.003380 seconds, clock cycles: 1730685
+|FILEOUT|IO_WRITE|TS 19|SIZE 16| time taken: 0.891008 seconds, clock cycles: 456196326
+|FILEOUT|IO_READ|TS 19|SIZE 16| time taken: 0.607047 seconds, clock cycles: 310808277
+|FILEOUT|CUDA|TS 20|SIZE 16| time taken: 0.003405 seconds, clock cycles: 1743613
+|FILEOUT|IO_WRITE|TS 20|SIZE 16| time taken: 0.887411 seconds, clock cycles: 454354357
+|FILEOUT|IO_READ|TS 20|SIZE 16| time taken: 0.606455 seconds, clock cycles: 310505203
+|FILEOUT|CUDA|TS 21|SIZE 16| time taken: 0.003317 seconds, clock cycles: 1698160
+|FILEOUT|IO_WRITE|TS 21|SIZE 16| time taken: 150.346854 seconds, clock cycles: 76977589413
+|FILEOUT|IO_READ|TS 21|SIZE 16| time taken: 0.612264 seconds, clock cycles: 313479422
+|FILEOUT|CUDA|TS 22|SIZE 16| time taken: 0.003197 seconds, clock cycles: 1636650
+|FILEOUT|IO_WRITE|TS 22|SIZE 16| time taken: 150.391962 seconds, clock cycles: 77000684771
+|FILEOUT|IO_READ|TS 22|SIZE 16| time taken: 0.608713 seconds, clock cycles: 311661089
+|FILEOUT|CUDA|TS 23|SIZE 16| time taken: 0.003396 seconds, clock cycles: 1738734
+|FILEOUT|IO_WRITE|TS 23|SIZE 16| time taken: 150.192953 seconds, clock cycles: 76898791862
+|FILEOUT|IO_READ|TS 23|SIZE 16| time taken: 0.611404 seconds, clock cycles: 313039071
+|FILEOUT|CUDA|TS 24|SIZE 16| time taken: 0.003523 seconds, clock cycles: 1803824
+|FILEOUT|IO_WRITE|TS 24|SIZE 16| time taken: 150.340821 seconds, clock cycles: 76974500365
+|FILEOUT|IO_READ|TS 24|SIZE 16| time taken: 0.605224 seconds, clock cycles: 309874538
+|FILEOUT|CUDA|TS 25|SIZE 16| time taken: 0.004165 seconds, clock cycles: 2132538
+|FILEOUT|IO_WRITE|TS 25|SIZE 16| time taken: 81.492322 seconds, clock cycles: 41724068775
+|FILEOUT|IO_READ|TS 25|SIZE 16| time taken: 0.600790 seconds, clock cycles: 307604319
+|FILEOUT|CUDA|TS 26|SIZE 16| time taken: 0.004446 seconds, clock cycles: 2276595
+|FILEOUT|IO_WRITE|TS 26|SIZE 16| time taken: 0.885907 seconds, clock cycles: 453584190
+|FILEOUT|IO_READ|TS 26|SIZE 16| time taken: 0.604631 seconds, clock cycles: 309570962
+|FILEOUT|CUDA|TS 27|SIZE 16| time taken: 0.004440 seconds, clock cycles: 2273209
+|FILEOUT|IO_WRITE|TS 27|SIZE 16| time taken: 0.887440 seconds, clock cycles: 454369229
+|FILEOUT|IO_READ|TS 27|SIZE 16| time taken: 0.605384 seconds, clock cycles: 309956373
+|FILEOUT|CUDA|TS 28|SIZE 16| time taken: 0.004342 seconds, clock cycles: 2222866
+|FILEOUT|IO_WRITE|TS 28|SIZE 16| time taken: 0.890434 seconds, clock cycles: 455902341
+|FILEOUT|IO_READ|TS 28|SIZE 16| time taken: 0.604965 seconds, clock cycles: 309741935
+|FILEOUT|CUDA|TS 29|SIZE 16| time taken: 0.004395 seconds, clock cycles: 2250283
+|FILEOUT|IO_WRITE|TS 29|SIZE 16| time taken: 0.891488 seconds, clock cycles: 456441742
+|FILEOUT|IO_READ|TS 29|SIZE 16| time taken: 0.604942 seconds, clock cycles: 309730542
+|FILEOUT|CUDA|TS 30|SIZE 16| time taken: 0.004369 seconds, clock cycles: 2236705
+|FILEOUT|IO_WRITE|TS 30|SIZE 16| time taken: 0.899062 seconds, clock cycles: 460319667
+|FILEOUT|IO_READ|TS 30|SIZE 16| time taken: 0.608430 seconds, clock cycles: 311515971
+|FILEOUT|CUDA|TS 31|SIZE 16| time taken: 0.003864 seconds, clock cycles: 1978174
+|FILEOUT|IO_WRITE|TS 31|SIZE 16| time taken: 150.653510 seconds, clock cycles: 77134596983
+|FILEOUT|IO_READ|TS 31|SIZE 16| time taken: 0.609583 seconds, clock cycles: 312106258
+|FILEOUT|CUDA|TS 32|SIZE 16| time taken: 0.003559 seconds, clock cycles: 1822017
+|FILEOUT|IO_WRITE|TS 32|SIZE 16| time taken: 150.907042 seconds, clock cycles: 77264405518
+|FILEOUT|IO_READ|TS 32|SIZE 16| time taken: 0.610485 seconds, clock cycles: 312568519
+|FILEOUT|CUDA|TS 33|SIZE 16| time taken: 0.003549 seconds, clock cycles: 1817262
+|FILEOUT|IO_WRITE|TS 33|SIZE 16| time taken: 150.730379 seconds, clock cycles: 77173953939
+|FILEOUT|IO_READ|TS 33|SIZE 16| time taken: 0.613292 seconds, clock cycles: 314005482
+|FILEOUT|CUDA|TS 34|SIZE 16| time taken: 0.003255 seconds, clock cycles: 1666707
+|FILEOUT|IO_WRITE|TS 34|SIZE 16| time taken: 150.684264 seconds, clock cycles: 77150343276
+|FILEOUT|IO_READ|TS 34|SIZE 16| time taken: 0.609676 seconds, clock cycles: 312153982
+|FILEOUT|CUDA|TS 35|SIZE 16| time taken: 0.003581 seconds, clock cycles: 1833551
+|FILEOUT|IO_WRITE|TS 35|SIZE 16| time taken: 123.491270 seconds, clock cycles: 63227530207
+|FILEOUT|IO_READ|TS 35|SIZE 16| time taken: 0.609568 seconds, clock cycles: 312098957
+|FILEOUT|CUDA|TS 36|SIZE 16| time taken: 0.003447 seconds, clock cycles: 1764929
+|FILEOUT|IO_WRITE|TS 36|SIZE 16| time taken: 0.890740 seconds, clock cycles: 456058672
+|FILEOUT|IO_READ|TS 36|SIZE 16| time taken: 0.603006 seconds, clock cycles: 308739155
+|FILEOUT|CUDA|TS 37|SIZE 16| time taken: 0.003203 seconds, clock cycles: 1639933
+|FILEOUT|IO_WRITE|TS 37|SIZE 16| time taken: 0.888910 seconds, clock cycles: 455121833
+|FILEOUT|IO_READ|TS 37|SIZE 16| time taken: 0.600767 seconds, clock cycles: 307592769
+|FILEOUT|CUDA|TS 38|SIZE 16| time taken: 0.003115 seconds, clock cycles: 1594822
+|FILEOUT|IO_WRITE|TS 38|SIZE 16| time taken: 0.884489 seconds, clock cycles: 452858204
+|FILEOUT|IO_READ|TS 38|SIZE 16| time taken: 0.603921 seconds, clock cycles: 309207389
+|FILEOUT|CUDA|TS 39|SIZE 16| time taken: 0.003432 seconds, clock cycles: 1756995
+|FILEOUT|IO_WRITE|TS 39|SIZE 16| time taken: 0.881815 seconds, clock cycles: 451489196
+|FILEOUT|IO_READ|TS 39|SIZE 16| time taken: 0.606255 seconds, clock cycles: 310402415
+|FILEOUT|CUDA|TS 40|SIZE 16| time taken: 0.003282 seconds, clock cycles: 1680167
+|FILEOUT|IO_WRITE|TS 40|SIZE 16| time taken: 0.878746 seconds, clock cycles: 449918130
+|FILEOUT|IO_READ|TS 40|SIZE 16| time taken: 0.605884 seconds, clock cycles: 310212560
+|FILEOUT|CUDA|TS 41|SIZE 16| time taken: 0.003340 seconds, clock cycles: 1710289
+|FILEOUT|IO_WRITE|TS 41|SIZE 16| time taken: 150.285407 seconds, clock cycles: 76946128517
+|FILEOUT|IO_READ|TS 41|SIZE 16| time taken: 0.605609 seconds, clock cycles: 310072028
+|FILEOUT|CUDA|TS 42|SIZE 16| time taken: 0.003464 seconds, clock cycles: 1773641
+|FILEOUT|IO_WRITE|TS 42|SIZE 16| time taken: 150.962928 seconds, clock cycles: 77293018969
+|FILEOUT|IO_READ|TS 42|SIZE 16| time taken: 0.609152 seconds, clock cycles: 311886010
+|FILEOUT|CUDA|TS 43|SIZE 16| time taken: 0.003349 seconds, clock cycles: 1714648
+|FILEOUT|IO_WRITE|TS 43|SIZE 16| time taken: 150.687119 seconds, clock cycles: 77151805022
+|FILEOUT|IO_READ|TS 43|SIZE 16| time taken: 0.602981 seconds, clock cycles: 308726311
+|FILEOUT|CUDA|TS 44|SIZE 16| time taken: 0.003296 seconds, clock cycles: 1687720
+|FILEOUT|IO_WRITE|TS 44|SIZE 16| time taken: 150.534131 seconds, clock cycles: 77073475060
+|FILEOUT|IO_READ|TS 44|SIZE 16| time taken: 0.604297 seconds, clock cycles: 309399837
+|FILEOUT|CUDA|TS 45|SIZE 16| time taken: 0.003292 seconds, clock cycles: 1685736
+|FILEOUT|IO_WRITE|TS 45|SIZE 16| time taken: 150.433440 seconds, clock cycles: 77021921039
+|FILEOUT|IO_READ|TS 45|SIZE 16| time taken: 0.608119 seconds, clock cycles: 311357106
+|FILEOUT|CUDA|TS 46|SIZE 16| time taken: 0.003276 seconds, clock cycles: 1677242
+|FILEOUT|IO_WRITE|TS 46|SIZE 16| time taken: 7.216554 seconds, clock cycles: 3694875598
+|FILEOUT|IO_READ|TS 46|SIZE 16| time taken: 0.605005 seconds, clock cycles: 309762518
+|FILEOUT|CUDA|TS 47|SIZE 16| time taken: 0.003463 seconds, clock cycles: 1772948
+|FILEOUT|IO_WRITE|TS 47|SIZE 16| time taken: 0.870453 seconds, clock cycles: 445672065
+|FILEOUT|IO_READ|TS 47|SIZE 16| time taken: 0.602233 seconds, clock cycles: 308343133
+|FILEOUT|CUDA|TS 48|SIZE 16| time taken: 0.003202 seconds, clock cycles: 1639268
+|FILEOUT|IO_WRITE|TS 48|SIZE 16| time taken: 0.873093 seconds, clock cycles: 447023857
+|FILEOUT|IO_READ|TS 48|SIZE 16| time taken: 0.600912 seconds, clock cycles: 307667032
+|FILEOUT|CUDA|TS 49|SIZE 16| time taken: 0.003388 seconds, clock cycles: 1734478
+|FILEOUT|IO_WRITE|TS 49|SIZE 16| time taken: 0.873827 seconds, clock cycles: 447399372
+|FILEOUT|IO_READ|TS 49|SIZE 16| time taken: 0.601737 seconds, clock cycles: 308089578
+|FILEOUT|CUDA|TS 50|SIZE 16| time taken: 0.003270 seconds, clock cycles: 1674067
+|FILEOUT|IO_WRITE|TS 50|SIZE 16| time taken: 0.875410 seconds, clock cycles: 448210077
+|FILEOUT|IO_READ|TS 50|SIZE 16| time taken: 0.599973 seconds, clock cycles: 307186167
+|FILEOUT|CUDA|TS 51|SIZE 16| time taken: 0.003359 seconds, clock cycles: 1719582
+|FILEOUT|IO_WRITE|TS 51|SIZE 16| time taken: 0.877373 seconds, clock cycles: 449215134
+|FILEOUT|IO_READ|TS 51|SIZE 16| time taken: 0.602302 seconds, clock cycles: 308378733
+|FILEOUT|CUDA|TS 52|SIZE 16| time taken: 0.003216 seconds, clock cycles: 1646550
+|FILEOUT|IO_WRITE|TS 52|SIZE 16| time taken: 150.019349 seconds, clock cycles: 76809906782
+|FILEOUT|IO_READ|TS 52|SIZE 16| time taken: 0.603829 seconds, clock cycles: 309160374
+|FILEOUT|CUDA|TS 53|SIZE 16| time taken: 0.003558 seconds, clock cycles: 1821852
+|FILEOUT|IO_WRITE|TS 53|SIZE 16| time taken: 150.516543 seconds, clock cycles: 77064469773
+|FILEOUT|IO_READ|TS 53|SIZE 16| time taken: 0.608159 seconds, clock cycles: 311377663
+|FILEOUT|CUDA|TS 54|SIZE 16| time taken: 0.003258 seconds, clock cycles: 1668219
+|FILEOUT|IO_WRITE|TS 54|SIZE 16| time taken: 150.103075 seconds, clock cycles: 76852774465
+|FILEOUT|IO_READ|TS 54|SIZE 16| time taken: 0.604920 seconds, clock cycles: 309719050
+|FILEOUT|CUDA|TS 55|SIZE 16| time taken: 0.003204 seconds, clock cycles: 1640228
+|FILEOUT|IO_WRITE|TS 55|SIZE 16| time taken: 140.012613 seconds, clock cycles: 71686457823
+|FILEOUT|IO_READ|TS 55|SIZE 16| time taken: 0.608289 seconds, clock cycles: 311444149
+|FILEOUT|CUDA|TS 56|SIZE 16| time taken: 0.003418 seconds, clock cycles: 1749906
+|FILEOUT|IO_WRITE|TS 56|SIZE 16| time taken: 41.249714 seconds, clock cycles: 21119853764
+|FILEOUT|IO_READ|TS 56|SIZE 16| time taken: 0.607038 seconds, clock cycles: 310803553
+|FILEOUT|CUDA|TS 57|SIZE 16| time taken: 0.003239 seconds, clock cycles: 1658143
+|FILEOUT|IO_WRITE|TS 57|SIZE 16| time taken: 0.881481 seconds, clock cycles: 451318186
+|FILEOUT|IO_READ|TS 57|SIZE 16| time taken: 0.603796 seconds, clock cycles: 309143302
+|FILEOUT|CUDA|TS 58|SIZE 16| time taken: 0.003265 seconds, clock cycles: 1671917
+|FILEOUT|IO_WRITE|TS 58|SIZE 16| time taken: 0.879068 seconds, clock cycles: 450082617
+|FILEOUT|IO_READ|TS 58|SIZE 16| time taken: 0.605874 seconds, clock cycles: 310207552
+|FILEOUT|CUDA|TS 59|SIZE 16| time taken: 0.003288 seconds, clock cycles: 1683217
+|FILEOUT|IO_WRITE|TS 59|SIZE 16| time taken: 0.878327 seconds, clock cycles: 449703675
+|FILEOUT|IO_READ|TS 59|SIZE 16| time taken: 0.606522 seconds, clock cycles: 310539294
+|FILEOUT|MPI|SIZE 16| time taken: 4367.215889 seconds, clock cycles: 2236014535273
+Elapsed time: 4726 seconds
+|FILEOUT|MPI_IO|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 16|
+[dcs222:41457] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 4 bound to socket 0[core 2[hwt 0-3]]: [..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 5 bound to socket 1[core 22[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 6 bound to socket 0[core 3[hwt 0-3]]: [..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 7 bound to socket 1[core 23[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 8 bound to socket 0[core 4[hwt 0-3]]: [..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 9 bound to socket 1[core 24[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 10 bound to socket 0[core 5[hwt 0-3]]: [..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 11 bound to socket 1[core 25[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 12 bound to socket 0[core 6[hwt 0-3]]: [..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 13 bound to socket 1[core 26[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 14 bound to socket 0[core 7[hwt 0-3]]: [..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41457] MCW rank 15 bound to socket 1[core 27[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....]
+Output file: 16_512_strong_boids_output.csv
+|FILEOUT|IO_WRITE|TS 0|SIZE 16| time taken: 5.295489 seconds, clock cycles: 2711290198
+|FILEOUT|IO_READ|TS 0|SIZE 16| time taken: 0.481511 seconds, clock cycles: 246533460
+|FILEOUT|CUDA|TS 1|SIZE 16| time taken: 0.000515 seconds, clock cycles: 263780
+|FILEOUT|IO_WRITE|TS 1|SIZE 16| time taken: 4.328445 seconds, clock cycles: 2216163637
+|FILEOUT|IO_READ|TS 1|SIZE 16| time taken: 0.467117 seconds, clock cycles: 239163754
+|FILEOUT|CUDA|TS 2|SIZE 16| time taken: 0.001114 seconds, clock cycles: 570551
+|FILEOUT|IO_WRITE|TS 2|SIZE 16| time taken: 3.026334 seconds, clock cycles: 1549483232
+|FILEOUT|IO_READ|TS 2|SIZE 16| time taken: 0.464730 seconds, clock cycles: 237941869
+|FILEOUT|CUDA|TS 3|SIZE 16| time taken: 0.003206 seconds, clock cycles: 1641317
+|FILEOUT|IO_WRITE|TS 3|SIZE 16| time taken: 1.358291 seconds, clock cycles: 695445089
+|FILEOUT|IO_READ|TS 3|SIZE 16| time taken: 0.464598 seconds, clock cycles: 237874346
+|FILEOUT|CUDA|TS 4|SIZE 16| time taken: 0.000498 seconds, clock cycles: 254939
+|FILEOUT|IO_WRITE|TS 4|SIZE 16| time taken: 0.735473 seconds, clock cycles: 376562377
+|FILEOUT|IO_READ|TS 4|SIZE 16| time taken: 0.464928 seconds, clock cycles: 238043311
+|FILEOUT|CUDA|TS 5|SIZE 16| time taken: 0.000500 seconds, clock cycles: 256237
+|FILEOUT|IO_WRITE|TS 5|SIZE 16| time taken: 0.643555 seconds, clock cycles: 329500062
+|FILEOUT|IO_READ|TS 5|SIZE 16| time taken: 0.465382 seconds, clock cycles: 238275609
+|FILEOUT|CUDA|TS 6|SIZE 16| time taken: 0.001730 seconds, clock cycles: 885685
+|FILEOUT|IO_WRITE|TS 6|SIZE 16| time taken: 0.370100 seconds, clock cycles: 189491206
+|FILEOUT|IO_READ|TS 6|SIZE 16| time taken: 0.464978 seconds, clock cycles: 238068917
+|FILEOUT|CUDA|TS 7|SIZE 16| time taken: 0.001618 seconds, clock cycles: 828620
+|FILEOUT|IO_WRITE|TS 7|SIZE 16| time taken: 2.579725 seconds, clock cycles: 1320819195
+|FILEOUT|IO_READ|TS 7|SIZE 16| time taken: 0.465922 seconds, clock cycles: 238551975
+|FILEOUT|CUDA|TS 8|SIZE 16| time taken: 0.000910 seconds, clock cycles: 466102
+|FILEOUT|IO_WRITE|TS 8|SIZE 16| time taken: 5.338451 seconds, clock cycles: 2733286690
+|FILEOUT|IO_READ|TS 8|SIZE 16| time taken: 0.465191 seconds, clock cycles: 238177582
+|FILEOUT|CUDA|TS 9|SIZE 16| time taken: 0.000499 seconds, clock cycles: 255251
+|FILEOUT|IO_WRITE|TS 9|SIZE 16| time taken: 4.014728 seconds, clock cycles: 2055540543
+|FILEOUT|IO_READ|TS 9|SIZE 16| time taken: 0.465319 seconds, clock cycles: 238243193
+|FILEOUT|CUDA|TS 10|SIZE 16| time taken: 0.000501 seconds, clock cycles: 256508
+|FILEOUT|IO_WRITE|TS 10|SIZE 16| time taken: 2.875357 seconds, clock cycles: 1472182602
+|FILEOUT|IO_READ|TS 10|SIZE 16| time taken: 0.468563 seconds, clock cycles: 239904335
+|FILEOUT|CUDA|TS 11|SIZE 16| time taken: 0.000524 seconds, clock cycles: 268476
+|FILEOUT|IO_WRITE|TS 11|SIZE 16| time taken: 1.422199 seconds, clock cycles: 728165777
+|FILEOUT|IO_READ|TS 11|SIZE 16| time taken: 0.469101 seconds, clock cycles: 240179504
+|FILEOUT|CUDA|TS 12|SIZE 16| time taken: 0.000988 seconds, clock cycles: 505621
+|FILEOUT|IO_WRITE|TS 12|SIZE 16| time taken: 0.754297 seconds, clock cycles: 386200016
+|FILEOUT|IO_READ|TS 12|SIZE 16| time taken: 0.468408 seconds, clock cycles: 239824723
+|FILEOUT|CUDA|TS 13|SIZE 16| time taken: 0.000519 seconds, clock cycles: 265973
+|FILEOUT|IO_WRITE|TS 13|SIZE 16| time taken: 0.535734 seconds, clock cycles: 274295745
+|FILEOUT|IO_READ|TS 13|SIZE 16| time taken: 0.468696 seconds, clock cycles: 239972395
+|FILEOUT|CUDA|TS 14|SIZE 16| time taken: 0.003487 seconds, clock cycles: 1785487
+|FILEOUT|IO_WRITE|TS 14|SIZE 16| time taken: 0.366428 seconds, clock cycles: 187611302
+|FILEOUT|IO_READ|TS 14|SIZE 16| time taken: 0.468379 seconds, clock cycles: 239809810
+|FILEOUT|CUDA|TS 15|SIZE 16| time taken: 0.001859 seconds, clock cycles: 951902
+|FILEOUT|IO_WRITE|TS 15|SIZE 16| time taken: 2.492254 seconds, clock cycles: 1276034201
+|FILEOUT|IO_READ|TS 15|SIZE 16| time taken: 0.468958 seconds, clock cycles: 240106634
+|FILEOUT|CUDA|TS 16|SIZE 16| time taken: 0.003638 seconds, clock cycles: 1862431
+|FILEOUT|IO_WRITE|TS 16|SIZE 16| time taken: 5.069054 seconds, clock cycles: 2595355611
+|FILEOUT|IO_READ|TS 16|SIZE 16| time taken: 0.468940 seconds, clock cycles: 240097261
+|FILEOUT|CUDA|TS 17|SIZE 16| time taken: 0.001213 seconds, clock cycles: 621176
+|FILEOUT|IO_WRITE|TS 17|SIZE 16| time taken: 4.238461 seconds, clock cycles: 2170091874
+|FILEOUT|IO_READ|TS 17|SIZE 16| time taken: 0.470791 seconds, clock cycles: 241045117
+|FILEOUT|CUDA|TS 18|SIZE 16| time taken: 0.001243 seconds, clock cycles: 636165
+|FILEOUT|IO_WRITE|TS 18|SIZE 16| time taken: 3.039410 seconds, clock cycles: 1556178127
+|FILEOUT|IO_READ|TS 18|SIZE 16| time taken: 0.468630 seconds, clock cycles: 239938397
+|FILEOUT|CUDA|TS 19|SIZE 16| time taken: 0.004670 seconds, clock cycles: 2391086
+|FILEOUT|IO_WRITE|TS 19|SIZE 16| time taken: 1.475680 seconds, clock cycles: 755548050
+|FILEOUT|IO_READ|TS 19|SIZE 16| time taken: 0.469002 seconds, clock cycles: 240129239
+|FILEOUT|CUDA|TS 20|SIZE 16| time taken: 0.002305 seconds, clock cycles: 1180134
+|FILEOUT|IO_WRITE|TS 20|SIZE 16| time taken: 0.760482 seconds, clock cycles: 389366590
+|FILEOUT|IO_READ|TS 20|SIZE 16| time taken: 0.467605 seconds, clock cycles: 239413784
+|FILEOUT|CUDA|TS 21|SIZE 16| time taken: 0.000696 seconds, clock cycles: 356225
+|FILEOUT|IO_WRITE|TS 21|SIZE 16| time taken: 0.497954 seconds, clock cycles: 254952526
+|FILEOUT|IO_READ|TS 21|SIZE 16| time taken: 0.467974 seconds, clock cycles: 239602485
+|FILEOUT|CUDA|TS 22|SIZE 16| time taken: 0.004369 seconds, clock cycles: 2236720
+|FILEOUT|IO_WRITE|TS 22|SIZE 16| time taken: 0.365795 seconds, clock cycles: 187287059
+|FILEOUT|IO_READ|TS 22|SIZE 16| time taken: 0.468267 seconds, clock cycles: 239752558
+|FILEOUT|CUDA|TS 23|SIZE 16| time taken: 0.004877 seconds, clock cycles: 2497227
+|FILEOUT|IO_WRITE|TS 23|SIZE 16| time taken: 2.574161 seconds, clock cycles: 1317970282
+|FILEOUT|IO_READ|TS 23|SIZE 16| time taken: 0.468649 seconds, clock cycles: 239948224
+|FILEOUT|CUDA|TS 24|SIZE 16| time taken: 0.002086 seconds, clock cycles: 1068178
+|FILEOUT|IO_WRITE|TS 24|SIZE 16| time taken: 5.241201 seconds, clock cycles: 2683495074
+|FILEOUT|IO_READ|TS 24|SIZE 16| time taken: 0.740592 seconds, clock cycles: 379183016
+|FILEOUT|CUDA|TS 25|SIZE 16| time taken: 0.000722 seconds, clock cycles: 369797
+|FILEOUT|IO_WRITE|TS 25|SIZE 16| time taken: 4.342140 seconds, clock cycles: 2223175459
+|FILEOUT|IO_READ|TS 25|SIZE 16| time taken: 0.468132 seconds, clock cycles: 239683606
+|FILEOUT|CUDA|TS 26|SIZE 16| time taken: 0.002887 seconds, clock cycles: 1478384
+|FILEOUT|IO_WRITE|TS 26|SIZE 16| time taken: 2.898339 seconds, clock cycles: 1483949598
+|FILEOUT|IO_READ|TS 26|SIZE 16| time taken: 0.468667 seconds, clock cycles: 239957747
+|FILEOUT|CUDA|TS 27|SIZE 16| time taken: 0.002261 seconds, clock cycles: 1157568
+|FILEOUT|IO_WRITE|TS 27|SIZE 16| time taken: 1.498345 seconds, clock cycles: 767152502
+|FILEOUT|IO_READ|TS 27|SIZE 16| time taken: 0.468499 seconds, clock cycles: 239871699
+|FILEOUT|CUDA|TS 28|SIZE 16| time taken: 0.003800 seconds, clock cycles: 1945615
+|FILEOUT|IO_WRITE|TS 28|SIZE 16| time taken: 0.766392 seconds, clock cycles: 392392946
+|FILEOUT|IO_READ|TS 28|SIZE 16| time taken: 0.468381 seconds, clock cycles: 239811149
+|FILEOUT|CUDA|TS 29|SIZE 16| time taken: 0.000727 seconds, clock cycles: 372217
+|FILEOUT|IO_WRITE|TS 29|SIZE 16| time taken: 0.592071 seconds, clock cycles: 303140146
+|FILEOUT|IO_READ|TS 29|SIZE 16| time taken: 0.468103 seconds, clock cycles: 239668597
+|FILEOUT|CUDA|TS 30|SIZE 16| time taken: 0.001618 seconds, clock cycles: 828337
+|FILEOUT|IO_WRITE|TS 30|SIZE 16| time taken: 0.357999 seconds, clock cycles: 183295644
+|FILEOUT|IO_READ|TS 30|SIZE 16| time taken: 0.468607 seconds, clock cycles: 239926757
+|FILEOUT|CUDA|TS 31|SIZE 16| time taken: 0.002321 seconds, clock cycles: 1188299
+|FILEOUT|IO_WRITE|TS 31|SIZE 16| time taken: 2.442263 seconds, clock cycles: 1250438566
+|FILEOUT|IO_READ|TS 31|SIZE 16| time taken: 0.471045 seconds, clock cycles: 241174844
+|FILEOUT|CUDA|TS 32|SIZE 16| time taken: 0.002599 seconds, clock cycles: 1330632
+|FILEOUT|IO_WRITE|TS 32|SIZE 16| time taken: 5.160428 seconds, clock cycles: 2642139173
+|FILEOUT|IO_READ|TS 32|SIZE 16| time taken: 0.467688 seconds, clock cycles: 239456420
+|FILEOUT|CUDA|TS 33|SIZE 16| time taken: 0.002053 seconds, clock cycles: 1051323
+|FILEOUT|IO_WRITE|TS 33|SIZE 16| time taken: 4.360404 seconds, clock cycles: 2232526864
+|FILEOUT|IO_READ|TS 33|SIZE 16| time taken: 0.468574 seconds, clock cycles: 239910078
+|FILEOUT|CUDA|TS 34|SIZE 16| time taken: 0.000629 seconds, clock cycles: 321870
+|FILEOUT|IO_WRITE|TS 34|SIZE 16| time taken: 3.129443 seconds, clock cycles: 1602274752
+|FILEOUT|IO_READ|TS 34|SIZE 16| time taken: 0.472511 seconds, clock cycles: 241925404
+|FILEOUT|CUDA|TS 35|SIZE 16| time taken: 0.000497 seconds, clock cycles: 254609
+|FILEOUT|IO_WRITE|TS 35|SIZE 16| time taken: 1.582992 seconds, clock cycles: 810491726
+|FILEOUT|IO_READ|TS 35|SIZE 16| time taken: 0.474146 seconds, clock cycles: 242762508
+|FILEOUT|CUDA|TS 36|SIZE 16| time taken: 0.000504 seconds, clock cycles: 257805
+|FILEOUT|IO_WRITE|TS 36|SIZE 16| time taken: 0.794856 seconds, clock cycles: 406966074
+|FILEOUT|IO_READ|TS 36|SIZE 16| time taken: 0.469538 seconds, clock cycles: 240403231
+|FILEOUT|CUDA|TS 37|SIZE 16| time taken: 0.001104 seconds, clock cycles: 565366
+|FILEOUT|IO_WRITE|TS 37|SIZE 16| time taken: 0.646122 seconds, clock cycles: 330814708
+|FILEOUT|IO_READ|TS 37|SIZE 16| time taken: 0.474056 seconds, clock cycles: 242716651
+|FILEOUT|CUDA|TS 38|SIZE 16| time taken: 0.000502 seconds, clock cycles: 257152
+|FILEOUT|IO_WRITE|TS 38|SIZE 16| time taken: 0.354792 seconds, clock cycles: 181653279
+|FILEOUT|IO_READ|TS 38|SIZE 16| time taken: 0.467852 seconds, clock cycles: 239540188
+|FILEOUT|CUDA|TS 39|SIZE 16| time taken: 0.002027 seconds, clock cycles: 1037751
+|FILEOUT|IO_WRITE|TS 39|SIZE 16| time taken: 2.487424 seconds, clock cycles: 1273560956
+|FILEOUT|IO_READ|TS 39|SIZE 16| time taken: 0.467652 seconds, clock cycles: 239437639
+|FILEOUT|CUDA|TS 40|SIZE 16| time taken: 0.001457 seconds, clock cycles: 745864
+|FILEOUT|IO_WRITE|TS 40|SIZE 16| time taken: 5.205827 seconds, clock cycles: 2665383521
+|FILEOUT|IO_READ|TS 40|SIZE 16| time taken: 0.467880 seconds, clock cycles: 239554427
+|FILEOUT|CUDA|TS 41|SIZE 16| time taken: 0.002983 seconds, clock cycles: 1527550
+|FILEOUT|IO_WRITE|TS 41|SIZE 16| time taken: 4.312406 seconds, clock cycles: 2207951754
+|FILEOUT|IO_READ|TS 41|SIZE 16| time taken: 0.467824 seconds, clock cycles: 239525799
+|FILEOUT|CUDA|TS 42|SIZE 16| time taken: 0.000513 seconds, clock cycles: 262650
+|FILEOUT|IO_WRITE|TS 42|SIZE 16| time taken: 3.028235 seconds, clock cycles: 1550456205
+|FILEOUT|IO_READ|TS 42|SIZE 16| time taken: 0.467773 seconds, clock cycles: 239499788
+|FILEOUT|CUDA|TS 43|SIZE 16| time taken: 0.004050 seconds, clock cycles: 2073803
+|FILEOUT|IO_WRITE|TS 43|SIZE 16| time taken: 1.397698 seconds, clock cycles: 715621437
+|FILEOUT|IO_READ|TS 43|SIZE 16| time taken: 0.468399 seconds, clock cycles: 239820159
+|FILEOUT|CUDA|TS 44|SIZE 16| time taken: 0.001586 seconds, clock cycles: 811857
+|FILEOUT|IO_WRITE|TS 44|SIZE 16| time taken: 0.781290 seconds, clock cycles: 400020708
+|FILEOUT|IO_READ|TS 44|SIZE 16| time taken: 0.466864 seconds, clock cycles: 239034272
+|FILEOUT|CUDA|TS 45|SIZE 16| time taken: 0.001307 seconds, clock cycles: 669216
+|FILEOUT|IO_WRITE|TS 45|SIZE 16| time taken: 0.673024 seconds, clock cycles: 344588075
+|FILEOUT|IO_READ|TS 45|SIZE 16| time taken: 0.467034 seconds, clock cycles: 239121193
+|FILEOUT|CUDA|TS 46|SIZE 16| time taken: 0.002212 seconds, clock cycles: 1132371
+|FILEOUT|IO_WRITE|TS 46|SIZE 16| time taken: 0.368510 seconds, clock cycles: 188677168
+|FILEOUT|IO_READ|TS 46|SIZE 16| time taken: 0.466647 seconds, clock cycles: 238923183
+|FILEOUT|CUDA|TS 47|SIZE 16| time taken: 0.001660 seconds, clock cycles: 850032
+|FILEOUT|IO_WRITE|TS 47|SIZE 16| time taken: 2.608262 seconds, clock cycles: 1335430173
+|FILEOUT|IO_READ|TS 47|SIZE 16| time taken: 0.467219 seconds, clock cycles: 239216276
+|FILEOUT|CUDA|TS 48|SIZE 16| time taken: 0.002673 seconds, clock cycles: 1368391
+|FILEOUT|IO_WRITE|TS 48|SIZE 16| time taken: 5.157028 seconds, clock cycles: 2640398312
+|FILEOUT|IO_READ|TS 48|SIZE 16| time taken: 0.467994 seconds, clock cycles: 239612791
+|FILEOUT|CUDA|TS 49|SIZE 16| time taken: 0.000556 seconds, clock cycles: 284878
+|FILEOUT|IO_WRITE|TS 49|SIZE 16| time taken: 4.138370 seconds, clock cycles: 2118845220
+|FILEOUT|IO_READ|TS 49|SIZE 16| time taken: 0.467170 seconds, clock cycles: 239190945
+|FILEOUT|CUDA|TS 50|SIZE 16| time taken: 0.000974 seconds, clock cycles: 498435
+|FILEOUT|IO_WRITE|TS 50|SIZE 16| time taken: 2.887978 seconds, clock cycles: 1478644621
+|FILEOUT|IO_READ|TS 50|SIZE 16| time taken: 0.959648 seconds, clock cycles: 491339581
+|FILEOUT|CUDA|TS 51|SIZE 16| time taken: 0.002516 seconds, clock cycles: 1288154
+|FILEOUT|IO_WRITE|TS 51|SIZE 16| time taken: 1.400536 seconds, clock cycles: 717074258
+|FILEOUT|IO_READ|TS 51|SIZE 16| time taken: 0.466477 seconds, clock cycles: 238836357
+|FILEOUT|CUDA|TS 52|SIZE 16| time taken: 0.000931 seconds, clock cycles: 476706
+|FILEOUT|IO_WRITE|TS 52|SIZE 16| time taken: 0.757180 seconds, clock cycles: 387676027
+|FILEOUT|IO_READ|TS 52|SIZE 16| time taken: 0.473010 seconds, clock cycles: 242180988
+|FILEOUT|CUDA|TS 53|SIZE 16| time taken: 0.000546 seconds, clock cycles: 279618
+|FILEOUT|IO_WRITE|TS 53|SIZE 16| time taken: 0.620818 seconds, clock cycles: 317858856
+|FILEOUT|IO_READ|TS 53|SIZE 16| time taken: 0.467338 seconds, clock cycles: 239276882
+|FILEOUT|CUDA|TS 54|SIZE 16| time taken: 0.001773 seconds, clock cycles: 908023
+|FILEOUT|IO_WRITE|TS 54|SIZE 16| time taken: 0.386633 seconds, clock cycles: 197956268
+|FILEOUT|IO_READ|TS 54|SIZE 16| time taken: 0.473201 seconds, clock cycles: 242278885
+|FILEOUT|CUDA|TS 55|SIZE 16| time taken: 0.000504 seconds, clock cycles: 257916
+|FILEOUT|IO_WRITE|TS 55|SIZE 16| time taken: 2.635504 seconds, clock cycles: 1349378176
+|FILEOUT|IO_READ|TS 55|SIZE 16| time taken: 0.469923 seconds, clock cycles: 240600599
+|FILEOUT|CUDA|TS 56|SIZE 16| time taken: 0.001364 seconds, clock cycles: 698272
+|FILEOUT|IO_WRITE|TS 56|SIZE 16| time taken: 5.052421 seconds, clock cycles: 2586839535
+|FILEOUT|IO_READ|TS 56|SIZE 16| time taken: 0.565698 seconds, clock cycles: 289637607
+|FILEOUT|CUDA|TS 57|SIZE 16| time taken: 0.002060 seconds, clock cycles: 1054532
+|FILEOUT|IO_WRITE|TS 57|SIZE 16| time taken: 4.264781 seconds, clock cycles: 2183568008
+|FILEOUT|IO_READ|TS 57|SIZE 16| time taken: 0.472137 seconds, clock cycles: 241733915
+|FILEOUT|CUDA|TS 58|SIZE 16| time taken: 0.000500 seconds, clock cycles: 255985
+|FILEOUT|IO_WRITE|TS 58|SIZE 16| time taken: 3.161448 seconds, clock cycles: 1618661478
+|FILEOUT|IO_READ|TS 58|SIZE 16| time taken: 0.467365 seconds, clock cycles: 239290775
+|FILEOUT|CUDA|TS 59|SIZE 16| time taken: 0.002797 seconds, clock cycles: 1431881
+|FILEOUT|IO_WRITE|TS 59|SIZE 16| time taken: 1.450166 seconds, clock cycles: 742485120
+|FILEOUT|IO_READ|TS 59|SIZE 16| time taken: 0.470662 seconds, clock cycles: 240978866
+|FILEOUT|MPI|SIZE 16| time taken: 348.150784 seconds, clock cycles: 178253201392
+|FILEOUT|MPI_IO|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 16|
+[dcs222:41888] MCW rank 15 bound to socket 1[core 27[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 4 bound to socket 0[core 2[hwt 0-3]]: [..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 5 bound to socket 1[core 22[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 6 bound to socket 0[core 3[hwt 0-3]]: [..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 7 bound to socket 1[core 23[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 8 bound to socket 0[core 4[hwt 0-3]]: [..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 9 bound to socket 1[core 24[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 10 bound to socket 0[core 5[hwt 0-3]]: [..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 11 bound to socket 1[core 25[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 12 bound to socket 0[core 6[hwt 0-3]]: [..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 13 bound to socket 1[core 26[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:41888] MCW rank 14 bound to socket 0[core 7[hwt 0-3]]: [..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+Output file: 16_512_weak_boids_output.csv
+|FILEOUT|IO_WRITE|TS 0|SIZE 16| time taken: 98.799731 seconds, clock cycles: 50585462393
+|FILEOUT|IO_READ|TS 0|SIZE 16| time taken: 0.471193 seconds, clock cycles: 241250643
+|FILEOUT|CUDA|TS 1|SIZE 16| time taken: 0.029951 seconds, clock cycles: 15335153
+|FILEOUT|IO_WRITE|TS 1|SIZE 16| time taken: 98.275060 seconds, clock cycles: 50316830855
+|FILEOUT|IO_READ|TS 1|SIZE 16| time taken: 0.472581 seconds, clock cycles: 241961382
+|FILEOUT|CUDA|TS 2|SIZE 16| time taken: 0.060239 seconds, clock cycles: 30842113
+|FILEOUT|IO_WRITE|TS 2|SIZE 16| time taken: 98.514774 seconds, clock cycles: 50439564085
+|FILEOUT|IO_READ|TS 2|SIZE 16| time taken: 0.488866 seconds, clock cycles: 250299533
+|FILEOUT|CUDA|TS 3|SIZE 16| time taken: 0.049029 seconds, clock cycles: 25102622
+|FILEOUT|IO_WRITE|TS 3|SIZE 16| time taken: 98.490574 seconds, clock cycles: 50427173944
+|FILEOUT|IO_READ|TS 3|SIZE 16| time taken: 0.476813 seconds, clock cycles: 244128300
+|FILEOUT|CUDA|TS 4|SIZE 16| time taken: 0.062774 seconds, clock cycles: 32140083
+|FILEOUT|IO_WRITE|TS 4|SIZE 16| time taken: 99.072354 seconds, clock cycles: 50725045161
+|FILEOUT|IO_READ|TS 4|SIZE 16| time taken: 0.471215 seconds, clock cycles: 241262131
+|FILEOUT|CUDA|TS 5|SIZE 16| time taken: 0.045618 seconds, clock cycles: 23356318
+|FILEOUT|IO_WRITE|TS 5|SIZE 16| time taken: 4.710378 seconds, clock cycles: 2411713466
+|FILEOUT|IO_READ|TS 5|SIZE 16| time taken: 0.472556 seconds, clock cycles: 241948419
+|FILEOUT|CUDA|TS 6|SIZE 16| time taken: 0.042224 seconds, clock cycles: 21618446
+|FILEOUT|IO_WRITE|TS 6|SIZE 16| time taken: 0.881957 seconds, clock cycles: 451561850
+|FILEOUT|IO_READ|TS 6|SIZE 16| time taken: 0.471834 seconds, clock cycles: 241578973
+|FILEOUT|CUDA|TS 7|SIZE 16| time taken: 0.045505 seconds, clock cycles: 23298517
+|FILEOUT|IO_WRITE|TS 7|SIZE 16| time taken: 0.887763 seconds, clock cycles: 454534874
+|FILEOUT|IO_READ|TS 7|SIZE 16| time taken: 0.472290 seconds, clock cycles: 241812421
+|FILEOUT|CUDA|TS 8|SIZE 16| time taken: 0.050129 seconds, clock cycles: 25665964
+|FILEOUT|IO_WRITE|TS 8|SIZE 16| time taken: 0.882062 seconds, clock cycles: 451615849
+|FILEOUT|IO_READ|TS 8|SIZE 16| time taken: 0.471499 seconds, clock cycles: 241407275
+|FILEOUT|CUDA|TS 9|SIZE 16| time taken: 0.036977 seconds, clock cycles: 18932020
+|FILEOUT|IO_WRITE|TS 9|SIZE 16| time taken: 0.882920 seconds, clock cycles: 452054972
+|FILEOUT|IO_READ|TS 9|SIZE 16| time taken: 0.472217 seconds, clock cycles: 241774928
+|FILEOUT|CUDA|TS 10|SIZE 16| time taken: 0.036863 seconds, clock cycles: 18874067
+|FILEOUT|IO_WRITE|TS 10|SIZE 16| time taken: 0.886403 seconds, clock cycles: 453838526
+|FILEOUT|IO_READ|TS 10|SIZE 16| time taken: 0.473489 seconds, clock cycles: 242426241
+|FILEOUT|CUDA|TS 11|SIZE 16| time taken: 0.044557 seconds, clock cycles: 22813010
+|FILEOUT|IO_WRITE|TS 11|SIZE 16| time taken: 150.742617 seconds, clock cycles: 77180219964
+|FILEOUT|IO_READ|TS 11|SIZE 16| time taken: 0.473457 seconds, clock cycles: 242409788
+|FILEOUT|CUDA|TS 12|SIZE 16| time taken: 0.048055 seconds, clock cycles: 24604029
+|FILEOUT|IO_WRITE|TS 12|SIZE 16| time taken: 150.959139 seconds, clock cycles: 77291079248
+|FILEOUT|IO_READ|TS 12|SIZE 16| time taken: 0.471916 seconds, clock cycles: 241621203
+|FILEOUT|CUDA|TS 13|SIZE 16| time taken: 0.040537 seconds, clock cycles: 20754736
+|FILEOUT|IO_WRITE|TS 13|SIZE 16| time taken: 150.553052 seconds, clock cycles: 77083162658
+|FILEOUT|IO_READ|TS 13|SIZE 16| time taken: 0.475312 seconds, clock cycles: 243359902
+|FILEOUT|CUDA|TS 14|SIZE 16| time taken: 0.034737 seconds, clock cycles: 17785169
+|FILEOUT|IO_WRITE|TS 14|SIZE 16| time taken: 151.182069 seconds, clock cycles: 77405219316
+|FILEOUT|IO_READ|TS 14|SIZE 16| time taken: 0.473746 seconds, clock cycles: 242558060
+|FILEOUT|CUDA|TS 15|SIZE 16| time taken: 0.040778 seconds, clock cycles: 20878294
+|FILEOUT|IO_WRITE|TS 15|SIZE 16| time taken: 53.538178 seconds, clock cycles: 27411547109
+|FILEOUT|IO_READ|TS 15|SIZE 16| time taken: 0.479211 seconds, clock cycles: 245355996
+|FILEOUT|CUDA|TS 16|SIZE 16| time taken: 0.037176 seconds, clock cycles: 19034081
+|FILEOUT|IO_WRITE|TS 16|SIZE 16| time taken: 0.885135 seconds, clock cycles: 453189136
+|FILEOUT|IO_READ|TS 16|SIZE 16| time taken: 0.482667 seconds, clock cycles: 247125573
+|FILEOUT|CUDA|TS 17|SIZE 16| time taken: 0.036009 seconds, clock cycles: 18436606
+|FILEOUT|IO_WRITE|TS 17|SIZE 16| time taken: 0.883091 seconds, clock cycles: 452142356
+|FILEOUT|IO_READ|TS 17|SIZE 16| time taken: 0.478140 seconds, clock cycles: 244807930
+|FILEOUT|CUDA|TS 18|SIZE 16| time taken: 0.041472 seconds, clock cycles: 21233575
+|FILEOUT|IO_WRITE|TS 18|SIZE 16| time taken: 0.880543 seconds, clock cycles: 450838177
+|FILEOUT|IO_READ|TS 18|SIZE 16| time taken: 0.473438 seconds, clock cycles: 242400487
+|FILEOUT|CUDA|TS 19|SIZE 16| time taken: 0.037304 seconds, clock cycles: 19099396
+|FILEOUT|IO_WRITE|TS 19|SIZE 16| time taken: 0.878188 seconds, clock cycles: 449632126
+|FILEOUT|IO_READ|TS 19|SIZE 16| time taken: 0.473534 seconds, clock cycles: 242449548
+|FILEOUT|CUDA|TS 20|SIZE 16| time taken: 0.044975 seconds, clock cycles: 23027037
+|FILEOUT|IO_WRITE|TS 20|SIZE 16| time taken: 0.875123 seconds, clock cycles: 448062995
+|FILEOUT|IO_READ|TS 20|SIZE 16| time taken: 0.473370 seconds, clock cycles: 242365431
+|FILEOUT|CUDA|TS 21|SIZE 16| time taken: 0.034244 seconds, clock cycles: 17532685
+|FILEOUT|IO_WRITE|TS 21|SIZE 16| time taken: 150.850415 seconds, clock cycles: 77235412631
+|FILEOUT|IO_READ|TS 21|SIZE 16| time taken: 0.478255 seconds, clock cycles: 244866306
+|FILEOUT|CUDA|TS 22|SIZE 16| time taken: 0.039660 seconds, clock cycles: 20305717
+|FILEOUT|IO_WRITE|TS 22|SIZE 16| time taken: 128.362744 seconds, clock cycles: 65721725065
+|FILEOUT|IO_READ|TS 22|SIZE 16| time taken: 0.479975 seconds, clock cycles: 245747136
+|FILEOUT|CUDA|TS 23|SIZE 16| time taken: 0.035248 seconds, clock cycles: 18046896
+|FILEOUT|IO_WRITE|TS 23|SIZE 16| time taken: 148.822881 seconds, clock cycles: 76197315234
+|FILEOUT|IO_READ|TS 23|SIZE 16| time taken: 0.475392 seconds, clock cycles: 243400608
+|FILEOUT|CUDA|TS 24|SIZE 16| time taken: 0.035709 seconds, clock cycles: 18283175
+|FILEOUT|IO_WRITE|TS 24|SIZE 16| time taken: 150.724041 seconds, clock cycles: 77170708868
+|FILEOUT|IO_READ|TS 24|SIZE 16| time taken: 0.469962 seconds, clock cycles: 240620778
+|FILEOUT|CUDA|TS 25|SIZE 16| time taken: 0.037258 seconds, clock cycles: 19075938
+|FILEOUT|IO_WRITE|TS 25|SIZE 16| time taken: 65.121805 seconds, clock cycles: 33342364295
+|FILEOUT|IO_READ|TS 25|SIZE 16| time taken: 0.471661 seconds, clock cycles: 241490324
+|FILEOUT|CUDA|TS 26|SIZE 16| time taken: 0.033691 seconds, clock cycles: 17249766
+|FILEOUT|IO_WRITE|TS 26|SIZE 16| time taken: 0.874868 seconds, clock cycles: 447932486
+|FILEOUT|IO_READ|TS 26|SIZE 16| time taken: 0.473554 seconds, clock cycles: 242459433
+|FILEOUT|CUDA|TS 27|SIZE 16| time taken: 0.035516 seconds, clock cycles: 18184249
+|FILEOUT|IO_WRITE|TS 27|SIZE 16| time taken: 0.875940 seconds, clock cycles: 448481272
+|FILEOUT|IO_READ|TS 27|SIZE 16| time taken: 0.478081 seconds, clock cycles: 244777284
+|FILEOUT|CUDA|TS 28|SIZE 16| time taken: 0.042212 seconds, clock cycles: 21612760
+|FILEOUT|IO_WRITE|TS 28|SIZE 16| time taken: 0.878327 seconds, clock cycles: 449703278
+|FILEOUT|IO_READ|TS 28|SIZE 16| time taken: 0.473313 seconds, clock cycles: 242336383
+|FILEOUT|CUDA|TS 29|SIZE 16| time taken: 0.044316 seconds, clock cycles: 22689961
+|FILEOUT|IO_WRITE|TS 29|SIZE 16| time taken: 0.881262 seconds, clock cycles: 451206336
+|FILEOUT|IO_READ|TS 29|SIZE 16| time taken: 0.473854 seconds, clock cycles: 242613486
+|FILEOUT|CUDA|TS 30|SIZE 16| time taken: 0.037128 seconds, clock cycles: 19009505
+|FILEOUT|IO_WRITE|TS 30|SIZE 16| time taken: 0.886887 seconds, clock cycles: 454086237
+|FILEOUT|IO_READ|TS 30|SIZE 16| time taken: 0.475043 seconds, clock cycles: 243221874
+|FILEOUT|CUDA|TS 31|SIZE 16| time taken: 0.043135 seconds, clock cycles: 22084995
+|FILEOUT|IO_WRITE|TS 31|SIZE 16| time taken: 151.434133 seconds, clock cycles: 77534276264
+|FILEOUT|IO_READ|TS 31|SIZE 16| time taken: 0.478699 seconds, clock cycles: 245093697
+|FILEOUT|CUDA|TS 32|SIZE 16| time taken: 0.042666 seconds, clock cycles: 21844799
+|FILEOUT|IO_WRITE|TS 32|SIZE 16| time taken: 151.373081 seconds, clock cycles: 77503017571
+|FILEOUT|IO_READ|TS 32|SIZE 16| time taken: 0.478916 seconds, clock cycles: 245205126
+|FILEOUT|CUDA|TS 33|SIZE 16| time taken: 0.042769 seconds, clock cycles: 21897975
+|FILEOUT|IO_WRITE|TS 33|SIZE 16| time taken: 151.092744 seconds, clock cycles: 77359484944
+|FILEOUT|IO_READ|TS 33|SIZE 16| time taken: 0.478863 seconds, clock cycles: 245178032
+|FILEOUT|CUDA|TS 34|SIZE 16| time taken: 0.035404 seconds, clock cycles: 18127056
+|FILEOUT|IO_WRITE|TS 34|SIZE 16| time taken: 151.325771 seconds, clock cycles: 77478794517
+|FILEOUT|IO_READ|TS 34|SIZE 16| time taken: 0.478418 seconds, clock cycles: 244949814
+|FILEOUT|CUDA|TS 35|SIZE 16| time taken: 0.032992 seconds, clock cycles: 16891827
+|FILEOUT|IO_WRITE|TS 35|SIZE 16| time taken: 123.323110 seconds, clock cycles: 63141432430
+|FILEOUT|IO_READ|TS 35|SIZE 16| time taken: 0.478974 seconds, clock cycles: 245234725
+|FILEOUT|CUDA|TS 36|SIZE 16| time taken: 0.037922 seconds, clock cycles: 19415916
+|FILEOUT|IO_WRITE|TS 36|SIZE 16| time taken: 0.878852 seconds, clock cycles: 449972191
+|FILEOUT|IO_READ|TS 36|SIZE 16| time taken: 0.475907 seconds, clock cycles: 243664326
+|FILEOUT|CUDA|TS 37|SIZE 16| time taken: 0.038103 seconds, clock cycles: 19508667
+|FILEOUT|IO_WRITE|TS 37|SIZE 16| time taken: 0.876988 seconds, clock cycles: 449017926
+|FILEOUT|IO_READ|TS 37|SIZE 16| time taken: 0.470769 seconds, clock cycles: 241033523
+|FILEOUT|CUDA|TS 38|SIZE 16| time taken: 0.036128 seconds, clock cycles: 18497671
+|FILEOUT|IO_WRITE|TS 38|SIZE 16| time taken: 0.872563 seconds, clock cycles: 446752193
+|FILEOUT|IO_READ|TS 38|SIZE 16| time taken: 0.471245 seconds, clock cycles: 241277208
+|FILEOUT|CUDA|TS 39|SIZE 16| time taken: 0.043448 seconds, clock cycles: 22245265
+|FILEOUT|IO_WRITE|TS 39|SIZE 16| time taken: 0.870141 seconds, clock cycles: 445512038
+|FILEOUT|IO_READ|TS 39|SIZE 16| time taken: 0.474416 seconds, clock cycles: 242901176
+|FILEOUT|CUDA|TS 40|SIZE 16| time taken: 0.042865 seconds, clock cycles: 21946732
+|FILEOUT|IO_WRITE|TS 40|SIZE 16| time taken: 0.867074 seconds, clock cycles: 443942073
+|FILEOUT|IO_READ|TS 40|SIZE 16| time taken: 0.473439 seconds, clock cycles: 242400943
+|FILEOUT|CUDA|TS 41|SIZE 16| time taken: 0.046965 seconds, clock cycles: 24045915
+|FILEOUT|IO_WRITE|TS 41|SIZE 16| time taken: 150.865812 seconds, clock cycles: 77243295503
+|FILEOUT|IO_READ|TS 41|SIZE 16| time taken: 0.474534 seconds, clock cycles: 242961438
+|FILEOUT|CUDA|TS 42|SIZE 16| time taken: 0.035502 seconds, clock cycles: 18177140
+|FILEOUT|IO_WRITE|TS 42|SIZE 16| time taken: 151.329022 seconds, clock cycles: 77480459193
+|FILEOUT|IO_READ|TS 42|SIZE 16| time taken: 0.473615 seconds, clock cycles: 242490813
+|FILEOUT|CUDA|TS 43|SIZE 16| time taken: 0.045381 seconds, clock cycles: 23235326
+|FILEOUT|IO_WRITE|TS 43|SIZE 16| time taken: 150.980231 seconds, clock cycles: 77301878287
+|FILEOUT|IO_READ|TS 43|SIZE 16| time taken: 0.477617 seconds, clock cycles: 244539971
+|FILEOUT|CUDA|TS 44|SIZE 16| time taken: 0.037392 seconds, clock cycles: 19144860
+|FILEOUT|IO_WRITE|TS 44|SIZE 16| time taken: 150.715530 seconds, clock cycles: 77166351547
+|FILEOUT|IO_READ|TS 44|SIZE 16| time taken: 0.472813 seconds, clock cycles: 242080497
+|FILEOUT|CUDA|TS 45|SIZE 16| time taken: 0.038233 seconds, clock cycles: 19575287
+|FILEOUT|IO_WRITE|TS 45|SIZE 16| time taken: 151.440224 seconds, clock cycles: 77537394506
+|FILEOUT|IO_READ|TS 45|SIZE 16| time taken: 0.473328 seconds, clock cycles: 242344182
+|FILEOUT|CUDA|TS 46|SIZE 16| time taken: 0.033997 seconds, clock cycles: 17406443
+|FILEOUT|IO_WRITE|TS 46|SIZE 16| time taken: 6.925846 seconds, clock cycles: 3546033344
+|FILEOUT|IO_READ|TS 46|SIZE 16| time taken: 0.475848 seconds, clock cycles: 243634144
+|FILEOUT|CUDA|TS 47|SIZE 16| time taken: 0.044763 seconds, clock cycles: 22918439
+|FILEOUT|IO_WRITE|TS 47|SIZE 16| time taken: 0.860989 seconds, clock cycles: 440826379
+|FILEOUT|IO_READ|TS 47|SIZE 16| time taken: 0.479577 seconds, clock cycles: 245543525
+|FILEOUT|CUDA|TS 48|SIZE 16| time taken: 0.041325 seconds, clock cycles: 21158352
+|FILEOUT|IO_WRITE|TS 48|SIZE 16| time taken: 0.872253 seconds, clock cycles: 446593345
+|FILEOUT|IO_READ|TS 48|SIZE 16| time taken: 0.475468 seconds, clock cycles: 243439868
+|FILEOUT|CUDA|TS 49|SIZE 16| time taken: 0.042036 seconds, clock cycles: 21522365
+|FILEOUT|IO_WRITE|TS 49|SIZE 16| time taken: 0.871242 seconds, clock cycles: 446075998
+|FILEOUT|IO_READ|TS 49|SIZE 16| time taken: 0.475977 seconds, clock cycles: 243700079
+|FILEOUT|CUDA|TS 50|SIZE 16| time taken: 0.037258 seconds, clock cycles: 19076124
+|FILEOUT|IO_WRITE|TS 50|SIZE 16| time taken: 0.870520 seconds, clock cycles: 445706136
+|FILEOUT|IO_READ|TS 50|SIZE 16| time taken: 0.470760 seconds, clock cycles: 241029363
+|FILEOUT|CUDA|TS 51|SIZE 16| time taken: 0.036996 seconds, clock cycles: 18941709
+|FILEOUT|IO_WRITE|TS 51|SIZE 16| time taken: 0.878388 seconds, clock cycles: 449734686
+|FILEOUT|IO_READ|TS 51|SIZE 16| time taken: 0.472798 seconds, clock cycles: 242072544
+|FILEOUT|CUDA|TS 52|SIZE 16| time taken: 0.045308 seconds, clock cycles: 23197642
+|FILEOUT|IO_WRITE|TS 52|SIZE 16| time taken: 150.362301 seconds, clock cycles: 76985498017
+|FILEOUT|IO_READ|TS 52|SIZE 16| time taken: 0.477814 seconds, clock cycles: 244640547
+|FILEOUT|CUDA|TS 53|SIZE 16| time taken: 0.043109 seconds, clock cycles: 22071616
+|FILEOUT|IO_WRITE|TS 53|SIZE 16| time taken: 112.727933 seconds, clock cycles: 57716701503
+|FILEOUT|IO_READ|TS 53|SIZE 16| time taken: 0.473852 seconds, clock cycles: 242612338
+|FILEOUT|CUDA|TS 54|SIZE 16| time taken: 0.045498 seconds, clock cycles: 23294809
+|FILEOUT|IO_WRITE|TS 54|SIZE 16| time taken: 148.930419 seconds, clock cycles: 76252374309
+|FILEOUT|IO_READ|TS 54|SIZE 16| time taken: 0.477402 seconds, clock cycles: 244429682
+|FILEOUT|CUDA|TS 55|SIZE 16| time taken: 0.042201 seconds, clock cycles: 21606700
+|FILEOUT|IO_WRITE|TS 55|SIZE 16| time taken: 149.584789 seconds, clock cycles: 76587411919
+|FILEOUT|IO_READ|TS 55|SIZE 16| time taken: 0.477494 seconds, clock cycles: 244476714
+|FILEOUT|CUDA|TS 56|SIZE 16| time taken: 0.041860 seconds, clock cycles: 21432544
+|FILEOUT|IO_WRITE|TS 56|SIZE 16| time taken: 44.260690 seconds, clock cycles: 22661473389
+|FILEOUT|IO_READ|TS 56|SIZE 16| time taken: 0.477657 seconds, clock cycles: 244560634
+|FILEOUT|CUDA|TS 57|SIZE 16| time taken: 0.043496 seconds, clock cycles: 22269899
+|FILEOUT|IO_WRITE|TS 57|SIZE 16| time taken: 0.867421 seconds, clock cycles: 444119711
+|FILEOUT|IO_READ|TS 57|SIZE 16| time taken: 0.478614 seconds, clock cycles: 245050198
+|FILEOUT|CUDA|TS 58|SIZE 16| time taken: 0.043616 seconds, clock cycles: 22331245
+|FILEOUT|IO_WRITE|TS 58|SIZE 16| time taken: 0.867589 seconds, clock cycles: 444205529
+|FILEOUT|IO_READ|TS 58|SIZE 16| time taken: 0.475548 seconds, clock cycles: 243480555
+|FILEOUT|CUDA|TS 59|SIZE 16| time taken: 0.039906 seconds, clock cycles: 20432068
+|FILEOUT|IO_WRITE|TS 59|SIZE 16| time taken: 0.866073 seconds, clock cycles: 443429336
+|FILEOUT|IO_READ|TS 59|SIZE 16| time taken: 0.472331 seconds, clock cycles: 241833591
+|FILEOUT|MPI|SIZE 16| time taken: 4304.623203 seconds, clock cycles: 2203967079688
+Elapsed time: 9381 seconds
+|FILEOUT|MPI_IO|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 16|
+[dcs222:45305] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 4 bound to socket 0[core 2[hwt 0-3]]: [..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 5 bound to socket 1[core 22[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 6 bound to socket 0[core 3[hwt 0-3]]: [..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 7 bound to socket 1[core 23[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 8 bound to socket 0[core 4[hwt 0-3]]: [..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 9 bound to socket 1[core 24[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 10 bound to socket 0[core 5[hwt 0-3]]: [..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 11 bound to socket 1[core 25[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 12 bound to socket 0[core 6[hwt 0-3]]: [..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 13 bound to socket 1[core 26[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 14 bound to socket 0[core 7[hwt 0-3]]: [..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 15 bound to socket 1[core 27[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45305] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+Output file: 16_1024_strong_boids_output.csv
+|FILEOUT|IO_WRITE|TS 0|SIZE 16| time taken: 4.860580 seconds, clock cycles: 2488616850
+|FILEOUT|IO_READ|TS 0|SIZE 16| time taken: 0.475008 seconds, clock cycles: 243204065
+|FILEOUT|CUDA|TS 1|SIZE 16| time taken: 0.000773 seconds, clock cycles: 395914
+|FILEOUT|IO_WRITE|TS 1|SIZE 16| time taken: 4.358296 seconds, clock cycles: 2231447652
+|FILEOUT|IO_READ|TS 1|SIZE 16| time taken: 0.474997 seconds, clock cycles: 243198467
+|FILEOUT|CUDA|TS 2|SIZE 16| time taken: 0.000503 seconds, clock cycles: 257319
+|FILEOUT|IO_WRITE|TS 2|SIZE 16| time taken: 3.170792 seconds, clock cycles: 1623445355
+|FILEOUT|IO_READ|TS 2|SIZE 16| time taken: 0.463792 seconds, clock cycles: 237461513
+|FILEOUT|CUDA|TS 3|SIZE 16| time taken: 0.002062 seconds, clock cycles: 1055544
+|FILEOUT|IO_WRITE|TS 3|SIZE 16| time taken: 1.457296 seconds, clock cycles: 746135521
+|FILEOUT|IO_READ|TS 3|SIZE 16| time taken: 0.463564 seconds, clock cycles: 237344592
+|FILEOUT|CUDA|TS 4|SIZE 16| time taken: 0.001110 seconds, clock cycles: 568520
+|FILEOUT|IO_WRITE|TS 4|SIZE 16| time taken: 0.866187 seconds, clock cycles: 443487799
+|FILEOUT|IO_READ|TS 4|SIZE 16| time taken: 0.465069 seconds, clock cycles: 238115264
+|FILEOUT|CUDA|TS 5|SIZE 16| time taken: 0.000940 seconds, clock cycles: 481149
+|FILEOUT|IO_WRITE|TS 5|SIZE 16| time taken: 0.594656 seconds, clock cycles: 304463697
+|FILEOUT|IO_READ|TS 5|SIZE 16| time taken: 0.464838 seconds, clock cycles: 237996851
+|FILEOUT|CUDA|TS 6|SIZE 16| time taken: 0.002800 seconds, clock cycles: 1433824
+|FILEOUT|IO_WRITE|TS 6|SIZE 16| time taken: 0.347950 seconds, clock cycles: 178150512
+|FILEOUT|IO_READ|TS 6|SIZE 16| time taken: 0.465335 seconds, clock cycles: 238251339
+|FILEOUT|CUDA|TS 7|SIZE 16| time taken: 0.003016 seconds, clock cycles: 1544085
+|FILEOUT|IO_WRITE|TS 7|SIZE 16| time taken: 2.466367 seconds, clock cycles: 1262779855
+|FILEOUT|IO_READ|TS 7|SIZE 16| time taken: 0.467723 seconds, clock cycles: 239474252
+|FILEOUT|CUDA|TS 8|SIZE 16| time taken: 0.000507 seconds, clock cycles: 259726
+|FILEOUT|IO_WRITE|TS 8|SIZE 16| time taken: 5.114792 seconds, clock cycles: 2618773282
+|FILEOUT|IO_READ|TS 8|SIZE 16| time taken: 0.468620 seconds, clock cycles: 239933360
+|FILEOUT|CUDA|TS 9|SIZE 16| time taken: 0.000503 seconds, clock cycles: 257347
+|FILEOUT|IO_WRITE|TS 9|SIZE 16| time taken: 4.369289 seconds, clock cycles: 2237076195
+|FILEOUT|IO_READ|TS 9|SIZE 16| time taken: 0.465582 seconds, clock cycles: 238378011
+|FILEOUT|CUDA|TS 10|SIZE 16| time taken: 0.000504 seconds, clock cycles: 257899
+|FILEOUT|IO_WRITE|TS 10|SIZE 16| time taken: 3.073103 seconds, clock cycles: 1573428960
+|FILEOUT|IO_READ|TS 10|SIZE 16| time taken: 0.470855 seconds, clock cycles: 241077689
+|FILEOUT|CUDA|TS 11|SIZE 16| time taken: 0.000896 seconds, clock cycles: 458858
+|FILEOUT|IO_WRITE|TS 11|SIZE 16| time taken: 1.468719 seconds, clock cycles: 751983912
+|FILEOUT|IO_READ|TS 11|SIZE 16| time taken: 0.473301 seconds, clock cycles: 242330088
+|FILEOUT|CUDA|TS 12|SIZE 16| time taken: 0.002349 seconds, clock cycles: 1202812
+|FILEOUT|IO_WRITE|TS 12|SIZE 16| time taken: 0.713785 seconds, clock cycles: 365457697
+|FILEOUT|IO_READ|TS 12|SIZE 16| time taken: 0.467183 seconds, clock cycles: 239197737
+|FILEOUT|CUDA|TS 13|SIZE 16| time taken: 0.000607 seconds, clock cycles: 310756
+|FILEOUT|IO_WRITE|TS 13|SIZE 16| time taken: 0.578621 seconds, clock cycles: 296253908
+|FILEOUT|IO_READ|TS 13|SIZE 16| time taken: 0.468276 seconds, clock cycles: 239757298
+|FILEOUT|CUDA|TS 14|SIZE 16| time taken: 0.005054 seconds, clock cycles: 2587419
+|FILEOUT|IO_WRITE|TS 14|SIZE 16| time taken: 0.350543 seconds, clock cycles: 179477781
+|FILEOUT|IO_READ|TS 14|SIZE 16| time taken: 0.467560 seconds, clock cycles: 239390631
+|FILEOUT|CUDA|TS 15|SIZE 16| time taken: 0.004252 seconds, clock cycles: 2176817
+|FILEOUT|IO_WRITE|TS 15|SIZE 16| time taken: 2.493417 seconds, clock cycles: 1276629458
+|FILEOUT|IO_READ|TS 15|SIZE 16| time taken: 0.467724 seconds, clock cycles: 239474671
+|FILEOUT|CUDA|TS 16|SIZE 16| time taken: 0.003803 seconds, clock cycles: 1947341
+|FILEOUT|IO_WRITE|TS 16|SIZE 16| time taken: 5.015410 seconds, clock cycles: 2567890157
+|FILEOUT|IO_READ|TS 16|SIZE 16| time taken: 0.472527 seconds, clock cycles: 241933603
+|FILEOUT|CUDA|TS 17|SIZE 16| time taken: 0.000516 seconds, clock cycles: 263966
+|FILEOUT|IO_WRITE|TS 17|SIZE 16| time taken: 4.345009 seconds, clock cycles: 2224644611
+|FILEOUT|IO_READ|TS 17|SIZE 16| time taken: 0.472675 seconds, clock cycles: 242009390
+|FILEOUT|CUDA|TS 18|SIZE 16| time taken: 0.001263 seconds, clock cycles: 646824
+|FILEOUT|IO_WRITE|TS 18|SIZE 16| time taken: 2.983942 seconds, clock cycles: 1527778220
+|FILEOUT|IO_READ|TS 18|SIZE 16| time taken: 0.470038 seconds, clock cycles: 240659402
+|FILEOUT|CUDA|TS 19|SIZE 16| time taken: 0.002218 seconds, clock cycles: 1135644
+|FILEOUT|IO_WRITE|TS 19|SIZE 16| time taken: 1.632982 seconds, clock cycles: 836086726
+|FILEOUT|IO_READ|TS 19|SIZE 16| time taken: 0.467382 seconds, clock cycles: 239299353
+|FILEOUT|CUDA|TS 20|SIZE 16| time taken: 0.000679 seconds, clock cycles: 347465
+|FILEOUT|IO_WRITE|TS 20|SIZE 16| time taken: 0.702968 seconds, clock cycles: 359919574
+|FILEOUT|IO_READ|TS 20|SIZE 16| time taken: 0.471742 seconds, clock cycles: 241531949
+|FILEOUT|CUDA|TS 21|SIZE 16| time taken: 0.000507 seconds, clock cycles: 259484
+|FILEOUT|IO_WRITE|TS 21|SIZE 16| time taken: 0.512100 seconds, clock cycles: 262195295
+|FILEOUT|IO_READ|TS 21|SIZE 16| time taken: 0.467222 seconds, clock cycles: 239217769
+|FILEOUT|CUDA|TS 22|SIZE 16| time taken: 0.003234 seconds, clock cycles: 1656064
+|FILEOUT|IO_WRITE|TS 22|SIZE 16| time taken: 0.376004 seconds, clock cycles: 192514030
+|FILEOUT|IO_READ|TS 22|SIZE 16| time taken: 0.467967 seconds, clock cycles: 239599255
+|FILEOUT|CUDA|TS 23|SIZE 16| time taken: 0.001518 seconds, clock cycles: 777028
+|FILEOUT|IO_WRITE|TS 23|SIZE 16| time taken: 2.469252 seconds, clock cycles: 1264257135
+|FILEOUT|IO_READ|TS 23|SIZE 16| time taken: 0.472982 seconds, clock cycles: 242166612
+|FILEOUT|CUDA|TS 24|SIZE 16| time taken: 0.000509 seconds, clock cycles: 260796
+|FILEOUT|IO_WRITE|TS 24|SIZE 16| time taken: 5.087924 seconds, clock cycles: 2605017123
+|FILEOUT|IO_READ|TS 24|SIZE 16| time taken: 0.472408 seconds, clock cycles: 241873016
+|FILEOUT|CUDA|TS 25|SIZE 16| time taken: 0.000512 seconds, clock cycles: 262269
+|FILEOUT|IO_WRITE|TS 25|SIZE 16| time taken: 4.249483 seconds, clock cycles: 2175735198
+|FILEOUT|IO_READ|TS 25|SIZE 16| time taken: 0.467371 seconds, clock cycles: 239293791
+|FILEOUT|CUDA|TS 26|SIZE 16| time taken: 0.000560 seconds, clock cycles: 286807
+|FILEOUT|IO_WRITE|TS 26|SIZE 16| time taken: 3.056458 seconds, clock cycles: 1564906628
+|FILEOUT|IO_READ|TS 26|SIZE 16| time taken: 0.467415 seconds, clock cycles: 239316579
+|FILEOUT|CUDA|TS 27|SIZE 16| time taken: 0.003816 seconds, clock cycles: 1953972
+|FILEOUT|IO_WRITE|TS 27|SIZE 16| time taken: 1.492676 seconds, clock cycles: 764249902
+|FILEOUT|IO_READ|TS 27|SIZE 16| time taken: 0.768194 seconds, clock cycles: 393315565
+|FILEOUT|CUDA|TS 28|SIZE 16| time taken: 0.000505 seconds, clock cycles: 258723
+|FILEOUT|IO_WRITE|TS 28|SIZE 16| time taken: 0.731538 seconds, clock cycles: 374547684
+|FILEOUT|IO_READ|TS 28|SIZE 16| time taken: 0.476424 seconds, clock cycles: 243928976
+|FILEOUT|CUDA|TS 29|SIZE 16| time taken: 0.000517 seconds, clock cycles: 264781
+|FILEOUT|IO_WRITE|TS 29|SIZE 16| time taken: 0.584099 seconds, clock cycles: 299058759
+|FILEOUT|IO_READ|TS 29|SIZE 16| time taken: 0.467667 seconds, clock cycles: 239445606
+|FILEOUT|CUDA|TS 30|SIZE 16| time taken: 0.003426 seconds, clock cycles: 1753963
+|FILEOUT|IO_WRITE|TS 30|SIZE 16| time taken: 0.348501 seconds, clock cycles: 178432625
+|FILEOUT|IO_READ|TS 30|SIZE 16| time taken: 0.466661 seconds, clock cycles: 238930688
+|FILEOUT|CUDA|TS 31|SIZE 16| time taken: 0.006351 seconds, clock cycles: 3251837
+|FILEOUT|IO_WRITE|TS 31|SIZE 16| time taken: 2.536678 seconds, clock cycles: 1298779127
+|FILEOUT|IO_READ|TS 31|SIZE 16| time taken: 0.467162 seconds, clock cycles: 239187181
+|FILEOUT|CUDA|TS 32|SIZE 16| time taken: 0.002327 seconds, clock cycles: 1191649
+|FILEOUT|IO_WRITE|TS 32|SIZE 16| time taken: 4.904623 seconds, clock cycles: 2511167224
+|FILEOUT|IO_READ|TS 32|SIZE 16| time taken: 0.467590 seconds, clock cycles: 239406183
+|FILEOUT|CUDA|TS 33|SIZE 16| time taken: 0.001330 seconds, clock cycles: 680883
+|FILEOUT|IO_WRITE|TS 33|SIZE 16| time taken: 4.144336 seconds, clock cycles: 2121899925
+|FILEOUT|IO_READ|TS 33|SIZE 16| time taken: 0.472779 seconds, clock cycles: 242062886
+|FILEOUT|CUDA|TS 34|SIZE 16| time taken: 0.001142 seconds, clock cycles: 584770
+|FILEOUT|IO_WRITE|TS 34|SIZE 16| time taken: 3.351158 seconds, clock cycles: 1715793030
+|FILEOUT|IO_READ|TS 34|SIZE 16| time taken: 0.470036 seconds, clock cycles: 240658633
+|FILEOUT|CUDA|TS 35|SIZE 16| time taken: 0.000614 seconds, clock cycles: 314129
+|FILEOUT|IO_WRITE|TS 35|SIZE 16| time taken: 1.400479 seconds, clock cycles: 717045195
+|FILEOUT|IO_READ|TS 35|SIZE 16| time taken: 0.467983 seconds, clock cycles: 239607479
+|FILEOUT|CUDA|TS 36|SIZE 16| time taken: 0.003400 seconds, clock cycles: 1740711
+|FILEOUT|IO_WRITE|TS 36|SIZE 16| time taken: 0.826525 seconds, clock cycles: 423180844
+|FILEOUT|IO_READ|TS 36|SIZE 16| time taken: 0.468499 seconds, clock cycles: 239871301
+|FILEOUT|CUDA|TS 37|SIZE 16| time taken: 0.000611 seconds, clock cycles: 312965
+|FILEOUT|IO_WRITE|TS 37|SIZE 16| time taken: 0.513923 seconds, clock cycles: 263128762
+|FILEOUT|IO_READ|TS 37|SIZE 16| time taken: 0.605499 seconds, clock cycles: 310015564
+|FILEOUT|CUDA|TS 38|SIZE 16| time taken: 0.001932 seconds, clock cycles: 989217
+|FILEOUT|IO_WRITE|TS 38|SIZE 16| time taken: 0.366887 seconds, clock cycles: 187846332
+|FILEOUT|IO_READ|TS 38|SIZE 16| time taken: 0.467088 seconds, clock cycles: 239149098
+|FILEOUT|CUDA|TS 39|SIZE 16| time taken: 0.005880 seconds, clock cycles: 3010797
+|FILEOUT|IO_WRITE|TS 39|SIZE 16| time taken: 2.561621 seconds, clock cycles: 1311549970
+|FILEOUT|IO_READ|TS 39|SIZE 16| time taken: 0.469284 seconds, clock cycles: 240273272
+|FILEOUT|CUDA|TS 40|SIZE 16| time taken: 0.004348 seconds, clock cycles: 2226168
+|FILEOUT|IO_WRITE|TS 40|SIZE 16| time taken: 5.181090 seconds, clock cycles: 2652718146
+|FILEOUT|IO_READ|TS 40|SIZE 16| time taken: 0.472750 seconds, clock cycles: 242048038
+|FILEOUT|CUDA|TS 41|SIZE 16| time taken: 0.000514 seconds, clock cycles: 263108
+|FILEOUT|IO_WRITE|TS 41|SIZE 16| time taken: 3.761613 seconds, clock cycles: 1925945728
+|FILEOUT|IO_READ|TS 41|SIZE 16| time taken: 0.472089 seconds, clock cycles: 241709324
+|FILEOUT|CUDA|TS 42|SIZE 16| time taken: 0.000505 seconds, clock cycles: 258562
+|FILEOUT|IO_WRITE|TS 42|SIZE 16| time taken: 3.143362 seconds, clock cycles: 1609401437
+|FILEOUT|IO_READ|TS 42|SIZE 16| time taken: 0.471685 seconds, clock cycles: 241502647
+|FILEOUT|CUDA|TS 43|SIZE 16| time taken: 0.000524 seconds, clock cycles: 268169
+|FILEOUT|IO_WRITE|TS 43|SIZE 16| time taken: 1.485947 seconds, clock cycles: 760804874
+|FILEOUT|IO_READ|TS 43|SIZE 16| time taken: 0.466685 seconds, clock cycles: 238942571
+|FILEOUT|CUDA|TS 44|SIZE 16| time taken: 0.000510 seconds, clock cycles: 260941
+|FILEOUT|IO_WRITE|TS 44|SIZE 16| time taken: 0.704604 seconds, clock cycles: 360757107
+|FILEOUT|IO_READ|TS 44|SIZE 16| time taken: 0.466940 seconds, clock cycles: 239073332
+|FILEOUT|CUDA|TS 45|SIZE 16| time taken: 0.000503 seconds, clock cycles: 257309
+|FILEOUT|IO_WRITE|TS 45|SIZE 16| time taken: 0.532066 seconds, clock cycles: 272417875
+|FILEOUT|IO_READ|TS 45|SIZE 16| time taken: 0.466077 seconds, clock cycles: 238631492
+|FILEOUT|CUDA|TS 46|SIZE 16| time taken: 0.000887 seconds, clock cycles: 454153
+|FILEOUT|IO_WRITE|TS 46|SIZE 16| time taken: 0.367246 seconds, clock cycles: 188029955
+|FILEOUT|IO_READ|TS 46|SIZE 16| time taken: 0.466382 seconds, clock cycles: 238787486
+|FILEOUT|CUDA|TS 47|SIZE 16| time taken: 0.003325 seconds, clock cycles: 1702622
+|FILEOUT|IO_WRITE|TS 47|SIZE 16| time taken: 2.455391 seconds, clock cycles: 1257160175
+|FILEOUT|IO_READ|TS 47|SIZE 16| time taken: 0.471069 seconds, clock cycles: 241187401
+|FILEOUT|CUDA|TS 48|SIZE 16| time taken: 0.000523 seconds, clock cycles: 267839
+|FILEOUT|IO_WRITE|TS 48|SIZE 16| time taken: 5.077754 seconds, clock cycles: 2599810292
+|FILEOUT|IO_READ|TS 48|SIZE 16| time taken: 0.826286 seconds, clock cycles: 423058605
+|FILEOUT|CUDA|TS 49|SIZE 16| time taken: 0.000765 seconds, clock cycles: 391844
+|FILEOUT|IO_WRITE|TS 49|SIZE 16| time taken: 3.854316 seconds, clock cycles: 1973410039
+|FILEOUT|IO_READ|TS 49|SIZE 16| time taken: 0.466464 seconds, clock cycles: 238829659
+|FILEOUT|CUDA|TS 50|SIZE 16| time taken: 0.000527 seconds, clock cycles: 269693
+|FILEOUT|IO_WRITE|TS 50|SIZE 16| time taken: 2.799543 seconds, clock cycles: 1433365842
+|FILEOUT|IO_READ|TS 50|SIZE 16| time taken: 0.466613 seconds, clock cycles: 238906102
+|FILEOUT|CUDA|TS 51|SIZE 16| time taken: 0.001213 seconds, clock cycles: 621206
+|FILEOUT|IO_WRITE|TS 51|SIZE 16| time taken: 1.443514 seconds, clock cycles: 739078972
+|FILEOUT|IO_READ|TS 51|SIZE 16| time taken: 0.468182 seconds, clock cycles: 239709156
+|FILEOUT|CUDA|TS 52|SIZE 16| time taken: 0.002366 seconds, clock cycles: 1211371
+|FILEOUT|IO_WRITE|TS 52|SIZE 16| time taken: 0.856603 seconds, clock cycles: 438580909
+|FILEOUT|IO_READ|TS 52|SIZE 16| time taken: 0.466246 seconds, clock cycles: 238717767
+|FILEOUT|CUDA|TS 53|SIZE 16| time taken: 0.000502 seconds, clock cycles: 257104
+|FILEOUT|IO_WRITE|TS 53|SIZE 16| time taken: 0.499188 seconds, clock cycles: 255584419
+|FILEOUT|IO_READ|TS 53|SIZE 16| time taken: 0.466472 seconds, clock cycles: 238833653
+|FILEOUT|CUDA|TS 54|SIZE 16| time taken: 0.002605 seconds, clock cycles: 1333524
+|FILEOUT|IO_WRITE|TS 54|SIZE 16| time taken: 0.347317 seconds, clock cycles: 177826532
+|FILEOUT|IO_READ|TS 54|SIZE 16| time taken: 0.466515 seconds, clock cycles: 238855551
+|FILEOUT|CUDA|TS 55|SIZE 16| time taken: 0.003680 seconds, clock cycles: 1884261
+|FILEOUT|IO_WRITE|TS 55|SIZE 16| time taken: 2.450041 seconds, clock cycles: 1254421044
+|FILEOUT|IO_READ|TS 55|SIZE 16| time taken: 0.467428 seconds, clock cycles: 239322958
+|FILEOUT|CUDA|TS 56|SIZE 16| time taken: 0.003133 seconds, clock cycles: 1603939
+|FILEOUT|IO_WRITE|TS 56|SIZE 16| time taken: 4.997016 seconds, clock cycles: 2558472170
+|FILEOUT|IO_READ|TS 56|SIZE 16| time taken: 0.466747 seconds, clock cycles: 238974600
+|FILEOUT|CUDA|TS 57|SIZE 16| time taken: 0.002925 seconds, clock cycles: 1497458
+|FILEOUT|IO_WRITE|TS 57|SIZE 16| time taken: 4.169436 seconds, clock cycles: 2134751374
+|FILEOUT|IO_READ|TS 57|SIZE 16| time taken: 0.466450 seconds, clock cycles: 238822588
+|FILEOUT|CUDA|TS 58|SIZE 16| time taken: 0.000555 seconds, clock cycles: 283936
+|FILEOUT|IO_WRITE|TS 58|SIZE 16| time taken: 3.008444 seconds, clock cycles: 1540323339
+|FILEOUT|IO_READ|TS 58|SIZE 16| time taken: 0.468097 seconds, clock cycles: 239665737
+|FILEOUT|CUDA|TS 59|SIZE 16| time taken: 0.003345 seconds, clock cycles: 1712715
+|FILEOUT|IO_WRITE|TS 59|SIZE 16| time taken: 1.374988 seconds, clock cycles: 703993771
+|FILEOUT|IO_READ|TS 59|SIZE 16| time taken: 0.466346 seconds, clock cycles: 238768993
+|FILEOUT|MPI|SIZE 16| time taken: 344.417163 seconds, clock cycles: 176341587568
+|FILEOUT|MPI_IO|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 16|
+[dcs222:45706] MCW rank 6 bound to socket 0[core 3[hwt 0-3]]: [..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 7 bound to socket 1[core 23[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 8 bound to socket 0[core 4[hwt 0-3]]: [..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 9 bound to socket 1[core 24[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 10 bound to socket 0[core 5[hwt 0-3]]: [..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 11 bound to socket 1[core 25[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 12 bound to socket 0[core 6[hwt 0-3]]: [..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 13 bound to socket 1[core 26[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 14 bound to socket 0[core 7[hwt 0-3]]: [..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 15 bound to socket 1[core 27[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 4 bound to socket 0[core 2[hwt 0-3]]: [..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+[dcs222:45706] MCW rank 5 bound to socket 1[core 22[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
+Output file: 16_1024_weak_boids_output.csv
+|FILEOUT|IO_WRITE|TS 0|SIZE 16| time taken: 102.175986 seconds, clock cycles: 52314105041
+|FILEOUT|IO_READ|TS 0|SIZE 16| time taken: 0.468891 seconds, clock cycles: 240072022
+|FILEOUT|CUDA|TS 1|SIZE 16| time taken: 0.022814 seconds, clock cycles: 11680600
+|FILEOUT|IO_WRITE|TS 1|SIZE 16| time taken: 101.752004 seconds, clock cycles: 52097025966
+|FILEOUT|IO_READ|TS 1|SIZE 16| time taken: 0.467921 seconds, clock cycles: 239575748
+|FILEOUT|CUDA|TS 2|SIZE 16| time taken: 0.061518 seconds, clock cycles: 31497161
+|FILEOUT|IO_WRITE|TS 2|SIZE 16| time taken: 102.211846 seconds, clock cycles: 52332465030
+|FILEOUT|IO_READ|TS 2|SIZE 16| time taken: 0.471754 seconds, clock cycles: 241537998
+|FILEOUT|CUDA|TS 3|SIZE 16| time taken: 0.059831 seconds, clock cycles: 30633604
+|FILEOUT|IO_WRITE|TS 3|SIZE 16| time taken: 101.992943 seconds, clock cycles: 52220386987
+|FILEOUT|IO_READ|TS 3|SIZE 16| time taken: 0.473512 seconds, clock cycles: 242438212
+|FILEOUT|CUDA|TS 4|SIZE 16| time taken: 0.043404 seconds, clock cycles: 22222995
+|FILEOUT|IO_WRITE|TS 4|SIZE 16| time taken: 101.940487 seconds, clock cycles: 52193529108
+|FILEOUT|IO_READ|TS 4|SIZE 16| time taken: 0.472298 seconds, clock cycles: 241816364
+|FILEOUT|CUDA|TS 5|SIZE 16| time taken: 0.059339 seconds, clock cycles: 30381621
+|FILEOUT|IO_WRITE|TS 5|SIZE 16| time taken: 4.858878 seconds, clock cycles: 2487745671
+|FILEOUT|IO_READ|TS 5|SIZE 16| time taken: 0.473469 seconds, clock cycles: 242416053
+|FILEOUT|CUDA|TS 6|SIZE 16| time taken: 0.040882 seconds, clock cycles: 20931653
+|FILEOUT|IO_WRITE|TS 6|SIZE 16| time taken: 0.887109 seconds, clock cycles: 454199851
+|FILEOUT|IO_READ|TS 6|SIZE 16| time taken: 0.471157 seconds, clock cycles: 241232271
+|FILEOUT|CUDA|TS 7|SIZE 16| time taken: 0.043185 seconds, clock cycles: 22110910
+|FILEOUT|IO_WRITE|TS 7|SIZE 16| time taken: 0.884442 seconds, clock cycles: 452834134
+|FILEOUT|IO_READ|TS 7|SIZE 16| time taken: 0.471967 seconds, clock cycles: 241647295
+|FILEOUT|CUDA|TS 8|SIZE 16| time taken: 0.052645 seconds, clock cycles: 26954107
+|FILEOUT|IO_WRITE|TS 8|SIZE 16| time taken: 0.883626 seconds, clock cycles: 452416712
+|FILEOUT|IO_READ|TS 8|SIZE 16| time taken: 0.471226 seconds, clock cycles: 241267583
+|FILEOUT|CUDA|TS 9|SIZE 16| time taken: 0.054615 seconds, clock cycles: 27962989
+|FILEOUT|IO_WRITE|TS 9|SIZE 16| time taken: 0.883367 seconds, clock cycles: 452284071
+|FILEOUT|IO_READ|TS 9|SIZE 16| time taken: 0.472032 seconds, clock cycles: 241680186
+|FILEOUT|CUDA|TS 10|SIZE 16| time taken: 0.043917 seconds, clock cycles: 22485469
+|FILEOUT|IO_WRITE|TS 10|SIZE 16| time taken: 0.887209 seconds, clock cycles: 454250917
+|FILEOUT|IO_READ|TS 10|SIZE 16| time taken: 0.473251 seconds, clock cycles: 242304315
+|FILEOUT|CUDA|TS 11|SIZE 16| time taken: 0.043901 seconds, clock cycles: 22477182
+|FILEOUT|IO_WRITE|TS 11|SIZE 16| time taken: 155.769307 seconds, clock cycles: 79753884937
+|FILEOUT|IO_READ|TS 11|SIZE 16| time taken: 0.473708 seconds, clock cycles: 242538505
+|FILEOUT|CUDA|TS 12|SIZE 16| time taken: 0.060399 seconds, clock cycles: 30924224
+|FILEOUT|IO_WRITE|TS 12|SIZE 16| time taken: 156.197014 seconds, clock cycles: 79972871417
+|FILEOUT|IO_READ|TS 12|SIZE 16| time taken: 0.470792 seconds, clock cycles: 241045411
+|FILEOUT|CUDA|TS 13|SIZE 16| time taken: 0.061776 seconds, clock cycles: 31629401
+|FILEOUT|IO_WRITE|TS 13|SIZE 16| time taken: 156.442294 seconds, clock cycles: 80098454506
+|FILEOUT|IO_READ|TS 13|SIZE 16| time taken: 0.469403 seconds, clock cycles: 240334161
+|FILEOUT|CUDA|TS 14|SIZE 16| time taken: 0.048541 seconds, clock cycles: 24852845
+|FILEOUT|IO_WRITE|TS 14|SIZE 16| time taken: 155.949941 seconds, clock cycles: 79846369927
+|FILEOUT|IO_READ|TS 14|SIZE 16| time taken: 0.474302 seconds, clock cycles: 242842583
+|FILEOUT|CUDA|TS 15|SIZE 16| time taken: 0.039592 seconds, clock cycles: 20270952
+|FILEOUT|IO_WRITE|TS 15|SIZE 16| time taken: 52.490094 seconds, clock cycles: 26874927911
+|FILEOUT|IO_READ|TS 15|SIZE 16| time taken: 0.474664 seconds, clock cycles: 243027895
+|FILEOUT|CUDA|TS 16|SIZE 16| time taken: 0.039791 seconds, clock cycles: 20372990
+|FILEOUT|IO_WRITE|TS 16|SIZE 16| time taken: 0.886556 seconds, clock cycles: 453916560
+|FILEOUT|IO_READ|TS 16|SIZE 16| time taken: 0.475991 seconds, clock cycles: 243707280
+|FILEOUT|CUDA|TS 17|SIZE 16| time taken: 0.043571 seconds, clock cycles: 22308217
+|FILEOUT|IO_WRITE|TS 17|SIZE 16| time taken: 0.885907 seconds, clock cycles: 453584417
+|FILEOUT|IO_READ|TS 17|SIZE 16| time taken: 0.474031 seconds, clock cycles: 242703877
+|FILEOUT|CUDA|TS 18|SIZE 16| time taken: 0.037973 seconds, clock cycles: 19442253
+|FILEOUT|IO_WRITE|TS 18|SIZE 16| time taken: 0.883222 seconds, clock cycles: 452209865
+|FILEOUT|IO_READ|TS 18|SIZE 16| time taken: 0.473820 seconds, clock cycles: 242595794
+|FILEOUT|CUDA|TS 19|SIZE 16| time taken: 0.042897 seconds, clock cycles: 21963258
+|FILEOUT|IO_WRITE|TS 19|SIZE 16| time taken: 0.879740 seconds, clock cycles: 450427033
+|FILEOUT|IO_READ|TS 19|SIZE 16| time taken: 0.474388 seconds, clock cycles: 242886636
+|FILEOUT|CUDA|TS 20|SIZE 16| time taken: 0.040107 seconds, clock cycles: 20534898
+|FILEOUT|IO_WRITE|TS 20|SIZE 16| time taken: 0.880561 seconds, clock cycles: 450847434
+|FILEOUT|IO_READ|TS 20|SIZE 16| time taken: 0.476244 seconds, clock cycles: 243837017
+|FILEOUT|CUDA|TS 21|SIZE 16| time taken: 0.036415 seconds, clock cycles: 18644258
+|FILEOUT|IO_WRITE|TS 21|SIZE 16| time taken: 155.327664 seconds, clock cycles: 79527764085
+|FILEOUT|IO_READ|TS 21|SIZE 16| time taken: 0.474066 seconds, clock cycles: 242721842
+|FILEOUT|CUDA|TS 22|SIZE 16| time taken: 0.038793 seconds, clock cycles: 19861878
+|FILEOUT|IO_WRITE|TS 22|SIZE 16| time taken: 155.573216 seconds, clock cycles: 79653486489
+|FILEOUT|IO_READ|TS 22|SIZE 16| time taken: 0.474125 seconds, clock cycles: 242751835
+|FILEOUT|CUDA|TS 23|SIZE 16| time taken: 0.044366 seconds, clock cycles: 22715513
+|FILEOUT|IO_WRITE|TS 23|SIZE 16| time taken: 155.695552 seconds, clock cycles: 79716122558
+|FILEOUT|IO_READ|TS 23|SIZE 16| time taken: 0.474198 seconds, clock cycles: 242789339
+|FILEOUT|CUDA|TS 24|SIZE 16| time taken: 0.035396 seconds, clock cycles: 18122960
+|FILEOUT|IO_WRITE|TS 24|SIZE 16| time taken: 155.582858 seconds, clock cycles: 79658423169
+|FILEOUT|IO_READ|TS 24|SIZE 16| time taken: 0.469790 seconds, clock cycles: 240532453
+|FILEOUT|CUDA|TS 25|SIZE 16| time taken: 0.038310 seconds, clock cycles: 19614899
+|FILEOUT|IO_WRITE|TS 25|SIZE 16| time taken: 83.397958 seconds, clock cycles: 42699754334
+|FILEOUT|IO_READ|TS 25|SIZE 16| time taken: 0.473774 seconds, clock cycles: 242572328
+|FILEOUT|CUDA|TS 26|SIZE 16| time taken: 0.037011 seconds, clock cycles: 18949718
+|FILEOUT|IO_WRITE|TS 26|SIZE 16| time taken: 0.882231 seconds, clock cycles: 451702113
+|FILEOUT|IO_READ|TS 26|SIZE 16| time taken: 0.475799 seconds, clock cycles: 243609128
+|FILEOUT|CUDA|TS 27|SIZE 16| time taken: 0.042567 seconds, clock cycles: 21794229
+|FILEOUT|IO_WRITE|TS 27|SIZE 16| time taken: 0.878266 seconds, clock cycles: 449672344
+|FILEOUT|IO_READ|TS 27|SIZE 16| time taken: 0.473714 seconds, clock cycles: 242541666
+|FILEOUT|CUDA|TS 28|SIZE 16| time taken: 0.038142 seconds, clock cycles: 19528685
+|FILEOUT|IO_WRITE|TS 28|SIZE 16| time taken: 0.880047 seconds, clock cycles: 450584141
+|FILEOUT|IO_READ|TS 28|SIZE 16| time taken: 0.473811 seconds, clock cycles: 242591469
+|FILEOUT|CUDA|TS 29|SIZE 16| time taken: 0.042392 seconds, clock cycles: 21704609
+|FILEOUT|IO_WRITE|TS 29|SIZE 16| time taken: 0.882295 seconds, clock cycles: 451735294
+|FILEOUT|IO_READ|TS 29|SIZE 16| time taken: 0.473717 seconds, clock cycles: 242543145
+|FILEOUT|CUDA|TS 30|SIZE 16| time taken: 0.039884 seconds, clock cycles: 20420448
+|FILEOUT|IO_WRITE|TS 30|SIZE 16| time taken: 0.883113 seconds, clock cycles: 452154048
+|FILEOUT|IO_READ|TS 30|SIZE 16| time taken: 0.473774 seconds, clock cycles: 242572120
+|FILEOUT|CUDA|TS 31|SIZE 16| time taken: 0.041378 seconds, clock cycles: 21185550
+|FILEOUT|IO_WRITE|TS 31|SIZE 16| time taken: 155.426494 seconds, clock cycles: 79578364899
+|FILEOUT|IO_READ|TS 31|SIZE 16| time taken: 0.474362 seconds, clock cycles: 242873532
+|FILEOUT|CUDA|TS 32|SIZE 16| time taken: 0.038628 seconds, clock cycles: 19777519
+|FILEOUT|IO_WRITE|TS 32|SIZE 16| time taken: 155.618606 seconds, clock cycles: 79676726444
+|FILEOUT|IO_READ|TS 32|SIZE 16| time taken: 0.476010 seconds, clock cycles: 243717303
+|FILEOUT|CUDA|TS 33|SIZE 16| time taken: 0.041512 seconds, clock cycles: 21254242
+|FILEOUT|IO_WRITE|TS 33|SIZE 16| time taken: 155.809130 seconds, clock cycles: 79774274495
+|FILEOUT|IO_READ|TS 33|SIZE 16| time taken: 0.475804 seconds, clock cycles: 243611473
+|FILEOUT|CUDA|TS 34|SIZE 16| time taken: 0.054520 seconds, clock cycles: 27914191
+|FILEOUT|IO_WRITE|TS 34|SIZE 16| time taken: 155.762476 seconds, clock cycles: 79750387722
+|FILEOUT|IO_READ|TS 34|SIZE 16| time taken: 0.476821 seconds, clock cycles: 244132600
+|FILEOUT|CUDA|TS 35|SIZE 16| time taken: 0.059526 seconds, clock cycles: 30477116
+|FILEOUT|IO_WRITE|TS 35|SIZE 16| time taken: 127.358463 seconds, clock cycles: 65207533149
+|FILEOUT|IO_READ|TS 35|SIZE 16| time taken: 0.473740 seconds, clock cycles: 242554840
+|FILEOUT|CUDA|TS 36|SIZE 16| time taken: 0.054120 seconds, clock cycles: 27709688
+|FILEOUT|IO_WRITE|TS 36|SIZE 16| time taken: 0.878917 seconds, clock cycles: 450005362
+|FILEOUT|IO_READ|TS 36|SIZE 16| time taken: 0.471831 seconds, clock cycles: 241577664
+|FILEOUT|CUDA|TS 37|SIZE 16| time taken: 0.042413 seconds, clock cycles: 21715679
+|FILEOUT|IO_WRITE|TS 37|SIZE 16| time taken: 0.877111 seconds, clock cycles: 449080811
+|FILEOUT|IO_READ|TS 37|SIZE 16| time taken: 0.469170 seconds, clock cycles: 240214979
+|FILEOUT|CUDA|TS 38|SIZE 16| time taken: 0.052000 seconds, clock cycles: 26624123
+|FILEOUT|IO_WRITE|TS 38|SIZE 16| time taken: 0.875474 seconds, clock cycles: 448242670
+|FILEOUT|IO_READ|TS 38|SIZE 16| time taken: 0.471855 seconds, clock cycles: 241589622
+|FILEOUT|CUDA|TS 39|SIZE 16| time taken: 0.044098 seconds, clock cycles: 22578420
+|FILEOUT|IO_WRITE|TS 39|SIZE 16| time taken: 0.871875 seconds, clock cycles: 446400185
+|FILEOUT|IO_READ|TS 39|SIZE 16| time taken: 0.473902 seconds, clock cycles: 242637643
+|FILEOUT|CUDA|TS 40|SIZE 16| time taken: 0.046551 seconds, clock cycles: 23834247
+|FILEOUT|IO_WRITE|TS 40|SIZE 16| time taken: 0.869416 seconds, clock cycles: 445140980
+|FILEOUT|IO_READ|TS 40|SIZE 16| time taken: 0.476278 seconds, clock cycles: 243854443
+|FILEOUT|CUDA|TS 41|SIZE 16| time taken: 0.052708 seconds, clock cycles: 26986490
+|FILEOUT|IO_WRITE|TS 41|SIZE 16| time taken: 155.765802 seconds, clock cycles: 79752090744
+|FILEOUT|IO_READ|TS 41|SIZE 16| time taken: 0.474061 seconds, clock cycles: 242718985
+|FILEOUT|CUDA|TS 42|SIZE 16| time taken: 0.043013 seconds, clock cycles: 22022800
+|FILEOUT|IO_WRITE|TS 42|SIZE 16| time taken: 155.902470 seconds, clock cycles: 79822064411
+|FILEOUT|IO_READ|TS 42|SIZE 16| time taken: 0.475828 seconds, clock cycles: 243623892
+|FILEOUT|CUDA|TS 43|SIZE 16| time taken: 0.047015 seconds, clock cycles: 24071730
+|FILEOUT|IO_WRITE|TS 43|SIZE 16| time taken: 155.986517 seconds, clock cycles: 79865096913
+|FILEOUT|IO_READ|TS 43|SIZE 16| time taken: 0.474281 seconds, clock cycles: 242831699
+|FILEOUT|CUDA|TS 44|SIZE 16| time taken: 0.050701 seconds, clock cycles: 25958666
+|FILEOUT|IO_WRITE|TS 44|SIZE 16| time taken: 156.034180 seconds, clock cycles: 79889500238
+|FILEOUT|IO_READ|TS 44|SIZE 16| time taken: 0.474838 seconds, clock cycles: 243116994
+|FILEOUT|CUDA|TS 45|SIZE 16| time taken: 0.043433 seconds, clock cycles: 22237865
+|FILEOUT|IO_WRITE|TS 45|SIZE 16| time taken: 155.856346 seconds, clock cycles: 79798448952
+|FILEOUT|IO_READ|TS 45|SIZE 16| time taken: 0.473838 seconds, clock cycles: 242605225
+|FILEOUT|CUDA|TS 46|SIZE 16| time taken: 0.046435 seconds, clock cycles: 23774655
+|FILEOUT|IO_WRITE|TS 46|SIZE 16| time taken: 7.824520 seconds, clock cycles: 4006154103
+|FILEOUT|IO_READ|TS 46|SIZE 16| time taken: 0.473523 seconds, clock cycles: 242444024
+|FILEOUT|CUDA|TS 47|SIZE 16| time taken: 0.046951 seconds, clock cycles: 24038785
+|FILEOUT|IO_WRITE|TS 47|SIZE 16| time taken: 0.862499 seconds, clock cycles: 441599744
+|FILEOUT|IO_READ|TS 47|SIZE 16| time taken: 0.474558 seconds, clock cycles: 242973560
+|FILEOUT|CUDA|TS 48|SIZE 16| time taken: 0.042452 seconds, clock cycles: 21735618
+|FILEOUT|IO_WRITE|TS 48|SIZE 16| time taken: 0.872690 seconds, clock cycles: 446817454
+|FILEOUT|IO_READ|TS 48|SIZE 16| time taken: 0.471193 seconds, clock cycles: 241250717
+|FILEOUT|CUDA|TS 49|SIZE 16| time taken: 0.050914 seconds, clock cycles: 26067979
+|FILEOUT|IO_WRITE|TS 49|SIZE 16| time taken: 0.864384 seconds, clock cycles: 442564572
+|FILEOUT|IO_READ|TS 49|SIZE 16| time taken: 0.467785 seconds, clock cycles: 239505915
+|FILEOUT|CUDA|TS 50|SIZE 16| time taken: 0.043728 seconds, clock cycles: 22388564
+|FILEOUT|IO_WRITE|TS 50|SIZE 16| time taken: 0.882830 seconds, clock cycles: 452008937
+|FILEOUT|IO_READ|TS 50|SIZE 16| time taken: 0.470503 seconds, clock cycles: 240897623
+|FILEOUT|CUDA|TS 51|SIZE 16| time taken: 0.044328 seconds, clock cycles: 22695686
+|FILEOUT|IO_WRITE|TS 51|SIZE 16| time taken: 0.867832 seconds, clock cycles: 444330172
+|FILEOUT|IO_READ|TS 51|SIZE 16| time taken: 0.472400 seconds, clock cycles: 241868860
+|FILEOUT|CUDA|TS 52|SIZE 16| time taken: 0.043030 seconds, clock cycles: 22031217
+|FILEOUT|IO_WRITE|TS 52|SIZE 16| time taken: 155.913594 seconds, clock cycles: 79827759933
+|FILEOUT|IO_READ|TS 52|SIZE 16| time taken: 0.477908 seconds, clock cycles: 244688873
+|FILEOUT|CUDA|TS 53|SIZE 16| time taken: 0.058277 seconds, clock cycles: 29837744
+|FILEOUT|IO_WRITE|TS 53|SIZE 16| time taken: 156.236633 seconds, clock cycles: 79993155866
+|FILEOUT|IO_READ|TS 53|SIZE 16| time taken: 0.473307 seconds, clock cycles: 242333437
+|FILEOUT|CUDA|TS 54|SIZE 16| time taken: 0.058288 seconds, clock cycles: 29843482
+|FILEOUT|IO_WRITE|TS 54|SIZE 16| time taken: 155.802124 seconds, clock cycles: 79770687669
+|FILEOUT|IO_READ|TS 54|SIZE 16| time taken: 0.475732 seconds, clock cycles: 243574715
+|FILEOUT|CUDA|TS 55|SIZE 16| time taken: 0.063997 seconds, clock cycles: 32766238
+|FILEOUT|IO_WRITE|TS 55|SIZE 16| time taken: 155.909331 seconds, clock cycles: 79825577242
+|FILEOUT|IO_READ|TS 55|SIZE 16| time taken: 0.477803 seconds, clock cycles: 244635141
+|FILEOUT|CUDA|TS 56|SIZE 16| time taken: 0.056352 seconds, clock cycles: 28852057
+|FILEOUT|IO_WRITE|TS 56|SIZE 16| time taken: 53.821781 seconds, clock cycles: 27556751819
+|FILEOUT|IO_READ|TS 56|SIZE 16| time taken: 0.473165 seconds, clock cycles: 242260267
+|FILEOUT|CUDA|TS 57|SIZE 16| time taken: 0.041042 seconds, clock cycles: 21013446
+|FILEOUT|IO_WRITE|TS 57|SIZE 16| time taken: 0.869403 seconds, clock cycles: 445134317
+|FILEOUT|IO_READ|TS 57|SIZE 16| time taken: 0.474206 seconds, clock cycles: 242793225
+|FILEOUT|CUDA|TS 58|SIZE 16| time taken: 0.042471 seconds, clock cycles: 21745351
+|FILEOUT|IO_WRITE|TS 58|SIZE 16| time taken: 0.868993 seconds, clock cycles: 444924455
+|FILEOUT|IO_READ|TS 58|SIZE 16| time taken: 0.473121 seconds, clock cycles: 242237926
+|FILEOUT|CUDA|TS 59|SIZE 16| time taken: 0.046408 seconds, clock cycles: 23760750
+|FILEOUT|IO_WRITE|TS 59|SIZE 16| time taken: 0.868625 seconds, clock cycles: 444736177
+|FILEOUT|IO_READ|TS 59|SIZE 16| time taken: 0.472479 seconds, clock cycles: 241909240
+|FILEOUT|MPI|SIZE 16| time taken: 4527.092174 seconds, clock cycles: 2317871193108
+Elapsed time: 14255 seconds
+/var/spool/slurm/d/job3233729/slurm_script: line 53: warning: here-document at line 24 delimited by end-of-file (wanted `EOF')
