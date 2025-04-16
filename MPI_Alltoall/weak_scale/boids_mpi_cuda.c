@@ -36,7 +36,7 @@ void read_config(int argc, char *argv[], int rank, int size)
     threadCount = atoi(argv[2]);
     frames = atoi(argv[3]);
 
-    int numChars = snprintf(NULL, 0, "%d_%d_", size, threadCount);
+    int numChars = snprintf(NULL, 0, "%d_%d_%d_", size, threadCount, flocksize);
     size_t originalLength = strlen(output_file);
     char *file_type;
 
@@ -53,7 +53,7 @@ void read_config(int argc, char *argv[], int rank, int size)
 
     size_t totalLength = numChars + 1 + originalLength + 1;
     char *newStr = malloc(totalLength);
-    sprintf(newStr, "%d_%d_%s_%s", size, threadCount, file_type, output_file);
+    sprintf(newStr, "%d_%d_%d_%s_%s", size, threadCount, flocksize, file_type, output_file);
     output_file = newStr;
     if (rank == 0)
     {
@@ -170,9 +170,6 @@ int main(int argc, char *argv[])
     // Synchronize all processes
     MPI_Barrier(MPI_COMM_WORLD);
 
-    MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
-                 full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
-
     // output the initial state of the boids
     start_io = clock_now();
     write_output(local_flock, local_count, fh, 0, size, rank);
@@ -184,6 +181,17 @@ int main(int argc, char *argv[])
 
     // All-to-all exchange, Synchronize all processes
     MPI_Barrier(MPI_COMM_WORLD);
+
+    start_io = clock_now();
+    // All-to-all exchange so each rank gets the full flock
+    MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
+                 full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
+
+    end_io = clock_now();
+    if (rank == 0)
+    {
+        printf("|FILEOUT|MPI_ALLTOALL|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", 0, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
+    }
 
     for (int t = 1; t < frames; t++)
     {
@@ -209,14 +217,21 @@ int main(int argc, char *argv[])
 
         MPI_Barrier(MPI_COMM_WORLD);
 
+        start_io = clock_now();
         MPI_Alltoall(local_flock, local_count * sizeof(Boid), MPI_BYTE,
                      full_flock, local_count * sizeof(Boid), MPI_BYTE, MPI_COMM_WORLD);
+
+        end_io = clock_now();
+        if (rank == 0)
+        {
+            printf("|FILEOUT|MPI_ALLTOALL|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", t, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
+        }
     }
 
     end_p = clock_now();
     if (rank == 0)
     {
-        printf("|FILEOUT|MPI|SIZE %d|TC %d| time taken: %f seconds, clock cycles: %lu\n", size, threadCount, (double)(end_p - start_p) / 512000000.0, end_p - start_p);
+        printf("|FILEOUT|MPI|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", size, (double)(end_p - start_p) / 512000000.0, end_p - start_p);
     }
 
     close_file(&fh);
