@@ -1,9 +1,7 @@
-# object files and executables
-*.o
-*exe
+# temporary files
 
-# OUTPUT FILES
+temp
+
+#large files
 *.csv
 
-# temp
-temp
