@@ -3,7 +3,7 @@ module load xl_r spectrum-mpi cuda/11.2
 
 #FLOCK_SIZE=( 1024 8192 65536 524288 )
 STRONG_FLOCK_SIZE=( 100 1000 10000 100000)
-WEAK_FLOCK_SIZE=( 100 1000 10000 1000000)
+WEAK_FLOCK_SIZE=( 100 1000 10000 100000)
 THREAD_COUNT=(64 128 256 512 1024)
 TIME_STEP=30
 NP_COUNT=( 1 2 4 )
@@ -18,7 +18,7 @@ for k in "${STRONG_FLOCK_SIZE[@]}"; do
     done
 done
 
-for k in "${STRONG_FLOCK_SIZE[@]}"; do
+for k in "${WEAK_FLOCK_SIZE[@]}"; do
     for j in "${THREAD_COUNT[@]}"; do
         for i in "${NP_COUNT[@]}"; do
             echo "|FILEOUT|MPI_IO|WEAK_SCALE|THREAD_COUNT $j|NP_COUNT $i|BOIDS_COUNT $k|"
