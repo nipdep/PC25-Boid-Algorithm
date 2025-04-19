@@ -165,10 +165,22 @@ int main(int argc, char *argv[])
     Boid *local_flock = NULL;
     void *d_states;
 
+    start_cuda = clock_now();
     local_flock = createBoids(local_count, rank, &d_states, threadCount);
+    end_cuda = clock_now();
+    if (rank == 0)
+    {
+        printf("|FILEOUT|CUDA|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", 0, size, (double)(end_cuda - start_cuda) / 512000000.0, end_cuda - start_cuda);
+    }
 
     // Synchronize all processes
+    start_io = clock_now();
     MPI_Barrier(MPI_COMM_WORLD);
+    end_io = clock_now();
+    if (rank == 0)
+    {
+        printf("|FILEOUT|MPI_COMM|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", 0, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
+    }
 
     // output the initial state of the boids
     start_io = clock_now();
@@ -183,11 +195,11 @@ int main(int argc, char *argv[])
     MPI_Barrier(MPI_COMM_WORLD);
 
     start_io = clock_now();
-    read_output(full_flock, flocksize, fh, 0);
+    MPI_Barrier(MPI_COMM_WORLD);
     end_io = clock_now();
     if (rank == 0)
     {
-        printf("|FILEOUT|IO_READ|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", 0, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
+        printf("|FILEOUT|MPI_COMM|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", 0, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
     }
 
     for (int t = 1; t < frames; t++)
@@ -212,10 +224,16 @@ int main(int argc, char *argv[])
 
         // All-to-all exchange, Synchronize all processes
 
+        start_io = clock_now();
         MPI_Barrier(MPI_COMM_WORLD);
+        end_io = clock_now();
+        if (rank == 0)
+        {
+            printf("|FILEOUT|MPI_COMM|TS %d|SIZE %d| time taken: %f seconds, clock cycles: %lu\n", t, size, (double)(end_io - start_io) / 512000000.0, end_io - start_io);
+        }
 
         start_io = clock_now();
-        read_output(full_flock, flocksize, fh, t);
+        read_output(full_flock, local_count * size, fh, t);
         end_io = clock_now();
         if (rank == 0)
         {
