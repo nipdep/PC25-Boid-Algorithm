@@ -8,8 +8,6 @@
 
 #define WIDTH 800
 #define HEIGHT 450
-#define FLOCKSIZE 400
-#define FRAMES 60
 
 #define MAX_VELOCITY 20
 #define MIN_VELOCITY -20
@@ -53,7 +51,7 @@ __global__ void initBoidsKernel(Boid* flock, curandState* states, int seed, int 
     flock[i].timestep = 0;
 }
 
-__global__ void updateBoidsKernel(Boid* local_flock, Boid* full_flock, int local_size, int timestep) {
+__global__ void updateBoidsKernel(Boid* local_flock, Boid* full_flock, int local_size, int timestep, int FLOCKSIZE) {
     int i = threadIdx.x + blockIdx.x * blockDim.x;
     // printf("updateBoidsKernel %d\n", i);
     if (i >= local_size) return;
@@ -135,10 +133,10 @@ extern "C" Boid* createBoids(int size, int rank, void** d_states, int thread_cou
     return flock;
 }
 
-extern "C" void updateBoids(Boid *local_flock, Boid *full_flock, int local_size, int timestep, int thread_count)
+extern "C" void updateBoids(Boid *local_flock, Boid *full_flock, int local_size, int timestep, int thread_count, int FLOCKSIZE)
 {
     // printf("updateBoids %d\n", local_size);
-    updateBoidsKernel<<<(local_size + thread_count - 1) / thread_count, thread_count>>>(local_flock, full_flock, local_size, timestep);
+    updateBoidsKernel<<<(local_size + thread_count - 1) / thread_count, thread_count>>>(local_flock, full_flock, local_size, timestep, FLOCKSIZE);
     cudaDeviceSynchronize();
 }
 
