@@ -1,4 +1,4 @@
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:287827] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_16_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000261 seconds, clock cycles: 133452
@@ -52,7 +52,7 @@ Output file: 1_64_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 673
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000109 seconds, clock cycles: 55714
 |FILEOUT|MPI|SIZE 1| time taken: 0.342466 seconds, clock cycles: 175342729
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:287864] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:287864] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_16_strong_boids_output.csv
@@ -107,7 +107,7 @@ Output file: 2_64_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000003 seconds, clock cycles: 1550
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000075 seconds, clock cycles: 38287
 |FILEOUT|MPI|SIZE 2| time taken: 0.474755 seconds, clock cycles: 243074596
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:287909] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:287909] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:287909] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -165,7 +165,7 @@ Output file: 4_64_16_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.000252 seconds, clock cycles: 129195
 |FILEOUT|MPI|SIZE 4| time taken: 0.757524 seconds, clock cycles: 387852413
 Elapsed time: 4 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:287969] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_16_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000260 seconds, clock cycles: 133314
@@ -219,7 +219,7 @@ Output file: 1_128_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 886
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000108 seconds, clock cycles: 55354
 |FILEOUT|MPI|SIZE 1| time taken: 0.332325 seconds, clock cycles: 170150394
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:288006] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288006] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_16_strong_boids_output.csv
@@ -274,7 +274,7 @@ Output file: 2_128_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000003 seconds, clock cycles: 1556
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000072 seconds, clock cycles: 36618
 |FILEOUT|MPI|SIZE 2| time taken: 0.474163 seconds, clock cycles: 242771352
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:288049] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288049] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288049] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -332,7 +332,7 @@ Output file: 4_128_16_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.000378 seconds, clock cycles: 193726
 |FILEOUT|MPI|SIZE 4| time taken: 0.765195 seconds, clock cycles: 391780051
 Elapsed time: 8 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:288103] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_16_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000260 seconds, clock cycles: 133286
@@ -386,7 +386,7 @@ Output file: 1_256_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 930
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000111 seconds, clock cycles: 56859
 |FILEOUT|MPI|SIZE 1| time taken: 0.339940 seconds, clock cycles: 174049439
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:288140] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288140] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_16_strong_boids_output.csv
@@ -441,7 +441,7 @@ Output file: 2_256_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000003 seconds, clock cycles: 1619
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000075 seconds, clock cycles: 38168
 |FILEOUT|MPI|SIZE 2| time taken: 0.470115 seconds, clock cycles: 240699110
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:288182] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288182] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288182] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -499,7 +499,7 @@ Output file: 4_256_16_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.000317 seconds, clock cycles: 162158
 |FILEOUT|MPI|SIZE 4| time taken: 0.757006 seconds, clock cycles: 387587054
 Elapsed time: 11 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:288234] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_16_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000254 seconds, clock cycles: 130212
@@ -553,7 +553,7 @@ Output file: 1_512_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 680
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000110 seconds, clock cycles: 56405
 |FILEOUT|MPI|SIZE 1| time taken: 0.341043 seconds, clock cycles: 174613987
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:288271] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288271] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_16_strong_boids_output.csv
@@ -608,7 +608,7 @@ Output file: 2_512_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000003 seconds, clock cycles: 1538
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000075 seconds, clock cycles: 38348
 |FILEOUT|MPI|SIZE 2| time taken: 0.474814 seconds, clock cycles: 243104634
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:288313] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288313] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288313] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -666,7 +666,7 @@ Output file: 4_512_16_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.000319 seconds, clock cycles: 163198
 |FILEOUT|MPI|SIZE 4| time taken: 0.763132 seconds, clock cycles: 390723574
 Elapsed time: 15 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:288366] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_16_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000257 seconds, clock cycles: 131437
@@ -720,7 +720,7 @@ Output file: 1_1024_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 687
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000110 seconds, clock cycles: 56066
 |FILEOUT|MPI|SIZE 1| time taken: 0.339174 seconds, clock cycles: 173657275
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:288403] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288403] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_16_strong_boids_output.csv
@@ -775,7 +775,7 @@ Output file: 2_1024_16_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000003 seconds, clock cycles: 1549
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000075 seconds, clock cycles: 38441
 |FILEOUT|MPI|SIZE 2| time taken: 0.481785 seconds, clock cycles: 246673726
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:288446] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288446] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288446] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -833,7 +833,7 @@ Output file: 4_1024_16_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.000301 seconds, clock cycles: 154090
 |FILEOUT|MPI|SIZE 4| time taken: 0.751914 seconds, clock cycles: 384980188
 Elapsed time: 18 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:288514] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_64_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000329 seconds, clock cycles: 168346
@@ -887,7 +887,7 @@ Output file: 1_64_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 767
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000433 seconds, clock cycles: 221549
 |FILEOUT|MPI|SIZE 1| time taken: 0.341223 seconds, clock cycles: 174706009
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:288551] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288551] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_64_strong_boids_output.csv
@@ -942,7 +942,7 @@ Output file: 2_64_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000004 seconds, clock cycles: 1822
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000344 seconds, clock cycles: 176345
 |FILEOUT|MPI|SIZE 2| time taken: 0.480968 seconds, clock cycles: 246255481
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:288593] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288593] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288593] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -1000,7 +1000,7 @@ Output file: 4_64_64_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001863 seconds, clock cycles: 953733
 |FILEOUT|MPI|SIZE 4| time taken: 0.775215 seconds, clock cycles: 396909907
 Elapsed time: 22 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:288645] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_64_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000299 seconds, clock cycles: 153176
@@ -1054,7 +1054,7 @@ Output file: 1_128_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000003 seconds, clock cycles: 1411
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000428 seconds, clock cycles: 219361
 |FILEOUT|MPI|SIZE 1| time taken: 0.344260 seconds, clock cycles: 176260928
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:288682] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288682] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_64_strong_boids_output.csv
@@ -1109,7 +1109,7 @@ Output file: 2_128_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000019 seconds, clock cycles: 9945
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000366 seconds, clock cycles: 187549
 |FILEOUT|MPI|SIZE 2| time taken: 0.481874 seconds, clock cycles: 246719627
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:288724] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288724] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288724] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -1167,7 +1167,7 @@ Output file: 4_128_64_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001655 seconds, clock cycles: 847395
 |FILEOUT|MPI|SIZE 4| time taken: 0.779028 seconds, clock cycles: 398862351
 Elapsed time: 25 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:288779] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_64_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000294 seconds, clock cycles: 150698
@@ -1221,7 +1221,7 @@ Output file: 1_256_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 938
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000426 seconds, clock cycles: 217999
 |FILEOUT|MPI|SIZE 1| time taken: 0.344211 seconds, clock cycles: 176236088
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:288816] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288816] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_64_strong_boids_output.csv
@@ -1276,7 +1276,7 @@ Output file: 2_256_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000004 seconds, clock cycles: 2045
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000337 seconds, clock cycles: 172292
 |FILEOUT|MPI|SIZE 2| time taken: 0.472883 seconds, clock cycles: 242116203
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:288858] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288858] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288858] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -1334,7 +1334,7 @@ Output file: 4_256_64_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001912 seconds, clock cycles: 978982
 |FILEOUT|MPI|SIZE 4| time taken: 0.774139 seconds, clock cycles: 396359326
 Elapsed time: 29 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:288910] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_64_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000294 seconds, clock cycles: 150591
@@ -1388,7 +1388,7 @@ Output file: 1_512_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 885
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000430 seconds, clock cycles: 220053
 |FILEOUT|MPI|SIZE 1| time taken: 0.343320 seconds, clock cycles: 175779744
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:288947] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288947] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_64_strong_boids_output.csv
@@ -1443,7 +1443,7 @@ Output file: 2_512_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000020 seconds, clock cycles: 10242
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000353 seconds, clock cycles: 180878
 |FILEOUT|MPI|SIZE 2| time taken: 0.487112 seconds, clock cycles: 249401523
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:288989] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288989] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:288989] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -1501,7 +1501,7 @@ Output file: 4_512_64_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001780 seconds, clock cycles: 911299
 |FILEOUT|MPI|SIZE 4| time taken: 0.778183 seconds, clock cycles: 398429939
 Elapsed time: 32 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:289041] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_64_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000294 seconds, clock cycles: 150656
@@ -1555,7 +1555,7 @@ Output file: 1_1024_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 1009
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000427 seconds, clock cycles: 218615
 |FILEOUT|MPI|SIZE 1| time taken: 0.337295 seconds, clock cycles: 172695208
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:289080] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289080] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_64_strong_boids_output.csv
@@ -1610,7 +1610,7 @@ Output file: 2_1024_64_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000019 seconds, clock cycles: 9816
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000361 seconds, clock cycles: 184914
 |FILEOUT|MPI|SIZE 2| time taken: 0.474395 seconds, clock cycles: 242890417
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:289122] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289122] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289122] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -1668,7 +1668,7 @@ Output file: 4_1024_64_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001762 seconds, clock cycles: 902299
 |FILEOUT|MPI|SIZE 4| time taken: 0.773004 seconds, clock cycles: 395778204
 Elapsed time: 36 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:289174] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_256_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000319 seconds, clock cycles: 163494
@@ -1722,7 +1722,7 @@ Output file: 1_64_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 10896
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001693 seconds, clock cycles: 867040
 |FILEOUT|MPI|SIZE 1| time taken: 0.357346 seconds, clock cycles: 182960916
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:289211] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289211] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_256_strong_boids_output.csv
@@ -1777,7 +1777,7 @@ Output file: 2_64_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000034 seconds, clock cycles: 17636
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.001040 seconds, clock cycles: 532438
 |FILEOUT|MPI|SIZE 2| time taken: 0.490048 seconds, clock cycles: 250904653
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:289253] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289253] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289253] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -1835,7 +1835,7 @@ Output file: 4_64_256_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005660 seconds, clock cycles: 2898162
 |FILEOUT|MPI|SIZE 4| time taken: 0.818707 seconds, clock cycles: 419177790
 Elapsed time: 39 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:289305] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_256_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000316 seconds, clock cycles: 161558
@@ -1889,7 +1889,7 @@ Output file: 1_128_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 10875
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001688 seconds, clock cycles: 864417
 |FILEOUT|MPI|SIZE 1| time taken: 0.357093 seconds, clock cycles: 182831397
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:289342] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289342] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_256_strong_boids_output.csv
@@ -1944,7 +1944,7 @@ Output file: 2_128_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000033 seconds, clock cycles: 17046
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.001020 seconds, clock cycles: 522134
 |FILEOUT|MPI|SIZE 2| time taken: 0.481326 seconds, clock cycles: 246438730
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:289384] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289384] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289384] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -2002,7 +2002,7 @@ Output file: 4_128_256_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005715 seconds, clock cycles: 2926179
 |FILEOUT|MPI|SIZE 4| time taken: 0.820543 seconds, clock cycles: 420118255
 Elapsed time: 43 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:289436] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_256_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000321 seconds, clock cycles: 164537
@@ -2056,7 +2056,7 @@ Output file: 1_256_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 10766
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001684 seconds, clock cycles: 862458
 |FILEOUT|MPI|SIZE 1| time taken: 0.353051 seconds, clock cycles: 180762250
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:289473] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289473] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_256_strong_boids_output.csv
@@ -2111,7 +2111,7 @@ Output file: 2_256_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000028 seconds, clock cycles: 14186
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.002008 seconds, clock cycles: 1028049
 |FILEOUT|MPI|SIZE 2| time taken: 0.496654 seconds, clock cycles: 254286799
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:289515] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289515] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289515] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -2169,7 +2169,7 @@ Output file: 4_256_256_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005733 seconds, clock cycles: 2935419
 |FILEOUT|MPI|SIZE 4| time taken: 0.816846 seconds, clock cycles: 418224994
 Elapsed time: 46 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:289568] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_256_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000329 seconds, clock cycles: 168494
@@ -2223,7 +2223,7 @@ Output file: 1_512_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 11003
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001687 seconds, clock cycles: 863742
 |FILEOUT|MPI|SIZE 1| time taken: 0.359184 seconds, clock cycles: 183902458
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:289609] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289609] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_256_strong_boids_output.csv
@@ -2278,7 +2278,7 @@ Output file: 2_512_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000027 seconds, clock cycles: 13774
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.001228 seconds, clock cycles: 628622
 |FILEOUT|MPI|SIZE 2| time taken: 0.491104 seconds, clock cycles: 251445032
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:289659] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289659] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289659] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -2336,7 +2336,7 @@ Output file: 4_512_256_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005506 seconds, clock cycles: 2819208
 |FILEOUT|MPI|SIZE 4| time taken: 0.816961 seconds, clock cycles: 418284209
 Elapsed time: 50 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:289711] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_256_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000327 seconds, clock cycles: 167541
@@ -2390,7 +2390,7 @@ Output file: 1_1024_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 10868
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001718 seconds, clock cycles: 879835
 |FILEOUT|MPI|SIZE 1| time taken: 0.355043 seconds, clock cycles: 181781967
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:289748] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289748] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_256_strong_boids_output.csv
@@ -2445,7 +2445,7 @@ Output file: 2_1024_256_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000024 seconds, clock cycles: 12368
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.001013 seconds, clock cycles: 518681
 |FILEOUT|MPI|SIZE 2| time taken: 0.490724 seconds, clock cycles: 251250862
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:289790] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289790] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289790] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -2503,7 +2503,7 @@ Output file: 4_1024_256_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005109 seconds, clock cycles: 2615805
 |FILEOUT|MPI|SIZE 4| time taken: 0.811684 seconds, clock cycles: 415582367
 Elapsed time: 53 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:289842] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_1024_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000382 seconds, clock cycles: 195435
@@ -2557,7 +2557,7 @@ Output file: 1_64_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 11771
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006711 seconds, clock cycles: 3436109
 |FILEOUT|MPI|SIZE 1| time taken: 0.409651 seconds, clock cycles: 209741358
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:289879] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289879] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_1024_strong_boids_output.csv
@@ -2612,7 +2612,7 @@ Output file: 2_64_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000035 seconds, clock cycles: 18172
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.004129 seconds, clock cycles: 2114019
 |FILEOUT|MPI|SIZE 2| time taken: 0.523069 seconds, clock cycles: 267811109
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:289921] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289921] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:289921] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -2670,7 +2670,7 @@ Output file: 4_64_1024_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.022760 seconds, clock cycles: 11653251
 |FILEOUT|MPI|SIZE 4| time taken: 1.002876 seconds, clock cycles: 513472449
 Elapsed time: 57 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:289973] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_1024_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000363 seconds, clock cycles: 185724
@@ -2724,7 +2724,7 @@ Output file: 1_128_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 11921
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006808 seconds, clock cycles: 3485748
 |FILEOUT|MPI|SIZE 1| time taken: 0.408533 seconds, clock cycles: 209168789
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:290010] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290010] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_1024_strong_boids_output.csv
@@ -2779,7 +2779,7 @@ Output file: 2_128_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000038 seconds, clock cycles: 19289
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.004048 seconds, clock cycles: 2072631
 |FILEOUT|MPI|SIZE 2| time taken: 0.517900 seconds, clock cycles: 265164858
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:290052] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290052] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290052] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -2837,7 +2837,7 @@ Output file: 4_128_1024_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.023365 seconds, clock cycles: 11962835
 |FILEOUT|MPI|SIZE 4| time taken: 0.996345 seconds, clock cycles: 510128474
 Elapsed time: 61 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:290105] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_1024_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000358 seconds, clock cycles: 183376
@@ -2891,7 +2891,7 @@ Output file: 1_256_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000024 seconds, clock cycles: 12047
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006735 seconds, clock cycles: 3448447
 |FILEOUT|MPI|SIZE 1| time taken: 0.410896 seconds, clock cycles: 210378744
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:290142] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290142] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_1024_strong_boids_output.csv
@@ -2946,7 +2946,7 @@ Output file: 2_256_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000036 seconds, clock cycles: 18214
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.004080 seconds, clock cycles: 2088916
 |FILEOUT|MPI|SIZE 2| time taken: 0.517161 seconds, clock cycles: 264786503
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:290186] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290186] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290186] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -3004,7 +3004,7 @@ Output file: 4_256_1024_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.024252 seconds, clock cycles: 12417108
 |FILEOUT|MPI|SIZE 4| time taken: 1.014824 seconds, clock cycles: 519590052
 Elapsed time: 65 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:290238] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_1024_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000407 seconds, clock cycles: 208490
@@ -3058,7 +3058,7 @@ Output file: 1_512_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 12001
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006785 seconds, clock cycles: 3473813
 |FILEOUT|MPI|SIZE 1| time taken: 0.415207 seconds, clock cycles: 212585829
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:290275] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290275] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_1024_strong_boids_output.csv
@@ -3113,7 +3113,7 @@ Output file: 2_512_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000039 seconds, clock cycles: 20112
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.004097 seconds, clock cycles: 2097422
 |FILEOUT|MPI|SIZE 2| time taken: 0.520832 seconds, clock cycles: 266665867
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:290317] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290317] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290317] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -3171,7 +3171,7 @@ Output file: 4_512_1024_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.021883 seconds, clock cycles: 11203860
 |FILEOUT|MPI|SIZE 4| time taken: 0.990262 seconds, clock cycles: 507014198
 Elapsed time: 69 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:290369] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_1024_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000598 seconds, clock cycles: 306199
@@ -3225,7 +3225,7 @@ Output file: 1_1024_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 11880
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006799 seconds, clock cycles: 3481027
 |FILEOUT|MPI|SIZE 1| time taken: 0.410315 seconds, clock cycles: 210081478
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:290406] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290406] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_1024_strong_boids_output.csv
@@ -3280,7 +3280,7 @@ Output file: 2_1024_1024_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000036 seconds, clock cycles: 18495
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.004612 seconds, clock cycles: 2361546
 |FILEOUT|MPI|SIZE 2| time taken: 0.525719 seconds, clock cycles: 269168084
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:290448] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290448] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290448] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -3338,7 +3338,7 @@ Output file: 4_1024_1024_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.023219 seconds, clock cycles: 11887916
 |FILEOUT|MPI|SIZE 4| time taken: 0.997482 seconds, clock cycles: 510710885
 Elapsed time: 72 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:290500] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_4096_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000442 seconds, clock cycles: 226291
@@ -3392,7 +3392,7 @@ Output file: 1_64_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000067 seconds, clock cycles: 34105
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027500 seconds, clock cycles: 14080071
 |FILEOUT|MPI|SIZE 1| time taken: 0.610084 seconds, clock cycles: 312363116
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:290537] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290537] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_4096_strong_boids_output.csv
@@ -3447,7 +3447,7 @@ Output file: 2_64_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000102 seconds, clock cycles: 52478
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.015998 seconds, clock cycles: 8191228
 |FILEOUT|MPI|SIZE 2| time taken: 0.659712 seconds, clock cycles: 337772789
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:290579] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290579] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290579] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -3505,7 +3505,7 @@ Output file: 4_64_4096_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.105688 seconds, clock cycles: 54112273
 |FILEOUT|MPI|SIZE 4| time taken: 1.707149 seconds, clock cycles: 874060254
 Elapsed time: 77 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:290632] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_4096_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000430 seconds, clock cycles: 219963
@@ -3559,7 +3559,7 @@ Output file: 1_128_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000066 seconds, clock cycles: 33874
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027516 seconds, clock cycles: 14088025
 |FILEOUT|MPI|SIZE 1| time taken: 0.603576 seconds, clock cycles: 309031162
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:290683] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290683] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_4096_strong_boids_output.csv
@@ -3614,7 +3614,7 @@ Output file: 2_128_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000103 seconds, clock cycles: 52553
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.016469 seconds, clock cycles: 8431906
 |FILEOUT|MPI|SIZE 2| time taken: 0.646451 seconds, clock cycles: 330983061
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:290725] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290725] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290725] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -3672,7 +3672,7 @@ Output file: 4_128_4096_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.105118 seconds, clock cycles: 53820573
 |FILEOUT|MPI|SIZE 4| time taken: 1.697857 seconds, clock cycles: 869302733
 Elapsed time: 82 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:290777] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_4096_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000421 seconds, clock cycles: 215580
@@ -3726,7 +3726,7 @@ Output file: 1_256_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000065 seconds, clock cycles: 33454
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027633 seconds, clock cycles: 14148301
 |FILEOUT|MPI|SIZE 1| time taken: 0.615658 seconds, clock cycles: 315216905
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:290814] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290814] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_4096_strong_boids_output.csv
@@ -3781,7 +3781,7 @@ Output file: 2_256_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000102 seconds, clock cycles: 52465
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.016152 seconds, clock cycles: 8269635
 |FILEOUT|MPI|SIZE 2| time taken: 0.650079 seconds, clock cycles: 332840634
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:290856] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290856] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290856] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -3839,7 +3839,7 @@ Output file: 4_256_4096_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.101763 seconds, clock cycles: 52102845
 |FILEOUT|MPI|SIZE 4| time taken: 1.648503 seconds, clock cycles: 844033582
 Elapsed time: 87 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:290908] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_4096_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000480 seconds, clock cycles: 245562
@@ -3893,7 +3893,7 @@ Output file: 1_512_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000066 seconds, clock cycles: 33994
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027549 seconds, clock cycles: 14105152
 |FILEOUT|MPI|SIZE 1| time taken: 0.616495 seconds, clock cycles: 315645374
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:290945] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290945] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_4096_strong_boids_output.csv
@@ -3948,7 +3948,7 @@ Output file: 2_512_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000102 seconds, clock cycles: 52133
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.016425 seconds, clock cycles: 8409635
 |FILEOUT|MPI|SIZE 2| time taken: 0.637436 seconds, clock cycles: 326367331
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:290987] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290987] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:290987] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -4006,7 +4006,7 @@ Output file: 4_512_4096_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.085408 seconds, clock cycles: 43729111
 |FILEOUT|MPI|SIZE 4| time taken: 1.646134 seconds, clock cycles: 842820795
 Elapsed time: 91 seconds
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:291039] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_4096_strong_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000679 seconds, clock cycles: 347809
@@ -4060,7 +4060,7 @@ Output file: 1_1024_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000067 seconds, clock cycles: 34213
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.028143 seconds, clock cycles: 14408963
 |FILEOUT|MPI|SIZE 1| time taken: 0.620742 seconds, clock cycles: 317819967
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:291076] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291076] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_4096_strong_boids_output.csv
@@ -4115,7 +4115,7 @@ Output file: 2_1024_4096_strong_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000103 seconds, clock cycles: 52678
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.015974 seconds, clock cycles: 8178602
 |FILEOUT|MPI|SIZE 2| time taken: 0.648425 seconds, clock cycles: 331993377
-|FILEOUT|ALGO MPI_Alltoall|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|STRONG_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:291120] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291120] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291120] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -4173,7 +4173,7 @@ Output file: 4_1024_4096_strong_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.100504 seconds, clock cycles: 51458076
 |FILEOUT|MPI|SIZE 4| time taken: 1.663267 seconds, clock cycles: 851592800
 Elapsed time: 96 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:291172] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_16_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000260 seconds, clock cycles: 133077
@@ -4227,7 +4227,7 @@ Output file: 1_64_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 849
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000114 seconds, clock cycles: 58142
 |FILEOUT|MPI|SIZE 1| time taken: 0.340321 seconds, clock cycles: 174244445
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:291209] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291209] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_16_weak_boids_output.csv
@@ -4282,7 +4282,7 @@ Output file: 2_64_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000025 seconds, clock cycles: 13015
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000199 seconds, clock cycles: 102083
 |FILEOUT|MPI|SIZE 2| time taken: 0.480947 seconds, clock cycles: 246245042
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:291251] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291251] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291251] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -4340,7 +4340,7 @@ Output file: 4_64_16_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001652 seconds, clock cycles: 845819
 |FILEOUT|MPI|SIZE 4| time taken: 0.780261 seconds, clock cycles: 399493777
 Elapsed time: 100 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:291303] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_16_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000259 seconds, clock cycles: 132578
@@ -4394,7 +4394,7 @@ Output file: 1_128_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 697
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000111 seconds, clock cycles: 56829
 |FILEOUT|MPI|SIZE 1| time taken: 0.349288 seconds, clock cycles: 178835514
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:291340] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291340] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_16_weak_boids_output.csv
@@ -4449,7 +4449,7 @@ Output file: 2_128_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000024 seconds, clock cycles: 12367
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000193 seconds, clock cycles: 98756
 |FILEOUT|MPI|SIZE 2| time taken: 0.487170 seconds, clock cycles: 249430875
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:291382] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291382] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291382] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -4507,7 +4507,7 @@ Output file: 4_128_16_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001701 seconds, clock cycles: 870812
 |FILEOUT|MPI|SIZE 4| time taken: 0.795596 seconds, clock cycles: 407345351
 Elapsed time: 103 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:291434] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_16_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000259 seconds, clock cycles: 132798
@@ -4561,7 +4561,7 @@ Output file: 1_256_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 667
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000110 seconds, clock cycles: 56081
 |FILEOUT|MPI|SIZE 1| time taken: 0.339383 seconds, clock cycles: 173764046
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:291471] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291471] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_16_weak_boids_output.csv
@@ -4616,7 +4616,7 @@ Output file: 2_256_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000019 seconds, clock cycles: 9945
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000207 seconds, clock cycles: 105741
 |FILEOUT|MPI|SIZE 2| time taken: 0.475941 seconds, clock cycles: 243681618
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:291513] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291513] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291513] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -4674,7 +4674,7 @@ Output file: 4_256_16_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001785 seconds, clock cycles: 914041
 |FILEOUT|MPI|SIZE 4| time taken: 0.775681 seconds, clock cycles: 397148455
 Elapsed time: 107 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:291565] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_16_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000263 seconds, clock cycles: 134820
@@ -4728,7 +4728,7 @@ Output file: 1_512_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 696
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000110 seconds, clock cycles: 56266
 |FILEOUT|MPI|SIZE 1| time taken: 0.340293 seconds, clock cycles: 174229936
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:291608] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291608] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_16_weak_boids_output.csv
@@ -4783,7 +4783,7 @@ Output file: 2_512_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000021 seconds, clock cycles: 10578
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000270 seconds, clock cycles: 138242
 |FILEOUT|MPI|SIZE 2| time taken: 0.475412 seconds, clock cycles: 243410771
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:291660] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291660] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291660] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -4841,7 +4841,7 @@ Output file: 4_512_16_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001913 seconds, clock cycles: 979368
 |FILEOUT|MPI|SIZE 4| time taken: 0.781577 seconds, clock cycles: 400167668
 Elapsed time: 110 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 16|
 [dcs231:291713] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_16_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000258 seconds, clock cycles: 132341
@@ -4895,7 +4895,7 @@ Output file: 1_1024_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000001 seconds, clock cycles: 691
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000110 seconds, clock cycles: 56334
 |FILEOUT|MPI|SIZE 1| time taken: 0.341029 seconds, clock cycles: 174607007
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 16|
 [dcs231:291750] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291750] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_16_weak_boids_output.csv
@@ -4950,7 +4950,7 @@ Output file: 2_1024_16_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000003 seconds, clock cycles: 1752
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000201 seconds, clock cycles: 102909
 |FILEOUT|MPI|SIZE 2| time taken: 0.478318 seconds, clock cycles: 244898999
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 16|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 16|
 [dcs231:291792] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291792] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291792] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -5008,7 +5008,7 @@ Output file: 4_1024_16_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.001904 seconds, clock cycles: 974816
 |FILEOUT|MPI|SIZE 4| time taken: 0.775062 seconds, clock cycles: 396831692
 Elapsed time: 114 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:291844] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_64_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000296 seconds, clock cycles: 151808
@@ -5062,7 +5062,7 @@ Output file: 1_64_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 864
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000423 seconds, clock cycles: 216513
 |FILEOUT|MPI|SIZE 1| time taken: 0.343621 seconds, clock cycles: 175934051
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:291881] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291881] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_64_weak_boids_output.csv
@@ -5117,7 +5117,7 @@ Output file: 2_64_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000032 seconds, clock cycles: 16557
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000544 seconds, clock cycles: 278387
 |FILEOUT|MPI|SIZE 2| time taken: 0.485440 seconds, clock cycles: 248545475
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:291923] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291923] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:291923] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -5175,7 +5175,7 @@ Output file: 4_64_64_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005767 seconds, clock cycles: 2952461
 |FILEOUT|MPI|SIZE 4| time taken: 0.824849 seconds, clock cycles: 422322461
 Elapsed time: 117 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:291975] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_64_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000298 seconds, clock cycles: 152519
@@ -5229,7 +5229,7 @@ Output file: 1_128_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 925
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000427 seconds, clock cycles: 218497
 |FILEOUT|MPI|SIZE 1| time taken: 0.340309 seconds, clock cycles: 174238319
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:292012] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292012] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_64_weak_boids_output.csv
@@ -5284,7 +5284,7 @@ Output file: 2_128_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000033 seconds, clock cycles: 17018
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000525 seconds, clock cycles: 269037
 |FILEOUT|MPI|SIZE 2| time taken: 0.484333 seconds, clock cycles: 247978582
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:292054] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292054] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292054] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -5342,7 +5342,7 @@ Output file: 4_128_64_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005727 seconds, clock cycles: 2931994
 |FILEOUT|MPI|SIZE 4| time taken: 0.819785 seconds, clock cycles: 419730054
 Elapsed time: 121 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:292106] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_64_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000294 seconds, clock cycles: 150595
@@ -5396,7 +5396,7 @@ Output file: 1_256_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 924
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000426 seconds, clock cycles: 218164
 |FILEOUT|MPI|SIZE 1| time taken: 0.343122 seconds, clock cycles: 175678680
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:292143] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292143] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_64_weak_boids_output.csv
@@ -5451,7 +5451,7 @@ Output file: 2_256_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000033 seconds, clock cycles: 16806
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000661 seconds, clock cycles: 338368
 |FILEOUT|MPI|SIZE 2| time taken: 0.488480 seconds, clock cycles: 250101871
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:292185] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292185] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292185] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -5509,7 +5509,7 @@ Output file: 4_256_64_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005866 seconds, clock cycles: 3003637
 |FILEOUT|MPI|SIZE 4| time taken: 0.814450 seconds, clock cycles: 416998471
 Elapsed time: 124 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:292239] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_64_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000295 seconds, clock cycles: 150861
@@ -5563,7 +5563,7 @@ Output file: 1_512_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 1101
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000425 seconds, clock cycles: 217618
 |FILEOUT|MPI|SIZE 1| time taken: 0.339341 seconds, clock cycles: 173742663
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:292276] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292276] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_64_weak_boids_output.csv
@@ -5618,7 +5618,7 @@ Output file: 2_512_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000033 seconds, clock cycles: 17058
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000535 seconds, clock cycles: 274070
 |FILEOUT|MPI|SIZE 2| time taken: 0.481346 seconds, clock cycles: 246449129
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:292318] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292318] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292318] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -5676,7 +5676,7 @@ Output file: 4_512_64_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005726 seconds, clock cycles: 2931788
 |FILEOUT|MPI|SIZE 4| time taken: 0.816467 seconds, clock cycles: 418031297
 Elapsed time: 128 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 64|
 [dcs231:292370] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_64_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000286 seconds, clock cycles: 146676
@@ -5730,7 +5730,7 @@ Output file: 1_1024_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000002 seconds, clock cycles: 958
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.000427 seconds, clock cycles: 218633
 |FILEOUT|MPI|SIZE 1| time taken: 0.345532 seconds, clock cycles: 176912276
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 64|
 [dcs231:292407] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292407] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_64_weak_boids_output.csv
@@ -5785,7 +5785,7 @@ Output file: 2_1024_64_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000032 seconds, clock cycles: 16503
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.000545 seconds, clock cycles: 279010
 |FILEOUT|MPI|SIZE 2| time taken: 0.494059 seconds, clock cycles: 252958460
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 64|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 64|
 [dcs231:292449] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292449] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292449] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -5843,7 +5843,7 @@ Output file: 4_1024_64_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.005373 seconds, clock cycles: 2751068
 |FILEOUT|MPI|SIZE 4| time taken: 0.813722 seconds, clock cycles: 416625436
 Elapsed time: 131 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:292501] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_256_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000320 seconds, clock cycles: 164078
@@ -5897,7 +5897,7 @@ Output file: 1_64_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000022 seconds, clock cycles: 11047
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001691 seconds, clock cycles: 866012
 |FILEOUT|MPI|SIZE 1| time taken: 0.356823 seconds, clock cycles: 182693559
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:292538] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292538] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_256_weak_boids_output.csv
@@ -5952,7 +5952,7 @@ Output file: 2_64_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000035 seconds, clock cycles: 17667
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.002010 seconds, clock cycles: 1028926
 |FILEOUT|MPI|SIZE 2| time taken: 0.497043 seconds, clock cycles: 254485790
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:292580] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292580] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292580] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -6010,7 +6010,7 @@ Output file: 4_64_256_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.018539 seconds, clock cycles: 9492048
 |FILEOUT|MPI|SIZE 4| time taken: 0.939664 seconds, clock cycles: 481108010
 Elapsed time: 135 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:292632] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_256_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000327 seconds, clock cycles: 167305
@@ -6064,7 +6064,7 @@ Output file: 1_128_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 10896
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001710 seconds, clock cycles: 875339
 |FILEOUT|MPI|SIZE 1| time taken: 0.357863 seconds, clock cycles: 183225789
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:292669] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292669] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_256_weak_boids_output.csv
@@ -6119,7 +6119,7 @@ Output file: 2_128_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000035 seconds, clock cycles: 18147
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.002098 seconds, clock cycles: 1074301
 |FILEOUT|MPI|SIZE 2| time taken: 0.491809 seconds, clock cycles: 251806219
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:292711] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292711] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292711] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -6177,7 +6177,7 @@ Output file: 4_128_256_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.022413 seconds, clock cycles: 11475249
 |FILEOUT|MPI|SIZE 4| time taken: 0.977913 seconds, clock cycles: 500691214
 Elapsed time: 139 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:292775] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_256_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000325 seconds, clock cycles: 166432
@@ -6231,7 +6231,7 @@ Output file: 1_256_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 10804
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001696 seconds, clock cycles: 868347
 |FILEOUT|MPI|SIZE 1| time taken: 0.354713 seconds, clock cycles: 181613239
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:292812] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292812] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_256_weak_boids_output.csv
@@ -6286,7 +6286,7 @@ Output file: 2_256_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000026 seconds, clock cycles: 13184
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.002053 seconds, clock cycles: 1051211
 |FILEOUT|MPI|SIZE 2| time taken: 0.502386 seconds, clock cycles: 257221815
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:292854] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292854] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292854] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -6344,7 +6344,7 @@ Output file: 4_256_256_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.022437 seconds, clock cycles: 11487648
 |FILEOUT|MPI|SIZE 4| time taken: 0.988059 seconds, clock cycles: 505886365
 Elapsed time: 142 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:292906] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_256_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000326 seconds, clock cycles: 166665
@@ -6398,7 +6398,7 @@ Output file: 1_512_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000021 seconds, clock cycles: 10767
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.001686 seconds, clock cycles: 863236
 |FILEOUT|MPI|SIZE 1| time taken: 0.355318 seconds, clock cycles: 181922683
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:292943] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292943] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_256_weak_boids_output.csv
@@ -6453,7 +6453,7 @@ Output file: 2_512_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000035 seconds, clock cycles: 18004
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.002425 seconds, clock cycles: 1241818
 |FILEOUT|MPI|SIZE 2| time taken: 0.503154 seconds, clock cycles: 257614750
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:292985] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292985] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:292985] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -6511,7 +6511,7 @@ Output file: 4_512_256_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.023142 seconds, clock cycles: 11848495
 |FILEOUT|MPI|SIZE 4| time taken: 0.994588 seconds, clock cycles: 509229007
 Elapsed time: 146 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 256|
 [dcs231:293037] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_256_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000347 seconds, clock cycles: 177847
@@ -6565,7 +6565,7 @@ Output file: 1_1024_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000024 seconds, clock cycles: 12035
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.002321 seconds, clock cycles: 1188270
 |FILEOUT|MPI|SIZE 1| time taken: 0.367455 seconds, clock cycles: 188136879
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 256|
 [dcs231:293074] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293074] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_256_weak_boids_output.csv
@@ -6620,7 +6620,7 @@ Output file: 2_1024_256_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000034 seconds, clock cycles: 17623
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.002342 seconds, clock cycles: 1199048
 |FILEOUT|MPI|SIZE 2| time taken: 0.506805 seconds, clock cycles: 259484069
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 256|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 256|
 [dcs231:293116] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293116] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293116] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -6678,7 +6678,7 @@ Output file: 4_1024_256_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.022956 seconds, clock cycles: 11753711
 |FILEOUT|MPI|SIZE 4| time taken: 0.987846 seconds, clock cycles: 505777393
 Elapsed time: 150 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:293168] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_1024_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000375 seconds, clock cycles: 191906
@@ -6732,7 +6732,7 @@ Output file: 1_64_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 12032
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006694 seconds, clock cycles: 3427427
 |FILEOUT|MPI|SIZE 1| time taken: 0.404326 seconds, clock cycles: 207015094
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:293205] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293205] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_1024_weak_boids_output.csv
@@ -6787,7 +6787,7 @@ Output file: 2_64_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000048 seconds, clock cycles: 24699
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.008261 seconds, clock cycles: 4229561
 |FILEOUT|MPI|SIZE 2| time taken: 0.561390 seconds, clock cycles: 287431727
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:293247] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293247] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293247] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -6845,7 +6845,7 @@ Output file: 4_64_1024_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.105281 seconds, clock cycles: 53903834
 |FILEOUT|MPI|SIZE 4| time taken: 1.696556 seconds, clock cycles: 868636719
 Elapsed time: 154 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:293301] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_1024_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000357 seconds, clock cycles: 182770
@@ -6899,7 +6899,7 @@ Output file: 1_128_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 11769
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006746 seconds, clock cycles: 3453701
 |FILEOUT|MPI|SIZE 1| time taken: 0.407688 seconds, clock cycles: 208736422
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:293338] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293338] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_1024_weak_boids_output.csv
@@ -6954,7 +6954,7 @@ Output file: 2_128_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000048 seconds, clock cycles: 24770
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.008171 seconds, clock cycles: 4183496
 |FILEOUT|MPI|SIZE 2| time taken: 0.564733 seconds, clock cycles: 289143318
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:293380] MCW rank 3 bound to socket 1[core 21[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293380] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293380] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -7012,7 +7012,7 @@ Output file: 4_128_1024_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.102804 seconds, clock cycles: 52635595
 |FILEOUT|MPI|SIZE 4| time taken: 1.659643 seconds, clock cycles: 849737392
 Elapsed time: 159 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:293433] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_1024_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000363 seconds, clock cycles: 185764
@@ -7066,7 +7066,7 @@ Output file: 1_256_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 11563
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006789 seconds, clock cycles: 3475875
 |FILEOUT|MPI|SIZE 1| time taken: 0.411808 seconds, clock cycles: 210845863
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:293470] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293470] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_1024_weak_boids_output.csv
@@ -7121,7 +7121,7 @@ Output file: 2_256_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000048 seconds, clock cycles: 24399
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.008058 seconds, clock cycles: 4125908
 |FILEOUT|MPI|SIZE 2| time taken: 0.572719 seconds, clock cycles: 293231913
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:293512] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293512] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293512] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -7179,7 +7179,7 @@ Output file: 4_256_1024_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.102310 seconds, clock cycles: 52382569
 |FILEOUT|MPI|SIZE 4| time taken: 1.701470 seconds, clock cycles: 871152759
 Elapsed time: 163 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:293564] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_1024_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000412 seconds, clock cycles: 210882
@@ -7233,7 +7233,7 @@ Output file: 1_512_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 11720
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006735 seconds, clock cycles: 3448119
 |FILEOUT|MPI|SIZE 1| time taken: 0.407233 seconds, clock cycles: 208503388
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:293601] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293601] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_1024_weak_boids_output.csv
@@ -7288,7 +7288,7 @@ Output file: 2_512_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000048 seconds, clock cycles: 24754
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.007733 seconds, clock cycles: 3959431
 |FILEOUT|MPI|SIZE 2| time taken: 0.558021 seconds, clock cycles: 285706702
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:293643] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293643] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293643] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -7346,7 +7346,7 @@ Output file: 4_512_1024_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.092356 seconds, clock cycles: 47286101
 |FILEOUT|MPI|SIZE 4| time taken: 1.672770 seconds, clock cycles: 856458316
 Elapsed time: 168 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 1024|
 [dcs231:293707] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_1024_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000602 seconds, clock cycles: 308352
@@ -7400,7 +7400,7 @@ Output file: 1_1024_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000023 seconds, clock cycles: 11657
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.006754 seconds, clock cycles: 3457910
 |FILEOUT|MPI|SIZE 1| time taken: 0.406265 seconds, clock cycles: 208007847
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 1024|
 [dcs231:293744] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293744] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_1024_weak_boids_output.csv
@@ -7455,7 +7455,7 @@ Output file: 2_1024_1024_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000048 seconds, clock cycles: 24443
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.008252 seconds, clock cycles: 4224957
 |FILEOUT|MPI|SIZE 2| time taken: 0.561272 seconds, clock cycles: 287371263
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 1024|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 1024|
 [dcs231:293786] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293786] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293786] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -7513,7 +7513,7 @@ Output file: 4_1024_1024_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.103011 seconds, clock cycles: 52741759
 |FILEOUT|MPI|SIZE 4| time taken: 1.697825 seconds, clock cycles: 869286188
 Elapsed time: 173 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:293838] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_64_4096_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000441 seconds, clock cycles: 225693
@@ -7567,7 +7567,7 @@ Output file: 1_64_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000066 seconds, clock cycles: 33758
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027790 seconds, clock cycles: 14228443
 |FILEOUT|MPI|SIZE 1| time taken: 0.621978 seconds, clock cycles: 318452635
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:293875] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293875] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_64_4096_weak_boids_output.csv
@@ -7622,7 +7622,7 @@ Output file: 2_64_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000146 seconds, clock cycles: 74921
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.033176 seconds, clock cycles: 16985936
 |FILEOUT|MPI|SIZE 2| time taken: 0.811636 seconds, clock cycles: 415557592
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 64|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:293917] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293917] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:293917] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -7680,7 +7680,7 @@ Output file: 4_64_4096_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.413574 seconds, clock cycles: 211749838
 |FILEOUT|MPI|SIZE 4| time taken: 4.610942 seconds, clock cycles: 2360802429
 Elapsed time: 181 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:293969] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_128_4096_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000420 seconds, clock cycles: 215076
@@ -7734,7 +7734,7 @@ Output file: 1_128_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000066 seconds, clock cycles: 33581
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027402 seconds, clock cycles: 14029823
 |FILEOUT|MPI|SIZE 1| time taken: 0.611024 seconds, clock cycles: 312844374
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:294006] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294006] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_128_4096_weak_boids_output.csv
@@ -7789,7 +7789,7 @@ Output file: 2_128_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000146 seconds, clock cycles: 74898
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.034330 seconds, clock cycles: 17576723
 |FILEOUT|MPI|SIZE 2| time taken: 0.853975 seconds, clock cycles: 437235379
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 128|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:294050] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294050] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294050] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -7847,7 +7847,7 @@ Output file: 4_128_4096_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.394404 seconds, clock cycles: 201934894
 |FILEOUT|MPI|SIZE 4| time taken: 4.475020 seconds, clock cycles: 2291210276
 Elapsed time: 188 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:294102] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_256_4096_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000413 seconds, clock cycles: 211339
@@ -7901,7 +7901,7 @@ Output file: 1_256_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000068 seconds, clock cycles: 34852
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027672 seconds, clock cycles: 14167945
 |FILEOUT|MPI|SIZE 1| time taken: 0.617983 seconds, clock cycles: 316407215
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:294139] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294139] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_256_4096_weak_boids_output.csv
@@ -7956,7 +7956,7 @@ Output file: 2_256_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000146 seconds, clock cycles: 74844
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.033834 seconds, clock cycles: 17322783
 |FILEOUT|MPI|SIZE 2| time taken: 0.816476 seconds, clock cycles: 418035640
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 256|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:294181] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294181] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294181] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -8014,7 +8014,7 @@ Output file: 4_256_4096_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.386846 seconds, clock cycles: 198065247
 |FILEOUT|MPI|SIZE 4| time taken: 4.448371 seconds, clock cycles: 2277565904
 Elapsed time: 196 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:294233] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_512_4096_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000476 seconds, clock cycles: 243638
@@ -8068,7 +8068,7 @@ Output file: 1_512_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000066 seconds, clock cycles: 33929
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027653 seconds, clock cycles: 14158549
 |FILEOUT|MPI|SIZE 1| time taken: 0.611753 seconds, clock cycles: 313217551
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:294282] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294282] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_512_4096_weak_boids_output.csv
@@ -8123,7 +8123,7 @@ Output file: 2_512_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000144 seconds, clock cycles: 73961
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.041292 seconds, clock cycles: 21141696
 |FILEOUT|MPI|SIZE 2| time taken: 0.882272 seconds, clock cycles: 451723450
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 512|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:294388] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294388] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294388] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
@@ -8181,7 +8181,7 @@ Output file: 4_512_4096_weak_boids_output.csv
 |FILEOUT|IO_WRITE|TS 9|SIZE 4| time taken: 0.416588 seconds, clock cycles: 213292901
 |FILEOUT|MPI|SIZE 4| time taken: 4.557722 seconds, clock cycles: 2333553821
 Elapsed time: 204 seconds
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 1|BOIDS_COUNT 4096|
 [dcs231:294445] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 1_1024_4096_weak_boids_output.csv
 |FILEOUT|CUDA|TS 0|SIZE 1| time taken: 0.000675 seconds, clock cycles: 345593
@@ -8235,7 +8235,7 @@ Output file: 1_1024_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 1| time taken: 0.000067 seconds, clock cycles: 34119
 |FILEOUT|IO_WRITE|TS 9|SIZE 1| time taken: 0.027576 seconds, clock cycles: 14118962
 |FILEOUT|MPI|SIZE 1| time taken: 0.611418 seconds, clock cycles: 313046084
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 2|BOIDS_COUNT 4096|
 [dcs231:294482] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294482] MCW rank 1 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 Output file: 2_1024_4096_weak_boids_output.csv
@@ -8290,7 +8290,7 @@ Output file: 2_1024_4096_weak_boids_output.csv
 |FILEOUT|MPI_COMM|TS 9|SIZE 2| time taken: 0.000145 seconds, clock cycles: 74296
 |FILEOUT|IO_WRITE|TS 9|SIZE 2| time taken: 0.034468 seconds, clock cycles: 17647589
 |FILEOUT|MPI|SIZE 2| time taken: 0.831761 seconds, clock cycles: 425861621
-|FILEOUT|ALGO MPI_Alltoall|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 4096|
+|FILEOUT|MPI_Allgather|WEAK_SCALE|THREAD_COUNT 1024|NP_COUNT 4|BOIDS_COUNT 4096|
 [dcs231:294524] MCW rank 0 bound to socket 0[core 0[hwt 0-3]]: [BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294524] MCW rank 1 bound to socket 1[core 20[hwt 0-3]]: [..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
 [dcs231:294524] MCW rank 2 bound to socket 0[core 1[hwt 0-3]]: [..../BBBB/..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....][..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../..../....]
