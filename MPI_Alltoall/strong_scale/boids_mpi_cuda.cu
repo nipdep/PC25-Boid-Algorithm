@@ -130,6 +130,7 @@ __global__ void updateBoidsKernel(Boid *local_flock, Boid *full_flock, int local
 // Called from host to initialize boids
 extern "C" Boid *createBoids(int size, int rank, void **d_states, int thread_count)
 {
+    cudaSetDevice(rank % 4);
     Boid *flock;
     cudaMallocManaged(&flock, size * sizeof(Boid));
 
