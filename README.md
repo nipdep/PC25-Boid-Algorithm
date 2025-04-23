@@ -70,3 +70,6 @@ mpirun --bind-to core --report-bindings -np 4 ./strong_scale/mpi-cuda-exe 4096 5
 ```dotnetcli
 sbatch -N 4 --partition=el8 --gres=gpu:4 -t 30 run_n4.sh
 ```
+
+8. The file will be saved as a CSV in the folder that you ran the code in.
+9. transfer the csv file to you local computer and use the `BoidsAnim2_Updated.html` to visualize.
