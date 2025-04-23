@@ -5,3 +5,4 @@ temp
 #large files
 *.csv
 
+.DS_Store
