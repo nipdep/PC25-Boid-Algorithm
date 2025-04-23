@@ -1,0 +1,7 @@
+# temporary files
+
+temp
+
+#large files
+*.csv
+

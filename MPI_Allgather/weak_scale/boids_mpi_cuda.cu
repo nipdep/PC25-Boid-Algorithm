@@ -1,13 +1,13 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <curand_kernel.h>
+#include <time.h>
+
+#include "boids.h"
 
 #define WIDTH 800
 #define HEIGHT 450
-#define flocksize 100
-#define FRAMES 60
 
 #define MAX_VELOCITY 20
 #define MIN_VELOCITY -20
@@ -19,22 +19,9 @@
 #define SEPARATION_DISTANCE 8
 #define COHESION_DISTANCE 20
 
-struct Vector2 {
-    float x, y;
-};
-
-struct Boid {
-    int id;
-    Vector2 position;
-    Vector2 velocity;
-    float rotation;
-    int timestep;
-};
 
 __device__ float cap_velocity(float velocity) {
-    if (velocity > MAX_VELOCITY) return MAX_VELOCITY;
-    if (velocity < MIN_VELOCITY) return MIN_VELOCITY;
-    return velocity;
+    return fmaxf(MIN_VELOCITY, fminf(MAX_VELOCITY, velocity));
 }
 
 __device__ float distance(Vector2 a, Vector2 b) {
@@ -43,9 +30,12 @@ __device__ float distance(Vector2 a, Vector2 b) {
     return sqrtf(dx * dx + dy * dy);
 }
 
-__global__ void initBoids(Boid* flock, curandState* states, int seed) {
+__global__ void initBoidsKernel(Boid* flock, curandState* states, int seed, int size, int rank) {
+    // printf("running here\n");
     int i = threadIdx.x + blockIdx.x * blockDim.x;
-    if (i >= flocksize) return;
+    int thread_count = blockDim.x * gridDim.x;
+    // printf("initBoidsKernel %d\n", i);
+    if (i >= size) return;
 
     curand_init(seed, i, 0, &states[i]);
 
@@ -53,36 +43,37 @@ __global__ void initBoids(Boid* flock, curandState* states, int seed) {
     float y = curand_uniform(&states[i]) * HEIGHT;
     float vx = curand_uniform(&states[i]) * (MAX_VELOCITY - MIN_VELOCITY) + MIN_VELOCITY;
     float vy = curand_uniform(&states[i]) * (MAX_VELOCITY - MIN_VELOCITY) + MIN_VELOCITY;
-
-    flock[i].id = i;
+    // printf("Boid %d: (%f, %f) velocity (%f, %f)\n", i, x, y, vx, vy);
+    flock[i].id = i + rank * size;
     flock[i].position = {x, y};
     flock[i].velocity = {vx, vy};
     flock[i].rotation = 0.0f;
     flock[i].timestep = 0;
 }
 
-__global__ void updateBoids(Boid* flock, int timestep) {
+__global__ void updateBoidsKernel(Boid* local_flock, Boid* full_flock, int local_size, int timestep, int FLOCKSIZE) {
     int i = threadIdx.x + blockIdx.x * blockDim.x;
-    if (i >= flocksize) return;
+    // printf("updateBoidsKernel %d\n", i);
+    if (i >= local_size) return;
 
-    Boid* boid = &flock[i];
+    Boid* boid = &local_flock[i];
 
     Vector2 cohesion = {0, 0}, alignment = {0, 0}, separation = {0, 0};
     int cohesion_count = 0, separation_count = 0;
 
-    for (int j = 0; j < flocksize; j++) {
-        if (i == j) continue;
-        float dist = distance(boid->position, flock[j].position);
+    for (int j = 0; j < FLOCKSIZE; j++) {
+        if (boid->id == full_flock[j].id) continue;
+        float dist = distance(boid->position, full_flock[j].position);
         if (dist < COHESION_DISTANCE) {
-            cohesion.x += flock[j].position.x;
-            cohesion.y += flock[j].position.y;
-            alignment.x += flock[j].velocity.x;
-            alignment.y += flock[j].velocity.y;
+            cohesion.x += full_flock[j].position.x;
+            cohesion.y += full_flock[j].position.y;
+            alignment.x += full_flock[j].velocity.x;
+            alignment.y += full_flock[j].velocity.y;
             cohesion_count++;
         }
         if (dist < SEPARATION_DISTANCE) {
-            separation.x += boid->position.x - flock[j].position.x;
-            separation.y += boid->position.y - flock[j].position.y;
+            separation.x += boid->position.x - full_flock[j].position.x;
+            separation.y += boid->position.y - full_flock[j].position.y;
             separation_count++;
         }
     }
@@ -121,34 +112,37 @@ __global__ void updateBoids(Boid* flock, int timestep) {
     boid->velocity.y = cap_velocity(boid->velocity.y);
 
     boid->position.x += boid->velocity.x;
-    boid->position.y += boid->velocity.y;
+    boid->position.y += boid->velocity.y;         
     boid->timestep = timestep;
-
-    printf("%d,%d,%.2f,%.2f,%.2f,%.2f\n",
-        boid->id, boid->timestep,
-        boid->position.x, boid->position.y,
-        boid->velocity.x, boid->velocity.y);
 }
 
-int main() {
-    Boid* d_flock;
-    curandState* d_states;
+// Called from host to initialize boids
+extern "C" Boid* createBoids(int size, int rank, void** d_states, int thread_count) {
+    cudaSetDevice(rank % 4);
+    Boid* flock;
+    cudaMallocManaged(&flock, size * sizeof(Boid));
 
-    cudaMalloc(&d_flock, sizeof(Boid) * flocksize);
-    cudaMalloc(&d_states, sizeof(curandState) * flocksize);
+    curandState* states;
+    cudaMallocManaged((void**)&states, size * sizeof(curandState));
+    *d_states = states;
 
-    initBoids<<<(flocksize + 255)/256, 256>>>(d_flock, d_states, time(NULL));
+    initBoidsKernel<<<(size + thread_count - 1) / thread_count, thread_count>>>(flock, states, time(NULL), size, rank);
+    cudaError_t err = cudaGetLastError();
+    if (err != cudaSuccess)
+        printf("CUDA error: %s\n", cudaGetErrorString(err));
     cudaDeviceSynchronize();
+    return flock;
+}
 
-    for (int t = 0; t < FRAMES; t++) {
-        updateBoids<<<(flocksize + 255)/256, 256>>>(d_flock, t);
-        cudaDeviceSynchronize();
-    }
+extern "C" void updateBoids(Boid *local_flock, Boid *full_flock, int local_size, int timestep, int thread_count, int FLOCKSIZE)
+{
+    // printf("updateBoids %d\n", local_size);
+    updateBoidsKernel<<<(local_size + thread_count - 1) / thread_count, thread_count>>>(local_flock, full_flock, local_size, timestep, FLOCKSIZE);
+    cudaDeviceSynchronize();
+}
 
-    Boid h_flock[flocksize];
-    cudaMemcpy(h_flock, d_flock, sizeof(Boid) * flocksize, cudaMemcpyDeviceToHost);
-
-    cudaFree(d_flock);
-    cudaFree(d_states);
-    return 0;
+extern "C" Boid* allocateFullFlock(int size) {
+    Boid* full;
+    cudaMallocManaged(&full, size * sizeof(Boid), cudaMemAttachGlobal);
+    return full;
 }

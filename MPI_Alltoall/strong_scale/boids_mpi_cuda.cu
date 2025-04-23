@@ -8,8 +8,6 @@
 
 #define WIDTH 800
 #define HEIGHT 450
-#define FLOCKSIZE 400
-#define FRAMES 60
 
 #define MAX_VELOCITY 20
 #define MIN_VELOCITY -20
@@ -21,23 +19,26 @@
 #define SEPARATION_DISTANCE 8
 #define COHESION_DISTANCE 20
 
-
-__device__ float cap_velocity(float velocity) {
+__device__ float cap_velocity(float velocity)
+{
     return fmaxf(MIN_VELOCITY, fminf(MAX_VELOCITY, velocity));
 }
 
-__device__ float distance(Vector2 a, Vector2 b) {
+__device__ float distance(Vector2 a, Vector2 b)
+{
     float dx = a.x - b.x;
     float dy = a.y - b.y;
     return sqrtf(dx * dx + dy * dy);
 }
 
-__global__ void initBoidsKernel(Boid* flock, curandState* states, int seed, int size, int rank) {
+__global__ void initBoidsKernel(Boid *flock, curandState *states, int seed, int size, int rank)
+{
     // printf("running here\n");
     int i = threadIdx.x + blockIdx.x * blockDim.x;
     int thread_count = blockDim.x * gridDim.x;
     // printf("initBoidsKernel %d\n", i);
-    if (i >= size) return;
+    if (i >= size)
+        return;
 
     curand_init(seed, i, 0, &states[i]);
 
@@ -53,41 +54,49 @@ __global__ void initBoidsKernel(Boid* flock, curandState* states, int seed, int 
     flock[i].timestep = 0;
 }
 
-__global__ void updateBoidsKernel(Boid* local_flock, Boid* full_flock, int local_size, int timestep) {
+__global__ void updateBoidsKernel(Boid *local_flock, Boid *full_flock, int local_size, int timestep, int FLOCKSIZE)
+{
     int i = threadIdx.x + blockIdx.x * blockDim.x;
     // printf("updateBoidsKernel %d\n", i);
-    if (i >= local_size) return;
+    if (i >= local_size)
+        return;
 
-    Boid* boid = &local_flock[i];
+    Boid *boid = &local_flock[i];
 
     Vector2 cohesion = {0, 0}, alignment = {0, 0}, separation = {0, 0};
     int cohesion_count = 0, separation_count = 0;
 
-    for (int j = 0; j < FLOCKSIZE; j++) {
-        if (boid->id == full_flock[j].id) continue;
+    for (int j = 0; j < FLOCKSIZE; j++)
+    {
+        if (boid->id == full_flock[j].id)
+            continue;
         float dist = distance(boid->position, full_flock[j].position);
-        if (dist < COHESION_DISTANCE) {
+        if (dist < COHESION_DISTANCE)
+        {
             cohesion.x += full_flock[j].position.x;
             cohesion.y += full_flock[j].position.y;
             alignment.x += full_flock[j].velocity.x;
             alignment.y += full_flock[j].velocity.y;
             cohesion_count++;
         }
-        if (dist < SEPARATION_DISTANCE) {
+        if (dist < SEPARATION_DISTANCE)
+        {
             separation.x += boid->position.x - full_flock[j].position.x;
             separation.y += boid->position.y - full_flock[j].position.y;
             separation_count++;
         }
     }
 
-    if (cohesion_count > 0) {
+    if (cohesion_count > 0)
+    {
         cohesion.x /= cohesion_count;
         cohesion.y /= cohesion_count;
         alignment.x /= cohesion_count;
         alignment.y /= cohesion_count;
     }
 
-    if (separation_count > 0) {
+    if (separation_count > 0)
+    {
         separation.x /= separation_count;
         separation.y /= separation_count;
     }
@@ -119,15 +128,17 @@ __global__ void updateBoidsKernel(Boid* local_flock, Boid* full_flock, int local
 }
 
 // Called from host to initialize boids
-extern "C" Boid* createBoids(int size, int rank, void** d_states) {
-    Boid* flock;
+extern "C" Boid *createBoids(int size, int rank, void **d_states, int thread_count)
+{
+    cudaSetDevice(rank % 4);
+    Boid *flock;
     cudaMallocManaged(&flock, size * sizeof(Boid));
 
-    curandState* states;
-    cudaMallocManaged((void**)&states, size * sizeof(curandState));
+    curandState *states;
+    cudaMallocManaged((void **)&states, size * sizeof(curandState));
     *d_states = states;
 
-    initBoidsKernel<<<(size + 63) / 64, 64>>>(flock, states, time(NULL), size, rank);
+    initBoidsKernel<<<(size + thread_count - 1) / thread_count, thread_count>>>(flock, states, time(NULL), size, rank);
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess)
         printf("CUDA error: %s\n", cudaGetErrorString(err));
@@ -135,14 +146,16 @@ extern "C" Boid* createBoids(int size, int rank, void** d_states) {
     return flock;
 }
 
-extern "C" void updateBoids(Boid* local_flock, Boid* full_flock, int local_size, int timestep) {
+extern "C" void updateBoids(Boid *local_flock, Boid *full_flock, int local_size, int timestep, int thread_count, int FLOCKSIZE)
+{
     // printf("updateBoids %d\n", local_size);
-    updateBoidsKernel<<<(local_size + 63) / 64, 64>>>(local_flock, full_flock, local_size, timestep);
+    updateBoidsKernel<<<(local_size + thread_count - 1) / thread_count, thread_count>>>(local_flock, full_flock, local_size, timestep, FLOCKSIZE);
     cudaDeviceSynchronize();
 }
 
-extern "C" Boid* allocateFullFlock(int size) {
-    Boid* full;
+extern "C" Boid *allocateFullFlock(int size)
+{
+    Boid *full;
     cudaMallocManaged(&full, size * sizeof(Boid), cudaMemAttachGlobal);
     return full;
 }
