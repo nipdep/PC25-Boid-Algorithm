@@ -60,7 +60,7 @@ make mpi-cuda
 mpirun --bind-to core --report-bindings -np $NP ./strong_scale/mpi-cuda-exe $NUM_BOIDS $THREAD_COUNT $TIME_STEP $SCALE_TYPE
         
 ```
-Example (for a strong scaling simulation with 4096 boids using 512 threads per block for 30 frames):
+Example (for a strong scaling simulation running on 4 processes with 4096 boids using 512 threads per block for 30 frames):
 ```terminal
 mpirun --bind-to core --report-bindings -np 4 ./strong_scale/mpi-cuda-exe 4096 512 30 0
         
