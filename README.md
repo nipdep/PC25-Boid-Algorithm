@@ -57,7 +57,12 @@ make mpi-cuda
 ```
 6. For a single run, $NP is the number of processors, $NUM_BOIDS is the number of boids (eg: 4096), $THREAD_COUNT is the number of threads per block, $TIME_STEP number of time steps the algo is run, $SCALE_TYPE is either 0 (for strong scale) or 1 (for weak scale) this is only used for printing purposes:
 ```terminal
-mpirun --bind-to core --report-bindings -np "$NP" ./strong_scale/mpi-cuda-exe $NUM_BOIDS $THREAD_COUNT $TIME_STEP $SCALE_TYPE
+mpirun --bind-to core --report-bindings -np $NP ./strong_scale/mpi-cuda-exe $NUM_BOIDS $THREAD_COUNT $TIME_STEP $SCALE_TYPE
+        
+```
+Example (for a strong scaling simulation with 4096 boids using 512 threads per block for 30 frames):
+```terminal
+mpirun --bind-to core --report-bindings -np 4 ./strong_scale/mpi-cuda-exe 4096 512 30 0
         
 ```
 
